@@ -542,7 +542,7 @@
           "Navigate to your application",
           "Create a new record",
           "Understand required fields",
-          "Save records properly (don't be like Ruth!)"
+          "Save records properly"
         ],
         "why_this_matters": "This is the moment of truth! You'll create actual data in your application and see everything you built come to life.",
         "steps": [
@@ -601,12 +601,20 @@
               "Click it",
               "Wait for confirmation (usually a green message saying 'Record saved successfully')",
               "",
-              "⚠️ **DON'T BE LIKE RUTH!** ⚠️",
-              "Ruth's Story: Ruth filled out a record and closed it without clicking Save. When she came back, all her work was GONE. She had to start over.",
+              "⚠️ **CRITICAL: You MUST click Save!** ⚠️",
               "",
-              "**THE GOLDEN RULE: ALWAYS CLICK SAVE BEFORE CLOSING A RECORD!**"
+              "**Why this is SO important:**",
+              "  - Archer doesn't auto-save like Google Docs or modern web apps",
+              "  - If you close the record without clicking Save, ALL your work is LOST",
+              "  - There's NO 'Are you sure?' warning - it just loses everything",
+              "  - This is the #1 mistake beginners make",
+              "",
+              "**THE GOLDEN RULE: ALWAYS CLICK SAVE BEFORE CLOSING A RECORD!**",
+              "",
+              "**Real-world impact:**",
+              "Imagine spending 20 minutes filling out a complex risk assessment, then closing it thinking it saved automatically. When you come back, everything is gone and you have to start over. This happens ALL THE TIME to new users!"
             ],
-            "exam_tip": "EXAM FACT: The 'Save' option saves edits to a record. If you don't select Save, your changes won't be kept. This is one of the most common exam scenarios!"
+            "exam_tip": "EXAM FACT: The 'Save' option saves edits to a record. If you don't select Save, your changes won't be kept. Always click Save!"
           },
           {
             "step": 5,
