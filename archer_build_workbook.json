@@ -783,7 +783,1055 @@
           "□ (Bonus) You created 'Status Alert' calculated field"
         ],
         "whats_next": "Next, we'll create cross-reference fields to link your training tracker to other applications (like an employee directory)!"
+      },
+      {
+        "activity_number": 7,
+        "title": "Create Advanced Search and Reports",
+        "learning_objectives": [
+          "Use advanced search with filters",
+          "Save searches as reports",
+          "Understand Personal vs Global reports",
+          "Export reports"
+        ],
+        "why_this_matters": "Searching and reporting are how you find and analyze your data. Without good reports, your data is useless!",
+        "steps": [
+          {
+            "step": 1,
+            "action": "Navigate to Your Application",
+            "details": [
+              "Go to your Security Training Tracker application",
+              "You should see a list of your training records"
+            ]
+          },
+          {
+            "step": 2,
+            "action": "Perform a Basic Search",
+            "details": [
+              "Look for a search box within the application",
+              "Try searching for an employee name (like 'John')",
+              "You'll see records that match",
+              "This is a keyword search - it searches within this APPLICATION"
+            ],
+            "exam_tip": "EXAM FACT: A keyword search searches for a specific word or string within one or more Applications (not workspaces or reports)."
+          },
+          {
+            "step": 3,
+            "action": "Use Advanced Search with Filters",
+            "details": [
+              "Look for 'Advanced Search' button or filter icon",
+              "Click it",
+              "You'll see filter options for your fields",
+              "",
+              "**Try these filters:**",
+              "  - Training Status = 'Completed'",
+              "  - Completion Date = Last 30 days",
+              "  - Training Type = 'Phishing Awareness'",
+              "",
+              "Apply the filters and run the search",
+              "You can filter by:",
+              "  ✓ Date ranges",
+              "  ✓ Value List selections",
+              "  ✓ Text fields",
+              "  ✗ NOT by 'Size of Records' (not a valid filter!)"
+            ],
+            "exam_tip": "EXAM FACT: Users CANNOT filter search results by 'Size of Records'. Valid filters include date ranges, value lists, and field values."
+          },
+          {
+            "step": 4,
+            "action": "Save Your Search as a Report",
+            "details": [
+              "After running your advanced search, look for 'Save' or 'Save As Report'",
+              "Click it",
+              "**Report Name:** Completed Training Last 30 Days",
+              "**Description:** Shows all completed training in the last month",
+              "**Report Type:** Personal (only you can see it)",
+              "",
+              "Save the report"
+            ],
+            "exam_tip": "EXAM FACT: Personal reports are only visible to the person who created them. Global reports can be set to be seen by others. Saving a report saves the SEARCH SETTINGS, not the exact data."
+          },
+          {
+            "step": 5,
+            "action": "Create a Global Report",
+            "details": [
+              "Run another search (try: Training Status = 'Expired')",
+              "Save it as a report:",
+              "**Report Name:** Expired Training Certifications",
+              "**Report Type:** Global (can be shared)",
+              "Save it",
+              "",
+              "Note: You need appropriate permissions to create global reports"
+            ]
+          },
+          {
+            "step": 6,
+            "action": "Modify Report Visualization",
+            "details": [
+              "Open one of your saved reports",
+              "Look for 'Modify' (Classic UI) or 'Edit Search' (SaaS UI)",
+              "Find 'Visualization Display Options'",
+              "",
+              "**Try different views:**",
+              "  - FLAT: Standard list view",
+              "  - HIERARCHICAL: Groups results by a field (try grouping by 'Training Type')",
+              "  - SUMMARY: Shows totals and counts",
+              "",
+              "Save your changes"
+            ],
+            "exam_tip": "EXAM FACT: To edit filters in an existing report, select 'Modify' (Classic UI) or 'Edit Search' (SaaS UI). In Visualization Display Options, select 'Hierarchical' to group results by a specific field."
+          },
+          {
+            "step": 7,
+            "action": "Export Your Report",
+            "details": [
+              "Open one of your reports",
+              "Look for 'Export' button",
+              "You can export in multiple formats:",
+              "  ✓ CSV (comma-separated values)",
+              "  ✓ Excel (spreadsheet)",
+              "  ✓ PDF (document)",
+              "",
+              "Try exporting to PDF and check the file!"
+            ],
+            "exam_tip": "EXAM FACT: Reports can be exported in CSV, Excel, OR PDF formats - any of these!"
+          }
+        ],
+        "checkpoint": [
+          "□ You've performed keyword and advanced searches",
+          "□ You've created both Personal and Global reports",
+          "□ You understand report visualization options",
+          "□ You've exported a report to PDF"
+        ],
+        "whats_next": "Now let's create dashboards and iViews to visualize your data!"
+      },
+      {
+        "activity_number": 8,
+        "title": "Build Dashboards and iViews",
+        "learning_objectives": [
+          "Understand dashboards",
+          "Create iViews",
+          "Add charts and visualizations",
+          "Set up Quick Links"
+        ],
+        "why_this_matters": "Dashboards give you at-a-glance visibility into your data. Instead of running reports, you see key metrics instantly!",
+        "steps": [
+          {
+            "step": 1,
+            "action": "Understand Your Dashboard",
+            "details": [
+              "Click the logo (top left) to go to your homepage",
+              "You're looking at a DASHBOARD",
+              "Dashboards can contain:",
+              "  - iViews (custom views of data)",
+              "  - Widgets (interactive components)",
+              "  - Charts (visual representations)",
+              "  - Quick Links (shortcuts to common actions)",
+              "",
+              "These can display links, embedded content, charts - any of these!"
+            ],
+            "exam_tip": "EXAM FACT: An iView or Widget can display Links, Embedded external content, OR Charts - any of these options! When users log in, their home view is a Dashboard."
+          },
+          {
+            "step": 2,
+            "action": "Create an iView (if you have permissions)",
+            "details": [
+              "Navigate: Manage > Dashboards (requires admin rights)",
+              "Find your dashboard or create a new one",
+              "Add a new iView",
+              "**iView Type:** Application Search Results",
+              "**Application:** Security Training Tracker",
+              "**Report:** Expired Training Certifications (use the report you created)",
+              "",
+              "This iView will show expired training on your dashboard!"
+            ]
+          },
+          {
+            "step": 3,
+            "action": "Add a Chart iView",
+            "details": [
+              "Create another iView",
+              "**iView Type:** Chart",
+              "**Chart Type:** Pie Chart",
+              "**Data Source:** Security Training Tracker",
+              "**Group By:** Training Type",
+              "**Show:** Count of records",
+              "",
+              "This creates a pie chart showing training breakdown by type!",
+              "When you click on a slice of the pie, it opens the records for that slice"
+            ],
+            "exam_tip": "EXAM FACT: Clicking on a chart area opens a list of records associated with that chart statistic."
+          },
+          {
+            "step": 4,
+            "action": "Set Up Quick Links",
+            "details": [
+              "Navigate to your workspace",
+              "Look for 'Quick Links' section",
+              "Add a Quick Link:",
+              "**Action:** Create New Record",
+              "**Application:** Security Training Tracker",
+              "**Label:** Log New Training",
+              "",
+              "Now you can create training records with one click instead of navigating Workspace > Solution > Application every time!"
+            ],
+            "exam_tip": "EXAM FACT: Quick Links allow users to quickly create new records without having to navigate to the application every time."
+          },
+          {
+            "step": 5,
+            "action": "Understand Dashboard Permissions",
+            "details": [
+              "**Personal Dashboards:** You create and edit for yourself",
+              "**Global Dashboards:** With admin rights, you can create and share with others",
+              "",
+              "With appropriate admin rights, you can:",
+              "  ✓ Edit and share global dashboards",
+              "  ✓ Create and edit personal dashboards",
+              "  ✓ Create global reports",
+              "  ✓ All of these!"
+            ],
+            "exam_tip": "EXAM FACT: With appropriate administrative rights, end users can do all of these: edit/share global dashboards, create/edit personal dashboards, and create global reports."
+          }
+        ],
+        "checkpoint": [
+          "□ You understand what dashboards and iViews are",
+          "□ You've created (or understand how to create) iViews",
+          "□ You've set up a Quick Link for fast record creation",
+          "□ You know the difference between Personal and Global dashboards"
+        ],
+        "whats_next": "Time to add automation with email notifications and subscriptions!"
+      },
+      {
+        "activity_number": 9,
+        "title": "Set Up Email Notifications and Subscriptions",
+        "learning_objectives": [
+          "Manage email subscriptions",
+          "Create scheduled notifications",
+          "Schedule report distributions",
+          "Share records via email"
+        ],
+        "why_this_matters": "Automation is key! Instead of manually checking for updates, let Archer notify you automatically.",
+        "steps": [
+          {
+            "step": 1,
+            "action": "Manage Your Email Subscriptions",
+            "details": [
+              "Click on your User Menu (top right corner)",
+              "Go to: Preferences > Email Subscription",
+              "You'll see a list of available email subscriptions",
+              "Each has a checkbox - check to subscribe, uncheck to unsubscribe",
+              "",
+              "Try subscribing to one of your reports!"
+            ],
+            "exam_tip": "EXAM FACT: To opt out of an email report subscription, navigate to User Menu > Preferences > Email Subscription, locate the report, and uncheck the subscribed box."
+          },
+          {
+            "step": 2,
+            "action": "Understand Scheduled Notifications (Concept)",
+            "details": [
+              "Scheduled notifications remind users when something is due",
+              "Example: 'Notify me 7 days before training expires'",
+              "",
+              "**How it works:**",
+              "  - Based on a date field (like 'Expiration Date')",
+              "  - Triggers X days before/after the date",
+              "  - Sends email to specified users/groups",
+              "",
+              "Creating these requires admin rights, but it's important to understand them!"
+            ],
+            "exam_tip": "EXAM FACT: To remind a team when reports are due within a set timeframe, create a scheduled notification based on the due date field."
+          },
+          {
+            "step": 3,
+            "action": "Create a Scheduled Report Distribution",
+            "details": [
+              "Open one of your saved reports",
+              "Look for 'Schedule' or 'Distribution' options",
+              "Set up a schedule:",
+              "**Frequency:** Weekly (every Monday)",
+              "**Time:** 9:00 AM",
+              "**Recipients:** Yourself (add your email)",
+              "**Format:** PDF",
+              "",
+              "Save the schedule",
+              "Now Archer will AUTOMATICALLY run this report and email it to you every Monday!"
+            ],
+            "exam_tip": "EXAM FACT: When a user creates a Scheduled Report Distribution, Archer will run the report Automatically (not manually)."
+          },
+          {
+            "step": 4,
+            "action": "Email a Record Link",
+            "details": [
+              "Open one of your training records",
+              "Look for 'Share' option",
+              "Select 'Email Record' (Share > Email)",
+              "",
+              "What happens:",
+              "  - Opens a new email in YOUR email client",
+              "  - The email includes a LINK to the record",
+              "  - The recipient can click the link to view (if they have access)",
+              "  - It does NOT send a downloadable copy",
+              "  - It does NOT sign them up for notifications"
+            ],
+            "exam_tip": "EXAM FACT: Email Record (Share > Email) opens a new email in the user's email client with a link to the record. It does NOT send a downloadable copy or sign them up for notifications."
+          }
+        ],
+        "checkpoint": [
+          "□ You know how to manage email subscriptions",
+          "□ You understand scheduled notifications",
+          "□ You've created (or understand) scheduled report distributions",
+          "□ You know how to email record links"
+        ],
+        "whats_next": "Almost done with Part 2! Next we'll understand data management and integration concepts."
+      },
+      {
+        "activity_number": 10,
+        "title": "Understand Data Management and Integration",
+        "learning_objectives": [
+          "Understand Data Feeds (import)",
+          "Understand Data Publications (export)",
+          "Learn about cross-references",
+          "Understand Archer's value over spreadsheets"
+        ],
+        "why_this_matters": "Archer doesn't exist in isolation - it integrates with other systems. Understanding data flows is critical for the exam!",
+        "steps": [
+          {
+            "step": 1,
+            "action": "Understand Data Import Methods",
+            "details": [
+              "Archer can import data in several ways:",
+              "  ✓ DATA FEEDS: Automated import from external systems",
+              "  ✓ MANUAL DATA IMPORT: Upload files manually",
+              "  ✓ API: Programmatic integration",
+              "  ✗ SCANNING: NOT a valid import method!",
+              "",
+              "Data Feeds are managed through the Data Feed Manager feature"
+            ],
+            "exam_tip": "EXAM FACT: Scanning is NOT a method to import data into Archer. Valid methods are Data Feeds, Manual Import, and API. Data feeds are managed through the Data Feed Manager."
+          },
+          {
+            "step": 2,
+            "action": "Understand Data Feeds (Import INTO Archer)",
+            "details": [
+              "**Data Feeds = Importing data INTO Archer from external systems**",
+              "",
+              "**Use cases:**",
+              "  - Import vulnerability scan results daily",
+              "  - Pull employee data from HR system weekly",
+              "  - Import compliance data from monitoring tools",
+              "",
+              "**Key characteristics:**",
+              "  - Scheduled (runs automatically)",
+              "  - Ideal for regular, recurring imports",
+              "  - JavaScript Transporters are a type of Data Feed"
+            ],
+            "exam_tip": "EXAM FACT: Data Feeds import data INTO Archer. JavaScript Transporters are a type of Data Feed. Data Feeds are ideal for data to be added or modified on a pre-defined schedule."
+          },
+          {
+            "step": 3,
+            "action": "Understand Data Publications (Export OUT OF Archer)",
+            "details": [
+              "**Data Publications = EXPORTING data OUT OF Archer**",
+              "",
+              "**Use cases:**",
+              "  - Send risk data to external reporting system",
+              "  - Export compliance metrics to data warehouse",
+              "  - Push incident data to SIEM",
+              "",
+              "**Key point: OPPOSITE of Data Feeds!**",
+              "  - Data Feeds: Import IN",
+              "  - Data Publications: Export OUT"
+            ],
+            "exam_tip": "EXAM FACT: Data Publications allow users to extract data from Archer and load it to an external database. This is the OPPOSITE of Data Feeds. Don't confuse them on the exam!"
+          },
+          {
+            "step": 4,
+            "action": "Understand Cross-Referenced Fields (Concept)",
+            "details": [
+              "Cross-references link records between different applications",
+              "",
+              "**Example:**",
+              "  - Link a Training Record to an Employee Record",
+              "  - Link a Risk to a Control",
+              "  - Link an Issue to an Audit Finding",
+              "",
+              "**In reports:**",
+              "To include cross-referenced application fields in a report, use 'Add New Relationship' on the search page"
+            ],
+            "exam_tip": "EXAM FACT: To create a report with fields from a cross-referenced application, choose 'Add New Relationship' on the search page."
+          },
+          {
+            "step": 5,
+            "action": "Why Archer Beats Spreadsheets",
+            "details": [
+              "**Spreadsheet problems:**",
+              "  ❌ Potential data loss from corrupted files",
+              "  ❌ Human error in manual updates",
+              "  ❌ No proactive risk trend analysis",
+              "  ❌ ALL OF THESE!",
+              "",
+              "**Archer solutions:**",
+              "  ✅ Centralized, secure data storage",
+              "  ✅ Automated workflows and notifications",
+              "  ✅ Real-time trend analysis and reporting",
+              "  ✅ Audit trails (who changed what, when)",
+              "  ✅ Access controls and permissions"
+            ],
+            "exam_tip": "EXAM FACT: Manual spreadsheet management puts organizations at risk due to ALL of these: potential data loss, human error, and inability to analyze trends proactively."
+          }
+        ],
+        "checkpoint": [
+          "□ You understand Data Feeds (import INTO Archer)",
+          "□ You understand Data Publications (export OUT OF Archer)",
+          "□ You won't confuse them on the exam!",
+          "□ You know why Archer is better than spreadsheets"
+        ],
+        "whats_next": "🎉 Part 2 Complete! Take a break, then move to Part 3 for END GAME features!"
       }
+    ],
+    "part_2_complete": {
+      "congratulations": "🎉 PART 2 COMPLETE! 🎉",
+      "what_you_learned": [
+        "✓ Created calculated fields with auto-calculations",
+        "✓ Built advanced searches with filters",
+        "✓ Created Personal and Global reports",
+        "✓ Designed dashboards and iViews",
+        "✓ Set up Quick Links for fast access",
+        "✓ Managed email subscriptions and scheduled reports",
+        "✓ Understood data import/export (Data Feeds vs Publications)"
+      ],
+      "exam_concepts_covered": [
+        "✓ Calculated fields (read-only, auto-populate)",
+        "✓ Keyword search scope (within applications)",
+        "✓ Valid search filters (NOT 'Size of Records'!)",
+        "✓ Personal vs Global reports",
+        "✓ Report visualization options",
+        "✓ Dashboard and iView capabilities",
+        "✓ Quick Links functionality",
+        "✓ Email subscriptions and notifications",
+        "✓ Data Feeds vs Data Publications (critical distinction!)"
+      ],
+      "take_a_break": "Great work! Take a 15-minute break. Part 3 is the END GAME - DDEs, Workflows, and Permissions. These are advanced features that complete your mastery!"
+    }
+  },
+  "part_3_end_game": {
+    "title": "PART 3: END GAME (Advanced)",
+    "subtitle": "Master-Level Features",
+    "duration": "2-3 hours",
+    "difficulty": "Advanced",
+    "what_youll_learn": [
+      "Data-Driven Events (DDEs) - field automation",
+      "Advanced Workflows - multi-stage processes",
+      "Access Control and Permissions",
+      "Security concepts"
+    ],
+    "activities": [
+      {
+        "activity_number": 11,
+        "title": "Create Data-Driven Events (DDEs)",
+        "learning_objectives": [
+          "Understand what DDEs are",
+          "Create a DDE to auto-update fields",
+          "Use DDEs for business logic"
+        ],
+        "why_this_matters": "DDEs are automation MAGIC. They automatically change field values based on conditions. Example: When Status = 'Expired', automatically set a flag or send a notification.",
+        "difficulty_note": "DDEs have a steep learning curve, but you've got this!",
+        "steps": [
+          {
+            "step": 1,
+            "action": "Understand Data-Driven Events",
+            "details": [
+              "**DDEs = Automated actions triggered by field changes**",
+              "",
+              "**What they can do:**",
+              "  - Automatically update field values",
+              "  - Set fields to read-only or required",
+              "  - Show/hide fields based on conditions",
+              "  - Trigger notifications",
+              "",
+              "**Example scenarios:**",
+              "  - When Status = 'Completed', automatically fill 'Completion Date' with today",
+              "  - When 'Days Until Expiration' < 0, set 'Training Status' to 'Expired'",
+              "  - When 'Cost' > 1000, make 'Approval Required' field visible"
+            ],
+            "exam_tip": "EXAM FACT: Data-Driven Events can automatically update field values based on conditions. Grayed-out fields might be read-only due to a DDE."
+          },
+          {
+            "step": 2,
+            "action": "Open Your Application in Edit Mode",
+            "details": [
+              "Navigate: Manage > Applications",
+              "Find 'Security Training Tracker'",
+              "Click Edit",
+              "Look for 'Data-Driven Events' or 'Advanced' tab"
+            ]
+          },
+          {
+            "step": 3,
+            "action": "Create Your First DDE",
+            "details": [
+              "Click 'Add New DDE' or similar",
+              "**DDE Name:** Auto-Set Expired Status",
+              "**Trigger:** When record is opened or saved",
+              "",
+              "**Condition (IF):**",
+              "  - If 'Days Until Expiration' < 0",
+              "",
+              "**Action (THEN):**",
+              "  - Set 'Training Status' = 'Expired'",
+              "",
+              "Save the DDE"
+            ]
+          },
+          {
+            "step": 4,
+            "action": "Test Your DDE",
+            "details": [
+              "Publish your changes",
+              "Navigate to your application",
+              "Open a record with an expiration date in the past",
+              "The 'Training Status' should automatically change to 'Expired'!",
+              "If it doesn't, check your DDE logic"
+            ]
+          },
+          {
+            "step": 5,
+            "action": "Challenge: Create Another DDE",
+            "details": [
+              "Create a DDE that makes 'Certificate Number' field REQUIRED when 'Training Status' = 'Completed'",
+              "",
+              "**Condition:** Training Status = 'Completed'",
+              "**Action:** Set 'Certificate Number' to Required",
+              "",
+              "Test it by creating a new record!"
+            ]
+          }
+        ],
+        "checkpoint": [
+          "□ You understand what DDEs are and what they can do",
+          "□ You've created a DDE to auto-update a field",
+          "□ You've tested your DDE and it works",
+          "□ (Bonus) You created a DDE to make a field required conditionally"
+        ],
+        "whats_next": "DDEs are powerful but workflows are even MORE powerful! Let's build one."
+      },
+      {
+        "activity_number": 12,
+        "title": "Build an Advanced Workflow",
+        "learning_objectives": [
+          "Understand Advanced Workflow",
+          "Create workflow stages",
+          "Configure stage transitions",
+          "Use the Actions dropdown"
+        ],
+        "why_this_matters": "Workflows turn your application into a multi-stage process. Example: Training Request → Approval → Scheduled → Completed. Each stage has different fields, permissions, and actions.",
+        "difficulty_note": "Workflows have the steepest learning curve in Archer. Take your time!",
+        "steps": [
+          {
+            "step": 1,
+            "action": "Understand Advanced Workflow",
+            "details": [
+              "**Advanced Workflow = Multi-stage process for records**",
+              "",
+              "**Real-world example:**",
+              "  Stage 1: Draft (employee requests training)",
+              "  Stage 2: Pending Approval (manager reviews)",
+              "  Stage 3: Approved (training scheduled)",
+              "  Stage 4: Completed (employee takes training)",
+              "  Stage 5: Expired (certification expires)",
+              "",
+              "**Key characteristics:**",
+              "  - Records move through stages",
+              "  - Each stage can have different fields visible/required",
+              "  - Each stage can have different permissions",
+              "  - Users use the ACTIONS DROPDOWN to move records to next stage"
+            ],
+            "exam_tip": "EXAM FACT: Records with Advanced Workflow have an Actions dropdown menu at the top. Users use this to advance records to the next stage of the workflow."
+          },
+          {
+            "step": 2,
+            "action": "Enable Advanced Workflow",
+            "details": [
+              "Open your application in Edit Mode",
+              "Go to 'Advanced Workflow' tab",
+              "Enable Advanced Workflow (checkbox or toggle)",
+              "You'll now see workflow configuration options"
+            ]
+          },
+          {
+            "step": 3,
+            "action": "Create Workflow Stages",
+            "details": [
+              "Define these stages (in order):",
+              "",
+              "**Stage 1: Draft**",
+              "  - Initial stage when record is created",
+              "  - Employee fills out basic info",
+              "",
+              "**Stage 2: Pending Approval**",
+              "  - Manager reviews the request",
+              "",
+              "**Stage 3: Approved**",
+              "  - Training is scheduled",
+              "",
+              "**Stage 4: Completed**",
+              "  - Training is done",
+              "",
+              "Add each stage with clear names and descriptions"
+            ]
+          },
+          {
+            "step": 4,
+            "action": "Configure Stage Transitions",
+            "details": [
+              "Define allowed transitions (which stages can move to which):",
+              "",
+              "  Draft → Pending Approval (Submit for Approval)",
+              "  Pending Approval → Approved (Approve)",
+              "  Pending Approval → Draft (Reject)",
+              "  Approved → Completed (Mark Complete)",
+              "",
+              "Each transition gets a name (this appears in the Actions dropdown)"
+            ]
+          },
+          {
+            "step": 5,
+            "action": "Configure Stage-Specific Settings (Optional)",
+            "details": [
+              "For each stage, you can configure:",
+              "  - Which fields are visible/hidden",
+              "  - Which fields are required",
+              "  - Who can access records in this stage",
+              "  - Email notifications when entering this stage",
+              "",
+              "Example: In 'Pending Approval' stage, make 'Manager Comments' field required"
+            ]
+          },
+          {
+            "step": 6,
+            "action": "Test Your Workflow",
+            "details": [
+              "Publish your changes",
+              "Create a new training record",
+              "Look for the ACTIONS DROPDOWN at the top of the record",
+              "It should show available actions (like 'Submit for Approval')",
+              "Click an action and watch the record move to the next stage!",
+              "The stage name should update at the top of the record"
+            ]
+          }
+        ],
+        "checkpoint": [
+          "□ You understand what Advanced Workflow is",
+          "□ You've created workflow stages",
+          "□ You've configured stage transitions",
+          "□ You've tested moving a record through workflow stages",
+          "□ You know the Actions dropdown is for workflow records"
+        ],
+        "whats_next": "Final activity! Let's understand security and permissions."
+      },
+      {
+        "activity_number": 13,
+        "title": "Understand Security and Permissions",
+        "learning_objectives": [
+          "Understand user accounts",
+          "Learn about groups and roles",
+          "Know the 4 valid access rights",
+          "Understand the 'Everyone' group"
+        ],
+        "why_this_matters": "Security is HEAVILY tested on the exam! You must know how Archer controls access.",
+        "steps": [
+          {
+            "step": 1,
+            "action": "Understand User Accounts",
+            "details": [
+              "**Access to Archer is controlled by USER ACCOUNTS**",
+              "",
+              "Each user has:",
+              "  - Username",
+              "  - Password",
+              "  - Email address",
+              "  - Assigned groups",
+              "  - Assigned access roles",
+              "",
+              "Administrators create and manage user accounts"
+            ],
+            "exam_tip": "EXAM FACT: Access to the Archer platform is controlled by User Accounts (username and password)."
+          },
+          {
+            "step": 2,
+            "action": "Understand Groups",
+            "details": [
+              "**GROUPS = Collections of users**",
+              "",
+              "Examples:",
+              "  - Risk Management Team",
+              "  - Compliance Analysts",
+              "  - Auditors",
+              "  - IT Security",
+              "",
+              "**Built-in group: EVERYONE**",
+              "  - Every user automatically belongs to this group",
+              "  - Can't be removed from it",
+              "  - Often used for organization-wide permissions"
+            ],
+            "exam_tip": "EXAM FACT: All system users automatically belong to a built-in group named 'Everyone'. This is a very common exam question!"
+          },
+          {
+            "step": 3,
+            "action": "Understand Access Rights (CRITICAL!)",
+            "details": [
+              "**Archer has 4 valid access rights:**",
+              "",
+              "  ✓ CREATE - Make new records",
+              "  ✓ READ - View records",
+              "  ✓ UPDATE - Edit records",
+              "  ✓ DELETE - Remove records",
+              "",
+              "  ✗ APPEND - NOT A VALID RIGHT IN ARCHER!",
+              "",
+              "**This is heavily tested! Memorize: CREATE, READ, UPDATE, DELETE**",
+              "**NOT APPEND!**"
+            ],
+            "exam_tip": "EXAM FACT: APPEND is NOT a right that can be assigned in Archer. Valid rights are CREATE, READ, UPDATE, and DELETE. This is one of the most common trick questions!"
+          },
+          {
+            "step": 4,
+            "action": "Understand Access Roles",
+            "details": [
+              "Access Roles determine WHAT users can access:",
+              "  - Which applications",
+              "  - Which records within applications",
+              "  - What actions they can perform (CREATE, READ, UPDATE, DELETE)",
+              "",
+              "Example: 'Training Coordinator' role might have:",
+              "  - CREATE, READ, UPDATE on Training Tracker",
+              "  - READ only on Employee Directory"
+            ]
+          },
+          {
+            "step": 5,
+            "action": "Understand Why Edit Button is Grayed Out",
+            "details": [
+              "If the Edit button is grayed out, it could be:",
+              "",
+              "  1. **Most common:** You don't have UPDATE permission",
+              "  2. Someone else is editing it (record locking)",
+              "  3. The application is set to Retired",
+              "  4. A workflow restriction",
+              "",
+              "The most likely reason: insufficient permissions"
+            ],
+            "exam_tip": "EXAM FACT: If the Edit button is grayed out, the most common reason is that you don't have editing permissions for that record."
+          },
+          {
+            "step": 6,
+            "action": "Check Licensing Information (Concept)",
+            "details": [
+              "To see what your organization purchased from Archer:",
+              "  - Navigate to admin area",
+              "  - Look for 'Licensing Information'",
+              "",
+              "This shows:",
+              "  - Which solutions are licensed",
+              "  - How many user licenses",
+              "  - What features are available"
+            ],
+            "exam_tip": "EXAM FACT: To determine what an organization has purchased from Archer, an administrator should check the Licensing Information."
+          },
+          {
+            "step": 7,
+            "action": "Understand Changing Roles",
+            "details": [
+              "When you change roles in your organization:",
+              "  - Ask your Archer administrator to:",
+              "    1. Assign you to appropriate groups",
+              "    2. Update your access roles",
+              "    3. Update your permissions",
+              "",
+              "Don't try to do this yourself - it requires admin privileges"
+            ],
+            "exam_tip": "EXAM FACT: When changing roles, ask your Archer administrator to assign you to appropriate groups and access roles."
+          }
+        ],
+        "checkpoint": [
+          "□ You understand user accounts and authentication",
+          "□ You know about the 'Everyone' group",
+          "□ You've MEMORIZED the 4 valid access rights (CREATE, READ, UPDATE, DELETE)",
+          "□ You know APPEND is NOT valid!",
+          "□ You understand why Edit button might be grayed out"
+        ],
+        "whats_next": "🎉 FINAL BOSS CHALLENGE AHEAD! 🎉"
+      }
+    ],
+    "part_3_complete": {
+      "congratulations": "🎉 PART 3 COMPLETE! 🎉",
+      "what_you_learned": [
+        "✓ Created Data-Driven Events for field automation",
+        "✓ Built an Advanced Workflow with multiple stages",
+        "✓ Mastered security concepts (users, groups, permissions)",
+        "✓ Memorized the 4 valid access rights (NOT APPEND!)",
+        "✓ Understood the Everyone group"
+      ],
+      "exam_concepts_covered": [
+        "✓ DDEs and field automation",
+        "✓ Advanced Workflow stages and Actions dropdown",
+        "✓ User accounts and authentication",
+        "✓ Groups (especially 'Everyone')",
+        "✓ Access rights: CREATE, READ, UPDATE, DELETE (NOT APPEND!)",
+        "✓ Why Edit button might be grayed out",
+        "✓ Licensing information"
+      ],
+      "youre_ready": "You've built a complete Archer application from ZERO and learned every concept tested on the exam. Time for the FINAL BOSS!"
+    }
+  },
+  "final_boss": {
+    "title": "FINAL BOSS: Knowledge Check & Real-World Scenario",
+    "subtitle": "Prove Your Mastery",
+    "duration": "30-45 minutes",
+    "scenario": "You're a new Risk Analyst. Your manager asks you to demonstrate your Archer knowledge by completing these challenges.",
+    "challenges": [
+      {
+        "challenge": 1,
+        "name": "Rapid-Fire Knowledge Questions",
+        "instructions": "Answer these WITHOUT looking them up:",
+        "questions": [
+          {
+            "q": "1. What happens if you don't click Save before closing a record?",
+            "a": "Changes are lost"
+          },
+          {
+            "q": "2. What are the 4 valid access rights in Archer?",
+            "a": "CREATE, READ, UPDATE, DELETE (NOT APPEND!)"
+          },
+          {
+            "q": "3. What's the difference between Data Feeds and Data Publications?",
+            "a": "Data Feeds import INTO Archer; Data Publications export OUT OF Archer"
+          },
+          {
+            "q": "4. What built-in group does every user automatically belong to?",
+            "a": "Everyone"
+          },
+          {
+            "q": "5. What Use Case is seen in nearly every Solution Area?",
+            "a": "Issues Management"
+          },
+          {
+            "q": "6. How do you return to your homepage quickly?",
+            "a": "Click the logo in the top left corner"
+          },
+          {
+            "q": "7. What does a red asterisk (*) on a field mean?",
+            "a": "Required field"
+          },
+          {
+            "q": "8. Can iViews display links, charts, embedded content, or all of these?",
+            "a": "Any/all of these"
+          },
+          {
+            "q": "9. What's the difference between Personal and Global reports?",
+            "a": "Personal = only you see it; Global = can be shared with others"
+          },
+          {
+            "q": "10. Can you filter search results by 'Size of Records'?",
+            "a": "NO! This is NOT a valid filter option"
+          },
+          {
+            "q": "11. What does Archer Evolv Risk use to predict potential risks?",
+            "a": "AI and machine learning"
+          },
+          {
+            "q": "12. Can calculated fields be edited manually?",
+            "a": "NO! They're read-only and auto-calculate"
+          },
+          {
+            "q": "13. What's the navigation path to access records?",
+            "a": "Workspace > Solution > Application > Records"
+          },
+          {
+            "q": "14. What's the most common reason Edit button is grayed out?",
+            "a": "You don't have editing permissions"
+          },
+          {
+            "q": "15. When you create a Scheduled Report Distribution, how does it run?",
+            "a": "Automatically (not manually)"
+          }
+        ],
+        "scoring": "13-15 correct: EXAM READY! 🎉 | 10-12 correct: Review weak areas | Under 10: Review the workbook"
+      },
+      {
+        "challenge": 2,
+        "name": "Real-World Application Challenge",
+        "instructions": "In your Security Training Tracker application, complete these tasks:",
+        "tasks": [
+          "1. Create 3 new training records with different statuses (Draft, Completed, Expired)",
+          "2. Create an advanced search for 'Expired' training and save it as a Global report",
+          "3. Modify that report to use Hierarchical visualization grouped by Training Type",
+          "4. Export the report to PDF",
+          "5. Set up a Quick Link to create new training records",
+          "6. Open a record and use Share > Email to send yourself the link",
+          "7. Go to User Menu > Preferences > Email Subscription and check what you're subscribed to",
+          "8. Create a calculated field showing 'Days Since Completion' (TODAY() - [Completion Date])",
+          "9. Test a workflow transition (if you created a workflow)",
+          "10. Document everything you learned in a summary"
+        ]
+      }
+    ],
+    "final_wisdom": [
+      "If you can complete these challenges confidently, you're READY for the exam!",
+      "",
+      "Remember:",
+      "✓ Always click SAVE",
+      "✓ CREATE, READ, UPDATE, DELETE (NOT APPEND!)",
+      "✓ Data Feeds = IN, Data Publications = OUT",
+      "✓ Everyone group = all users",
+      "✓ Issues Management = everywhere",
+      "✓ Click logo = home",
+      "✓ Red asterisk = required",
+      "✓ Can't filter by Size of Records",
+      "✓ Calculated fields = read-only",
+      "✓ Personal vs Global (reports, dashboards)",
+      "",
+      "YOU'VE GOT THIS! GO SMASH THAT EXAM! 💪"
     ]
+  },
+  "conclusion": {
+    "title": "🎉 CONGRATULATIONS! 🎉",
+    "message": "You've built a complete Archer application from absolute scratch and learned EVERY skill needed to pass the Archer Associate Exam!",
+    "what_you_built": [
+      "✓ A fully functional Security Training Tracker application",
+      "✓ With 10+ fields of different types",
+      "✓ Custom form layouts with organized sections",
+      "✓ Calculated fields with auto-calculations",
+      "✓ Advanced searches and reports (Personal and Global)",
+      "✓ Dashboards and iViews",
+      "✓ Quick Links for fast access",
+      "✓ Data-Driven Events for automation",
+      "✓ Advanced Workflow with multiple stages",
+      "✓ Understanding of security and permissions"
+    ],
+    "exam_readiness_checklist": [
+      "□ I can navigate Archer confidently",
+      "□ I know CREATE, READ, UPDATE, DELETE (NOT APPEND!)",
+      "□ I understand Data Feeds vs Data Publications",
+      "□ I know the Everyone group",
+      "□ I always remember to click SAVE",
+      "□ I know how to create applications, fields, and layouts",
+      "□ I understand calculated fields are read-only",
+      "□ I know Personal vs Global reports/dashboards",
+      "□ I understand workflows and the Actions dropdown",
+      "□ I know Issues Management is the most common Use Case",
+      "□ I can answer the Final Boss questions correctly"
+    ],
+    "next_steps": [
+      "1. Review the Quick Reference section below",
+      "2. Practice creating different types of applications",
+      "3. Take practice quizzes (if available)",
+      "4. Review any concepts you're still unsure about",
+      "5. Schedule your exam with CONFIDENCE!",
+      "6. Remember: The exam validates what you ALREADY KNOW from this workbook!"
+    ],
+    "final_message": "Just like learning Archer by creating a D&D character sheet, you learned by BUILDING something real. You didn't just read about features - you USED them. That's how you master Archer. That's how you SMASH the exam. 💪"
+  },
+  "quick_reference": {
+    "title": "📋 QUICK REFERENCE: Top Exam Facts",
+    "navigation": {
+      "title": "Navigation",
+      "facts": [
+        "✓ Click LOGO (top left) to return to homepage/default workspace",
+        "✓ Path to records: Workspace > Solution > Application > Records",
+        "✓ Activity icon shows 10 most recently viewed/edited records",
+        "✓ Clicking record ID takes you to the record"
+      ]
+    },
+    "fields_and_records": {
+      "title": "Fields and Records",
+      "facts": [
+        "✓ Red asterisk (*) = Required field",
+        "✓ ALWAYS click SAVE before closing (or changes are lost!)",
+        "✓ Calculated fields are read-only and auto-populate",
+        "✓ Required calculated fields populate after save",
+        "✓ Grayed out Edit button = usually insufficient permissions"
+      ]
+    },
+    "access_rights": {
+      "title": "Access Rights (CRITICAL!)",
+      "facts": [
+        "✓ Valid rights: CREATE, READ, UPDATE, DELETE",
+        "✗ APPEND is NOT a valid right!",
+        "✓ Everyone group = all users automatically belong",
+        "✓ Access controlled by User Accounts (username/password)"
+      ]
+    },
+    "search_and_reports": {
+      "title": "Search and Reports",
+      "facts": [
+        "✓ Global Search searches ALL Archer data you have access to",
+        "✓ Keyword Search searches within Applications",
+        "✗ Can NOT filter by 'Size of Records'",
+        "✓ Personal reports = only you; Global reports = can share",
+        "✓ Saving report saves SEARCH SETTINGS (not exact data)",
+        "✓ Modify report: 'Modify' (Classic) or 'Edit Search' (SaaS)",
+        "✓ Hierarchical visualization groups results by field",
+        "✓ Can export to CSV, Excel, OR PDF"
+      ]
+    },
+    "dashboards": {
+      "title": "Dashboards and iViews",
+      "facts": [
+        "✓ Login home view = Dashboard",
+        "✓ iViews can display Links, Charts, Embedded content (any/all)",
+        "✓ Clicking chart area opens associated records",
+        "✓ Quick Links = create records without navigating"
+      ]
+    },
+    "data_management": {
+      "title": "Data Management (Don't Confuse These!)",
+      "facts": [
+        "✓ Data Feeds = import INTO Archer",
+        "✓ Data Publications = export OUT OF Archer",
+        "✓ JavaScript Transporters = type of Data Feed",
+        "✗ Scanning is NOT a valid import method",
+        "✓ Cross-references link records between applications"
+      ]
+    },
+    "notifications": {
+      "title": "Notifications and Automation",
+      "facts": [
+        "✓ Opt out: User Menu > Preferences > Email Subscription",
+        "✓ Scheduled Report Distribution runs Automatically",
+        "✓ Email Record (Share > Email) sends LINK (not copy)",
+        "✓ Scheduled notifications based on date fields"
+      ]
+    },
+    "advanced_features": {
+      "title": "Advanced Features",
+      "facts": [
+        "✓ DDEs auto-update fields based on conditions",
+        "✓ Workflow records have Actions dropdown at top",
+        "✓ Attention feature (SaaS) highlights empty fields",
+        "✓ Pencil icon = in-line editing available"
+      ]
+    },
+    "solutions_and_use_cases": {
+      "title": "Solutions and Use Cases",
+      "facts": [
+        "✓ Issues Management = seen in nearly every Solution Area",
+        "✓ On-Demand Applications = custom built by your org",
+        "✓ Use Cases = pre-configured, ready to use",
+        "✓ Archer Evolv Risk uses AI/ML for risk prediction",
+        "✓ Archer primary purpose = GRC (risk management & compliance)"
+      ]
+    },
+    "common_mistakes": {
+      "title": "⚠️ Common Exam Mistakes to AVOID",
+      "mistakes": [
+        "❌ Thinking APPEND is a valid access right (IT'S NOT!)",
+        "❌ Confusing Data Feeds (import) with Data Publications (export)",
+        "❌ Thinking you can filter by 'Size of Records' (YOU CAN'T!)",
+        "❌ Thinking calculated fields can be edited manually (THEY CAN'T!)",
+        "❌ Forgetting that Everyone group is automatic",
+        "❌ Not knowing clicking logo returns to homepage",
+        "❌ Confusing Personal vs Global reports/dashboards"
+      ]
+    }
   }
 }
