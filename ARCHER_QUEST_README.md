@@ -1,15 +1,132 @@
-# Archer Newbie Quest: Zero to Hero Learning Activity
+# Archer Learning Materials
 
-## 🎯 What is This?
+## 📚 What's Included?
 
-An interactive, **beginner-friendly** learning activity designed to teach Archer from absolute scratch. By completing this quest, you'll master every skill needed to pass the Archer Associate Exam.
+This repository contains TWO learning approaches for mastering Archer and passing the Associate Exam:
 
-Inspired by the approach of learning through hands-on activities (like creating a D&D character sheet in Archer), this quest guides complete beginners through all fundamental Archer concepts using real exam questions as context.
+### 1. **BUILD Workbook** (RECOMMENDED) - `archer_build_workbook.json`
+A hands-on workbook where you **BUILD an Archer application from scratch**. Just like learning Archer by creating a D&D character sheet, you learn by DOING, not just reading.
+
+### 2. **Guided Quest** (Original) - `archer_newbie_quest.json` + `index.html`
+An interactive guided tour through Archer features with practice exercises.
+
+---
+
+## 🎯 BUILD Workbook (Recommended for Complete Beginners)
+
+### What is This?
+
+A **hands-on workbook** where you BUILD a complete "Security Training Tracker" application from ZERO. By the time you're done, you'll have created a fully functional application and learned every skill needed to **SMASH the Archer Associate Exam**.
+
+### Why BUILD Instead of Read?
+
+Just like creating a D&D character sheet taught the basics of Archer, the best way to learn is by BUILDING something real. You start with nothing and progressively add more advanced features until you have a complete application.
+
+### What You'll Build
+
+A **Security Training Tracker** application that:
+- Tracks employee security training completion
+- Stores training records with multiple field types
+- Auto-calculates expiration dates
+- Creates reports and dashboards
+- Sends automated notifications
+- Uses workflows for approval processes
+
+### Workbook Structure
+
+**PART 0: The Big Picture** (15-20 min)
+- What is Archer & GRC?
+- How Archer solves real business problems
+- Archer hierarchy (Solution → Use Case → Application → Records)
+- Your mission explained
+
+**PART 1: Foundation (Activities 1-5)** - EASY (1.5-2 hours)
+1. Create your application from scratch
+2. Add text fields
+3. Add value lists, dates, numeric fields
+4. Create form layout with organized sections
+5. Create and save your first record
+
+**PART 2: Building Up (Activities 6-10)** - MEDIUM (2-3 hours)
+6. Add calculated fields (auto-calculations)
+7. Create advanced search and reports
+8. Build dashboards and iViews
+9. Set up email notifications
+10. Understand data management (Data Feeds vs Publications)
+
+**PART 3: End Game (Activities 11-13)** - ADVANCED (2-3 hours)
+11. Create Data-Driven Events (DDEs) - steep learning curve!
+12. Build Advanced Workflow - multi-stage processes
+13. Understand security and permissions
+
+**FINAL BOSS: Knowledge Check** (30-45 min)
+- 15 rapid-fire exam questions
+- Real-world application challenge
+- Exam readiness assessment
+
+**QUICK REFERENCE**
+- Top exam facts organized by category
+- Common mistakes to avoid
+- Critical concepts summary
+
+### How to Use the BUILD Workbook
+
+1. **Open the JSON file** - `archer_build_workbook.json`
+2. **Have Archer access ready** - You'll be building in a real Archer environment
+3. **Start with Part 0** - Understand the big picture
+4. **Follow activities in order** - Each builds on the previous
+5. **Complete checkpoints** - Verify your understanding before moving on
+6. **Take breaks** - This is 6-8 hours of content!
+7. **Do the Final Boss** - Test your readiness for the exam
+
+### What Makes This Special?
+
+✅ **Intricate step-by-step instructions** - Nothing assumed, everything explained
+✅ **Progressive difficulty** - Easy → Medium → Advanced
+✅ **Exam tips embedded throughout** - Learn what's tested as you build
+✅ **Real-world context** - Understand WHY, not just HOW
+✅ **Checkpoints** - Verify understanding before moving on
+✅ **Final Boss challenge** - Prove you're exam-ready
+✅ **Quick Reference** - Perfect for last-minute exam prep
+
+### Key Exam Concepts Covered
+
+**Critical Concepts (Memorize These!):**
+- ✅ **Access Rights:** CREATE, READ, UPDATE, DELETE (NOT APPEND!)
+- ✅ **Data Feeds vs Publications:** Feeds = import IN, Publications = export OUT
+- ✅ **Everyone Group:** All users automatically belong
+- ✅ **Issues Management:** Most common Use Case (in nearly every Solution Area)
+- ✅ **Calculated Fields:** Read-only, auto-populate based on other fields
+- ✅ **Personal vs Global:** Reports and Dashboards
+- ✅ **Navigation:** Workspace > Solution > Application > Records
+- ✅ **Click SAVE:** Or lose all changes!
+- ✅ **Red Asterisk (*):** Required field
+- ✅ **Can't Filter By:** "Size of Records" (NOT a valid filter)
+- ✅ **Advanced Workflow:** Actions dropdown at top of record
+- ✅ **And 50+ more exam facts embedded throughout!**
+
+---
+
+## 📋 Comparison: BUILD Workbook vs Guided Quest
+
+| Feature | BUILD Workbook | Guided Quest |
+|---------|---------------|--------------|
+| **Learning Style** | Build application from scratch | Guided tour of existing features |
+| **Best For** | Complete beginners who want hands-on | Users who prefer structured walkthroughs |
+| **Time Required** | 6-8 hours | 4-6 hours |
+| **Prerequisites** | Admin/builder permissions | Basic user access |
+| **Exam Prep** | Comprehensive (all concepts) | Comprehensive (all concepts) |
+| **Format** | JSON workbook | JSON + HTML interface |
+| **Difficulty** | Progressive (Easy → Hard) | Progressive levels |
+
+**Recommendation:** Start with the **BUILD Workbook** if you have admin access. It provides deeper understanding through hands-on creation.
+
+---
 
 ## 🎮 Who is This For?
 
 - **Complete beginners** with ZERO Archer knowledge
-- Users with access to **on-prem Archer** (not cloud)
+- Users with access to **on-prem Archer** (you need admin/builder permissions)
 - Anyone preparing for the **Archer Associate Exam**
 - People who learn best by **doing, not just reading**
 
