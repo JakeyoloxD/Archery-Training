@@ -1,0 +1,166 @@
+Functions & Operators:
+ 
+Functions
+ 
+Date & Time
+ 
+    DATEADD
+    DATEDIF
+    DATEFORMAT
+    DATETIMEVALUE
+    DAY
+    HOUR
+    MINUTE
+    MONTH
+    MONTHNAME
+    NOW
+    QUARTER
+    TODAY
+    SYSTEMTODAY
+    WEEKDAY
+    WEEKNUMBER
+    YEAR
+ 
+Financial
+ 
+    DB
+    DDB
+    FV
+    IPMT
+    IRR
+    ISPMT
+    MIRR
+    NPER
+    NPV
+    PMT
+    PPMT
+    PV
+    RATE
+    SLN
+    SYD
+    VDB
+ 
+Logical
+ 
+    AND
+    IF
+    NOT
+    OR
+ 
+Math
+ 
+    ABS
+    ACOS
+    ACOSH
+    ASIN
+    ASINH
+    ATAN
+    ATAN2
+    ATANH
+    CEILING
+    COMBIN
+    COS
+    COSH
+    DEGREES
+    EVEN
+    EXP
+    FACT
+    FLOOR
+    INT
+    LN
+    LOG
+    LOG10
+    MOD
+    ODD
+    PI
+    POWER
+    PRODUCT
+    QUOTIENT
+    RADIANS
+    RAND
+    ROUND
+    ROUNDDOWN
+    ROUNDUP
+    SIGN
+    SIN
+    SINH
+    SQRT
+    SUM
+    SUMIF
+    SUMPRODUCT
+    SUMSQ
+    SUMX2MY2
+    SUMX2PY2
+    SUMXMY2
+    TAN
+    TANH
+    TRUNC
+ 
+Statistical
+System
+ 
+    CONTAINS
+    CONTENTID
+    COMBINESELECTIONS
+    GETGROUPS
+    GETUSERS
+    GROUP
+    ISCORRECT
+    ISEMPTY
+    ISNUMBER
+    MOSTRECENTVALUE
+    NOVALUE
+    OTHERTEXT
+    REF
+    SELECTEDVALUENUMBER
+    TRACKINGID
+    USER
+    USERDEFAULTEMAIL
+    USERFIRSTNAME
+    USERLASTNAME
+    USERMIDDLENAME
+    VALUEOF
+    WEIGHTEDSCORE
+    WEIGHTING
+ 
+    Text
+        CONCATENATE
+        FIND
+        LEFT
+        LEN
+        LOWER
+        MASKEDTEXT
+        NUMBERFORMAT
+        PROPER
+        RIGHT
+        SUBSTRING
+        TRIM
+        UPPER
+ 
+Operators
+ 
+Arithmetic
+ 
+    *
+    +
+    -
+    /
+    ^
+ 
+Comparison
+ 
+    <
+<=
+<>
+    =
+>
+>=
+ 
+Text
+ 
+    &
+
+https://help.archerirm.cloud/platform_2024_11/en-us/content/platform/fields/fld_calc_basics.htm
+
+https://help.archerirm.cloud/platform_2024_11/en-us/content/platform/calcfunctions/text_functions.htm
+
