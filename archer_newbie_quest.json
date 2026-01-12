@@ -1,0 +1,1000 @@
+{
+  "meta": {
+    "name": "Archer Newbie Quest: Zero to Hero Learning Activity",
+    "version": "1.0.0",
+    "created": "2026-01-11",
+    "description": "A complete beginner's guide to Archer on-prem. By completing this quest, you'll master all the skills needed to pass the Archer Associate Exam.",
+    "target_audience": "Complete beginners with zero Archer knowledge",
+    "estimated_time": "4-6 hours",
+    "prerequisites": "Access to an on-prem Archer instance"
+  },
+  "introduction": {
+    "welcome": "Welcome, brave adventurer! You're about to embark on a quest to master Archer - a powerful platform for risk management and compliance. Don't worry if you've never used Archer before - this quest assumes you know absolutely nothing and will guide you step-by-step.",
+    "what_is_archer": "Think of Archer as a super-organized digital filing system where organizations track risks, compliance, audits, and other important business stuff. Instead of messy spreadsheets and emails, everything lives in one place with proper tracking and workflows.",
+    "your_quest": "You'll create a 'Personal Skills Development Tracker' to track your own learning journey. Along the way, you'll learn every fundamental Archer skill needed to pass the Associate Exam.",
+    "how_it_works": "This quest has levels. Each level teaches you a new skill with clear instructions. Complete them in order - each builds on the previous one!"
+  },
+  "levels": [
+    {
+      "level": 1,
+      "title": "First Steps: Logging In & Finding Your Way",
+      "skills_learned": [
+        "Login to Archer",
+        "Navigate the interface",
+        "Understand workspaces and dashboards"
+      ],
+      "exam_concepts": [
+        "Dashboards are your home view",
+        "Workspaces organize dashboards",
+        "Navigation basics"
+      ],
+      "tasks": [
+        {
+          "task_id": "1.1",
+          "name": "Log In to Archer",
+          "instructions": [
+            "Open your web browser and go to your organization's Archer URL (ask your IT team if you don't know it)",
+            "Enter your username and password (these should be provided by your Archer administrator)",
+            "Click 'Login' or press Enter",
+            "SUCCESS: You're in! You should see a dashboard with various boxes and information"
+          ],
+          "what_you_see": "You're looking at your default dashboard. This is your 'home base' in Archer.",
+          "exam_tip": "EXAM FACT: When users log in to Archer, their home view is of a Dashboard. Remember this!"
+        },
+        {
+          "task_id": "1.2",
+          "name": "Explore the Top Menu Bar",
+          "instructions": [
+            "Look at the very top of the screen - this is your menu bar",
+            "On the LEFT: You'll see your organization's logo/image",
+            "In the MIDDLE: There's a search box (this is Global Search)",
+            "On the RIGHT: Look for icons - Activity (clock), Help (?), and your User Menu (your name/avatar)"
+          ],
+          "practice": [
+            "Click on the Activity icon (clock) - see your 10 most recently viewed records",
+            "Click on the Help icon (?) - explore help resources",
+            "Click on your User Menu (top right) - see options like Preferences"
+          ],
+          "exam_tip": "EXAM FACT: The Activity icon shows your 10 most recently added, edited, or viewed records. The menu bar does NOT have map display controls!"
+        },
+        {
+          "task_id": "1.3",
+          "name": "Return to Your Homepage",
+          "instructions": [
+            "Click around Archer a bit - open some links, explore",
+            "Now, click on the IMAGE/LOGO in the TOP LEFT CORNER",
+            "BOOM! You're back to your default homepage/workspace"
+          ],
+          "exam_tip": "EXAM FACT: Clicking the image in the top left corner returns you to your default homepage. This is a common exam question!"
+        }
+      ],
+      "level_complete": "Level 1 Complete! You can now navigate Archer's interface like a pro. Time to dig deeper!"
+    },
+    {
+      "level": 2,
+      "title": "Understanding the Archer Universe",
+      "skills_learned": [
+        "Understand Solutions, Use Cases, and Applications",
+        "Navigate the hierarchy",
+        "Access applications"
+      ],
+      "exam_concepts": [
+        "Solutions contain Use Cases",
+        "Use Cases contain Applications",
+        "Applications contain Records"
+      ],
+      "story": "Imagine Archer as a library. Solutions are like different floors (Risk Management, Compliance, etc.). Use Cases are like sections on each floor (Risk Assessment, Audit Management). Applications are like specific bookshelves. Records are the individual books.",
+      "tasks": [
+        {
+          "task_id": "2.1",
+          "name": "Find the Left Panel Menu",
+          "instructions": [
+            "Look on the LEFT SIDE of your screen",
+            "You should see a panel with icons or text labels",
+            "This shows your available WORKSPACES",
+            "Click on one to explore it"
+          ],
+          "what_you_see": "Workspaces organize dashboards. Different teams might have different workspaces (Risk Team, Audit Team, etc.).",
+          "exam_tip": "EXAM FACT: A Workspace is an organized display of Dashboards."
+        },
+        {
+          "task_id": "2.2",
+          "name": "Navigate to an Application",
+          "instructions": [
+            "From your workspace, look for 'Solutions' or a list of available areas",
+            "Click on a Solution (like 'IT & Security' or 'Operational Risk')",
+            "You'll see Use Cases - these are pre-configured application groups",
+            "Click on a Use Case",
+            "You'll see Applications - click on one to open it",
+            "You'll see a list of RECORDS (individual data entries)"
+          ],
+          "navigation_path": "Workspace → Solution → Use Case → Application → Records",
+          "exam_tip": "EXAM FACT: The correct path to access all records in an application is Workspace > Solution > Application. Use Cases are ready-to-use application groups that come pre-configured with Archer."
+        },
+        {
+          "task_id": "2.3",
+          "name": "Understand What You're Looking At",
+          "instructions": [
+            "SOLUTION: A grouping of applications for a specific business need (like 'Risk Management')",
+            "USE CASE: Pre-configured applications ready to use immediately (like 'Issues Management')",
+            "APPLICATION: Houses specific sets of RECORDS (like 'Business Continuity Plans')",
+            "RECORDS: Individual data entries (like 'Plan #12345')"
+          ],
+          "exam_tip": "EXAM FACT: Applications house specific sets of Records. Use Cases are groups of pre-configured Applications. Remember this hierarchy!"
+        }
+      ],
+      "level_complete": "Level 2 Complete! You understand Archer's structure. Now let's create something!"
+    },
+    {
+      "level": 3,
+      "title": "Creating Your First Record",
+      "skills_learned": [
+        "Create a new record",
+        "Understand field types",
+        "Save changes properly"
+      ],
+      "exam_concepts": [
+        "Required fields (red asterisks)",
+        "Calculated fields",
+        "Saving records"
+      ],
+      "tasks": [
+        {
+          "task_id": "3.1",
+          "name": "Find an Application You Can Edit",
+          "instructions": [
+            "Navigate to an Application (use the path from Level 2)",
+            "Look for a button that says 'New Record' (Classic UI) or 'Add New Record' (SaaS UI)",
+            "If you DON'T see this button, you don't have permission to create records here - try a different application",
+            "Once you find an application with the New Record button, click it!"
+          ],
+          "exam_tip": "EXAM FACT: To add new data when it doesn't exist, click the New Record icon (Classic UI) or Add New Record (SaaS UI)."
+        },
+        {
+          "task_id": "3.2",
+          "name": "Understand the Fields",
+          "instructions": [
+            "You're now looking at a blank record form",
+            "Look for FIELDS - these are the boxes where you enter information",
+            "RED ASTERISKS (*) = REQUIRED FIELDS - you MUST fill these out",
+            "Some fields might be GRAYED OUT - these could be:",
+            "  - CALCULATED FIELDS: They auto-fill based on other fields",
+            "  - READ-ONLY FIELDS: Marked by a Data-Driven Event",
+            "  - SYSTEM FIELDS: Managed automatically by Archer"
+          ],
+          "exam_tip": "EXAM FACT: Record fields with red asterisks are Required Fields. Calculated fields cannot be edited manually and change based on other field values."
+        },
+        {
+          "task_id": "3.3",
+          "name": "Fill Out Your First Record",
+          "instructions": [
+            "Fill in the REQUIRED FIELDS (ones with red asterisks)",
+            "If you see any CALCULATED FIELDS (grayed out, required), don't worry - they'll populate when you save",
+            "Add information to a few optional fields too",
+            "Now comes the MOST IMPORTANT PART..."
+          ],
+          "exam_tip": "EXAM FACT: Required calculated fields will populate once the record is saved. This is why some required fields can't be manually edited."
+        },
+        {
+          "task_id": "3.4",
+          "name": "SAVE YOUR RECORD (DON'T MESS THIS UP!)",
+          "instructions": [
+            "Look for a SAVE button (usually at the top or bottom of the record)",
+            "Click SAVE",
+            "Wait for confirmation that your record was saved",
+            "⚠️ CRITICAL WARNING: If you DON'T click Save, your changes will be LOST when you close the record!"
+          ],
+          "common_mistakes": [
+            "Ruth's Story: Ruth updated a record and closed it without clicking Save. When she opened it again, her changes were gone. Don't be like Ruth!",
+            "The Rule: ALWAYS click Save before closing a record"
+          ],
+          "exam_tip": "EXAM FACT: The 'Save' option saves edits to a record. If you don't select Save, your changes won't be kept. This is a common exam scenario!"
+        }
+      ],
+      "level_complete": "Level 3 Complete! You've created and saved your first record. Ruth would be proud!"
+    },
+    {
+      "level": 4,
+      "title": "Editing & Managing Records",
+      "skills_learned": [
+        "Edit existing records",
+        "Understand permissions",
+        "Add comments and attachments"
+      ],
+      "exam_concepts": [
+        "Edit permissions",
+        "Record locking",
+        "Comments and attachments"
+      ],
+      "tasks": [
+        {
+          "task_id": "4.1",
+          "name": "Find and Open Your Record",
+          "instructions": [
+            "Navigate back to the application where you created your record",
+            "Find your record in the list (it should show recent records first)",
+            "Click on the RECORD ID (the linked number) to open it",
+            "The link takes you directly to the record itself"
+          ],
+          "exam_tip": "EXAM FACT: Clicking on a linked record ID takes you to the record itself."
+        },
+        {
+          "task_id": "4.2",
+          "name": "Try to Edit Your Record",
+          "instructions": [
+            "Look for an EDIT button",
+            "If the Edit button is AVAILABLE: Click it and make some changes",
+            "If the Edit button is GRAYED OUT: This means:",
+            "  - You don't have editing permissions for this record, OR",
+            "  - Someone else is working on it at the same time, OR",
+            "  - The application is set to Retired"
+          ],
+          "scenario": "Sonja's Story: Sonja wanted to add a note but the Edit button was grayed out. Why? She didn't have editing permissions for that record.",
+          "exam_tip": "EXAM FACT: If the Edit button is grayed out, the most common reason is that you don't have editing permissions."
+        },
+        {
+          "task_id": "4.3",
+          "name": "View the History Log",
+          "instructions": [
+            "While viewing your record, look for 'History Log' or 'Change Log'",
+            "In Classic UI: Can be displayed as a grid or simple link",
+            "In SaaS UI: Appears in the right panel with cool features:",
+            "  - Click on changes to highlight modified fields",
+            "  - Filter changes by date, user(s), and/or fields",
+            "This shows who changed what and when"
+          ],
+          "exam_tip": "EXAM FACT: In SaaS UI, the History Log has all these behaviors - clickable changes, filtering options, and appears in the right panel."
+        },
+        {
+          "task_id": "4.4",
+          "name": "Add a Comment (if available)",
+          "instructions": [
+            "Some records (like questionnaires) let you add comments",
+            "Look for a 'Comments' section or comment icon",
+            "If you see it, open and submit a comment",
+            "This is useful for providing additional information"
+          ],
+          "exam_tip": "EXAM FACT: To provide additional information to a questionnaire item, open and submit a comment attached to the question."
+        }
+      ],
+      "level_complete": "Level 4 Complete! You can now manage records like a pro. Time to learn about finding data!"
+    },
+    {
+      "level": 5,
+      "title": "Searching & Finding Data",
+      "skills_learned": [
+        "Global search",
+        "Keyword search",
+        "Advanced search",
+        "Search filters"
+      ],
+      "exam_concepts": [
+        "Global search capabilities",
+        "Keyword search scope",
+        "Advanced search filters"
+      ],
+      "tasks": [
+        {
+          "task_id": "5.1",
+          "name": "Try a Global Search",
+          "instructions": [
+            "Look at the SEARCH BOX in the top menu bar",
+            "Type a word or phrase (try searching for something you know exists)",
+            "Press Enter or click the search icon",
+            "Global Search looks across ALL data in Archer that you have access to"
+          ],
+          "exam_tip": "EXAM FACT: Archer's Global Search allows users to search across all data within Archer that the user has access to. It doesn't search the internet or intranet!"
+        },
+        {
+          "task_id": "5.2",
+          "name": "Transfer Search to Specific Application",
+          "instructions": [
+            "After performing a global search, you'll see results",
+            "Look for an option to 'Transfer to Application' or similar",
+            "This lets you narrow your search to a specific application",
+            "Try it!"
+          ],
+          "exam_tip": "EXAM FACT: After a global search, users can transfer the search to a specific application."
+        },
+        {
+          "task_id": "5.3",
+          "name": "Perform a Keyword Search",
+          "instructions": [
+            "Navigate to an Application",
+            "Look for a search option within the application",
+            "Enter a keyword or phrase",
+            "Keyword searches look for specific words within one or more APPLICATIONS (not workspaces or reports)"
+          ],
+          "exam_tip": "EXAM FACT: A keyword search searches for a specific word or string within one or more Applications."
+        },
+        {
+          "task_id": "5.4",
+          "name": "Try Advanced Search with Filters",
+          "instructions": [
+            "In an Application, look for 'Advanced Search' or a filter icon",
+            "Click it to see filter options",
+            "You can filter by:",
+            "  ✓ Date ranges",
+            "  ✓ Cross-referenced field selections",
+            "  ✓ Value List Fields",
+            "  ✗ NOT by Size of Records (this is NOT a filter option!)",
+            "Try adding a filter and running the search"
+          ],
+          "exam_tip": "EXAM FACT: Users CANNOT filter search results by 'Size of Records'. All other options (date ranges, cross-referenced fields, value lists) are valid."
+        }
+      ],
+      "level_complete": "Level 5 Complete! You're now a search ninja. Time to create reports!"
+    },
+    {
+      "level": 6,
+      "title": "Creating Reports",
+      "skills_learned": [
+        "Save searches as reports",
+        "Personal vs Global reports",
+        "Edit and modify reports",
+        "Export reports"
+      ],
+      "exam_concepts": [
+        "Report types",
+        "Report permissions",
+        "Report visualization"
+      ],
+      "tasks": [
+        {
+          "task_id": "6.1",
+          "name": "Save Your Search as a Report",
+          "instructions": [
+            "After performing an advanced search, look for 'Save' or 'Save As Report'",
+            "Click it",
+            "You'll be asked to:",
+            "  - Name your report",
+            "  - Add a description (for later reference)",
+            "  - Choose report type: Personal, Shared, or Global",
+            "REMEMBER: You're saving the SEARCH SETTINGS, not the exact data"
+          ],
+          "report_types": {
+            "personal": "Only visible to you",
+            "global": "Can be set to be seen by others, as you designate"
+          },
+          "exam_tip": "EXAM FACT: Personal reports are only visible to the person who created them. Global reports can be set to be seen by others. Saving a report saves the search settings, not the exact data."
+        },
+        {
+          "task_id": "6.2",
+          "name": "Modify an Existing Report",
+          "instructions": [
+            "Find one of your saved reports",
+            "Look for 'Modify' (Classic UI) or 'Edit Search' (SaaS UI)",
+            "Click it to change the filters and criteria",
+            "This is how Terri would edit her report to make data more relevant!"
+          ],
+          "exam_tip": "EXAM FACT: To edit filters in an existing report, select 'Modify' (Classic UI) or 'Edit Search' (SaaS UI)."
+        },
+        {
+          "task_id": "6.3",
+          "name": "Try Report Visualization Options",
+          "instructions": [
+            "When creating/editing a report, look for 'Visualization Display Options'",
+            "Try different views:",
+            "  - FLAT: Standard list view",
+            "  - HIERARCHICAL: Groups results by a specific field (useful for organizing data)",
+            "  - SUMMARY: Shows totals and counts",
+            "If you want to group results by a field, choose HIERARCHICAL"
+          ],
+          "exam_tip": "EXAM FACT: In Visualization Display Options, select 'Hierarchical' to group results by a specific field."
+        },
+        {
+          "task_id": "6.4",
+          "name": "Export Your Report",
+          "instructions": [
+            "Open one of your reports",
+            "Look for an 'Export' option",
+            "You can export in multiple formats:",
+            "  - CSV (comma-separated values)",
+            "  - Excel (spreadsheet)",
+            "  - PDF (document)",
+            "Try exporting to PDF and check the file!"
+          ],
+          "exam_tip": "EXAM FACT: Reports can be exported in CSV, Excel, OR PDF formats - any of these!"
+        },
+        {
+          "task_id": "6.5",
+          "name": "Understanding Report Access",
+          "instructions": [
+            "Create a report that shows records 'Assigned To' the current user",
+            "This is how 'My Tasks' reports work",
+            "The report uses a filter on the 'Assigned To' field",
+            "This limits results to only records the logged-in user can access",
+            "This is why Serena saw 5 tasks and Beth saw 10 - the filter showed each person only their assigned tasks!"
+          ],
+          "exam_tip": "EXAM FACT: Reports can use filters on the 'Assigned To' field to limit results to records for the currently logged-in user. This is the most likely reason two users see different results on the same report."
+        }
+      ],
+      "level_complete": "Level 6 Complete! You're now a reporting master. Let's set up automation!"
+    },
+    {
+      "level": 7,
+      "title": "Dashboards & Visualization",
+      "skills_learned": [
+        "Understand dashboards",
+        "Work with iViews and widgets",
+        "Personal vs Global dashboards",
+        "Quick Links"
+      ],
+      "exam_concepts": [
+        "Dashboard types",
+        "iView capabilities",
+        "Chart interactions"
+      ],
+      "tasks": [
+        {
+          "task_id": "7.1",
+          "name": "Explore Your Dashboard",
+          "instructions": [
+            "Return to your homepage (click the logo!)",
+            "You're looking at a dashboard",
+            "Dashboards can contain:",
+            "  - iViews (custom views of data)",
+            "  - Widgets (interactive components)",
+            "  - Charts (visual representations)",
+            "These can display links, embedded content, charts - any of these!"
+          ],
+          "exam_tip": "EXAM FACT: An iView or Widget can display Links, Embedded external content, OR Charts - any of these options!"
+        },
+        {
+          "task_id": "7.2",
+          "name": "Interact with a Chart",
+          "instructions": [
+            "Find a chart on your dashboard (a pie chart, bar graph, etc.)",
+            "Click on an area of the chart (like a slice or bar)",
+            "MAGIC: It opens a list of records associated with that statistic!",
+            "This lets you drill down from summary data to detailed records"
+          ],
+          "exam_tip": "EXAM FACT: Clicking on a chart area opens a list of records associated with that chart statistic."
+        },
+        {
+          "task_id": "7.3",
+          "name": "Understand Dashboard Permissions",
+          "instructions": [
+            "Personal Dashboards: You create and edit for yourself",
+            "Global Dashboards: With admin rights, you can create and share with others",
+            "With appropriate admin rights, you can:",
+            "  ✓ Edit and share global dashboards",
+            "  ✓ Create and edit personal dashboards",
+            "  ✓ Create global reports",
+            "  ✓ All of these!",
+            "Note: Different users might see different dashboard content based on their access rights",
+            "This is why Srishti and Jamie saw different reports - they had different access rights!"
+          ],
+          "exam_tip": "EXAM FACT: With appropriate administrative rights, end users can do all of these: edit/share global dashboards, create/edit personal dashboards, and create global reports. Dashboard differences between users are usually due to different access rights."
+        },
+        {
+          "task_id": "7.4",
+          "name": "Set Up Quick Links",
+          "instructions": [
+            "Look for a 'Quick Links' section in your workspace",
+            "Quick Links let you jump directly to commonly-used actions",
+            "For example: If you frequently create new findings, add a Quick Link to 'New Finding Record'",
+            "This saves you from navigating Workspace > Solution > Application every time",
+            "This is perfect for Nate who needs to quickly log findings without navigating every time!"
+          ],
+          "exam_tip": "EXAM FACT: Quick Links allow users to quickly create new records without having to navigate to the application every time."
+        }
+      ],
+      "level_complete": "Level 7 Complete! Your dashboard game is strong. Let's automate communications!"
+    },
+    {
+      "level": 8,
+      "title": "Notifications & Subscriptions",
+      "skills_learned": [
+        "Email subscriptions",
+        "Scheduled notifications",
+        "Scheduled report distributions",
+        "Email sharing"
+      ],
+      "exam_concepts": [
+        "Subscription management",
+        "Notification types",
+        "Automated reporting"
+      ],
+      "tasks": [
+        {
+          "task_id": "8.1",
+          "name": "Manage Email Subscriptions",
+          "instructions": [
+            "Click on your User Menu (top right)",
+            "Go to Preferences > Email Subscription",
+            "You'll see a list of reports/notifications you're subscribed to",
+            "Each has a checkbox - check to subscribe, uncheck to unsubscribe",
+            "This is how Ayanna would opt out of that weekly risk report!",
+            "And how Anca would check if she's subscribed to the quarterly report!"
+          ],
+          "exam_tip": "EXAM FACT: To opt out of an email report subscription, navigate to User Menu > Preferences > Email Subscription, locate the report, and uncheck the subscribed box."
+        },
+        {
+          "task_id": "8.2",
+          "name": "Create a Scheduled Notification",
+          "instructions": [
+            "This requires admin rights, but good to understand",
+            "Scheduled notifications remind users when something is due",
+            "Example: Remind team when reports are due within 7 days",
+            "Based on a date field (like 'Due Date')",
+            "This is what Beatrice should create for her quarterly risk reports!"
+          ],
+          "exam_tip": "EXAM FACT: To remind a team when reports are due within a set timeframe, create a scheduled notification based on the due date field."
+        },
+        {
+          "task_id": "8.3",
+          "name": "Set Up Scheduled Report Distribution",
+          "instructions": [
+            "Open one of your saved reports",
+            "Look for 'Schedule' or 'Distribution' options",
+            "You can set the report to run automatically:",
+            "  - Daily, Weekly, Monthly, etc.",
+            "  - At specific times",
+            "  - Sent to specific people",
+            "Once scheduled, Archer runs the report AUTOMATICALLY"
+          ],
+          "exam_tip": "EXAM FACT: When a user creates a Scheduled Report Distribution, Archer will run the report Automatically (not manually)."
+        },
+        {
+          "task_id": "8.4",
+          "name": "Email a Record Link",
+          "instructions": [
+            "Open any record you have access to",
+            "Look for 'Share' or 'Email Record' option",
+            "Select 'Email Record' (Share > Email)",
+            "This opens a new email in YOUR email client",
+            "The email includes a LINK to the record",
+            "The recipient can click the link to view the record (if they have access)"
+          ],
+          "exam_tip": "EXAM FACT: Email Record (Share > Email) opens a new email in the user's email client with a link to the record. It does NOT send a downloadable copy or sign them up for notifications."
+        }
+      ],
+      "level_complete": "Level 8 Complete! You've automated communication like a boss. Let's dive into data management!"
+    },
+    {
+      "level": 9,
+      "title": "Data Management & Integration",
+      "skills_learned": [
+        "Data feeds",
+        "Data publications",
+        "Manual data import",
+        "Cross-references"
+      ],
+      "exam_concepts": [
+        "Import/export methods",
+        "Data feed purpose",
+        "Integration approaches"
+      ],
+      "tasks": [
+        {
+          "task_id": "9.1",
+          "name": "Understand Data Import Methods",
+          "instructions": [
+            "Archer can import data in several ways:",
+            "  ✓ DATA FEEDS: Import from external systems (via Data Feed Manager)",
+            "  ✓ MANUAL DATA IMPORT: Upload files manually",
+            "  ✓ API: Programmatic integration",
+            "  ✗ SCANNING: This is NOT a valid import method!",
+            "Each serves different purposes"
+          ],
+          "exam_tip": "EXAM FACT: Scanning is NOT a method to import data into Archer. Valid methods are Data Feeds, Manual Import, and API. Data feeds are managed through the Data Feed Manager feature."
+        },
+        {
+          "task_id": "9.2",
+          "name": "Understand Data Feeds",
+          "instructions": [
+            "Data Feeds = Importing data INTO Archer from external systems",
+            "Ideal for: Regular, scheduled imports",
+            "Example: Daily import of vulnerability scan results",
+            "JavaScript Transporters are a type of Data Feed",
+            "Set to run on a pre-defined schedule"
+          ],
+          "exam_tip": "EXAM FACT: JavaScript Transporters are a type of Data Feed. Data Feeds are ideal for Archer data to be added or modified on a pre-defined schedule."
+        },
+        {
+          "task_id": "9.3",
+          "name": "Understand Data Publications",
+          "instructions": [
+            "Data Publications = EXPORTING data OUT OF Archer",
+            "Extract data from Archer and load it to an external database",
+            "Opposite of Data Feeds!",
+            "Used for: Sending Archer data to external systems on a regular cadence"
+          ],
+          "exam_tip": "EXAM FACT: Data Publications allow users to extract data from Archer and load it to an external database. Data Feeds are for data to be sent OUT of Archer into an external database on a regular cadence."
+        },
+        {
+          "task_id": "9.4",
+          "name": "Work with Cross-Referenced Fields",
+          "instructions": [
+            "Navigate to an application",
+            "Try creating a report with 'Add New Relationship'",
+            "This lets you include fields from cross-referenced applications",
+            "Cross-references link records between different applications",
+            "Example: Link a Risk record to a Control record",
+            "This is what Doug should use to include cross-referenced application fields!"
+          ],
+          "exam_tip": "EXAM FACT: To create a report with fields from a cross-referenced application, choose 'Add New Relationship' on the search page."
+        },
+        {
+          "task_id": "9.5",
+          "name": "Why Archer Beats Spreadsheets",
+          "instructions": [
+            "Remember Andre's problem with spreadsheets?",
+            "Spreadsheets have issues:",
+            "  - Potential data loss from corrupted files",
+            "  - Human error in manual updates",
+            "  - No proactive risk trend analysis",
+            "  - ALL OF THESE!",
+            "Archer solves these by:",
+            "  - Centralized, secure data storage",
+            "  - Automated workflows and notifications",
+            "  - Real-time trend analysis and reporting"
+          ],
+          "exam_tip": "EXAM FACT: Manual spreadsheet management puts organizations at risk due to ALL of these: potential data loss, human error, and inability to analyze trends proactively."
+        }
+      ],
+      "level_complete": "Level 9 Complete! You understand data management and integration. Let's explore advanced features!"
+    },
+    {
+      "level": 10,
+      "title": "Advanced Features & Workflows",
+      "skills_learned": [
+        "Advanced Workflow",
+        "Actions dropdown",
+        "Attention feature",
+        "In-line editing"
+      ],
+      "exam_concepts": [
+        "Workflow functionality",
+        "UI features",
+        "Efficiency tools"
+      ],
+      "tasks": [
+        {
+          "task_id": "10.1",
+          "name": "Understand Advanced Workflow",
+          "instructions": [
+            "Some records use Advanced Workflow",
+            "These records have an ACTIONS DROPDOWN MENU near the top",
+            "Use this dropdown to advance the record to the next workflow stage",
+            "Example: Move a finding from 'Draft' to 'Under Review' to 'Closed'",
+            "Non-workflow records don't have this feature"
+          ],
+          "exam_tip": "EXAM FACT: Records with Advanced Workflow have an Actions dropdown menu at the top. Users use this to advance records to the next stage of the workflow."
+        },
+        {
+          "task_id": "10.2",
+          "name": "Use the Attention Feature (SaaS UI)",
+          "instructions": [
+            "In the new SaaS UI, look at the RIGHT PANEL",
+            "The 'Attention' feature highlights EMPTY FIELDS",
+            "It draws your attention to fields that need to be filled out",
+            "Helps ensure you don't miss required information"
+          ],
+          "exam_tip": "EXAM FACT: In the SaaS UI, the Attention feature in the right panel draws the user's attention to fields that are empty."
+        },
+        {
+          "task_id": "10.3",
+          "name": "Try In-Line Editing (Classic UI)",
+          "instructions": [
+            "View a search results page in Classic UI",
+            "Look for a small PENCIL ICON next to a field name",
+            "This means you can edit that field directly from the search results!",
+            "No need to open the full record",
+            "Super efficient for quick updates",
+            "This is what Steven noticed with the pencil icon!"
+          ],
+          "exam_tip": "EXAM FACT: A pencil icon next to a field in search results means you can edit the field for various records right from within the search results themselves."
+        }
+      ],
+      "level_complete": "Level 10 Complete! You're mastering advanced features. Let's cover security and permissions!"
+    },
+    {
+      "level": 11,
+      "title": "Security & Permissions",
+      "skills_learned": [
+        "User accounts",
+        "Groups and access roles",
+        "Permission types",
+        "Access control"
+      ],
+      "exam_concepts": [
+        "Authentication",
+        "Authorization",
+        "Built-in groups",
+        "Rights assignment"
+      ],
+      "tasks": [
+        {
+          "task_id": "11.1",
+          "name": "Understand User Accounts",
+          "instructions": [
+            "Access to Archer is controlled by USER ACCOUNTS",
+            "Each user has a username and password",
+            "This is your authentication",
+            "Administrators create and manage user accounts"
+          ],
+          "exam_tip": "EXAM FACT: Access to the Archer platform is controlled by User Accounts (username and password)."
+        },
+        {
+          "task_id": "11.2",
+          "name": "Learn About Groups",
+          "instructions": [
+            "Users are assigned to GROUPS",
+            "Groups determine what you can access",
+            "Every user automatically belongs to the 'EVERYONE' group",
+            "When you change roles (like Laszlo), ask your admin to:",
+            "  - Assign you to new groups",
+            "  - Update your access roles"
+          ],
+          "exam_tip": "EXAM FACT: All system users automatically belong to a built-in group named 'Everyone'. When changing roles, ask your Archer administrator to assign you to appropriate groups and access roles."
+        },
+        {
+          "task_id": "11.3",
+          "name": "Understand Access Rights",
+          "instructions": [
+            "Archer has specific rights that can be assigned:",
+            "  ✓ CREATE: Make new records",
+            "  ✓ READ: View records",
+            "  ✓ UPDATE: Edit records",
+            "  ✓ DELETE: Remove records",
+            "  ✗ APPEND: This is NOT a valid Archer right!",
+            "Your rights determine what you can do in each application"
+          ],
+          "exam_tip": "EXAM FACT: APPEND is NOT a right that can be assigned in Archer. Valid rights are CREATE, READ, UPDATE, and DELETE."
+        },
+        {
+          "task_id": "11.4",
+          "name": "Check Licensing Information",
+          "instructions": [
+            "To see what your organization has purchased from Archer:",
+            "Look for 'Licensing Information' in the admin area",
+            "This shows:",
+            "  - Which solutions are licensed",
+            "  - How many user licenses you have",
+            "  - What features are available"
+          ],
+          "exam_tip": "EXAM FACT: To determine what an organization has purchased from Archer, an administrator should check the Licensing Information."
+        }
+      ],
+      "level_complete": "Level 11 Complete! You understand security and permissions. Time to learn about Archer Solutions!"
+    },
+    {
+      "level": 12,
+      "title": "Archer Solutions & Use Cases",
+      "skills_learned": [
+        "Solution areas",
+        "Common use cases",
+        "Archer Evolv products",
+        "Industry applications"
+      ],
+      "exam_concepts": [
+        "Solution structure",
+        "Use case purposes",
+        "Archer product suite"
+      ],
+      "tasks": [
+        {
+          "task_id": "12.1",
+          "name": "Understand Solution Areas",
+          "instructions": [
+            "Archer organizes content into SOLUTION AREAS",
+            "Common Solution Areas include:",
+            "  - IT & Security",
+            "  - Operational Risk",
+            "  - Compliance",
+            "  - Audit",
+            "  - Third Party Management",
+            "Each Solution Area contains related USE CASES"
+          ],
+          "exam_tip": "EXAM FACT: Archer Solution Areas contain groups of related Use Cases. Archer's primary purpose is to support risk management and compliance activities."
+        },
+        {
+          "task_id": "12.2",
+          "name": "Learn Common Use Cases",
+          "instructions": [
+            "Key Use Cases to know:",
+            "1. ISSUES MANAGEMENT: Document events/findings that need resolution (seen in nearly every Solution Area)",
+            "2. REGULATORY & COMPLIANCE: Consolidate regulatory info into searchable repository",
+            "3. AUDIT MANAGEMENT: Manage internal/external audit processes and track findings",
+            "4. THIRD PARTY MANAGEMENT: Manage supplier relationships and monitor third-party risks",
+            "5. BUSINESS CONTINUITY: Plan for business resiliency and disaster recovery"
+          ],
+          "exam_tip": "EXAM FACT: Issues Management is the Use Case seen in nearly every Solution Area. It helps organizations document events (Findings) that need to be resolved, often for compliance reasons."
+        },
+        {
+          "task_id": "12.3",
+          "name": "Understand Custom vs Pre-Built Apps",
+          "instructions": [
+            "ON-DEMAND APPLICATIONS: Entirely designed and deployed by your organization for specific business needs",
+            "USE CASES: Pre-configured applications ready to use immediately after deployment",
+            "Your organization can use both!"
+          ],
+          "exam_tip": "EXAM FACT: Applications entirely designed and deployed by your organization for specific business needs are called On-Demand Applications. Use Cases are pre-configured and ready to use immediately."
+        },
+        {
+          "task_id": "12.4",
+          "name": "Learn About Archer Evolv",
+          "instructions": [
+            "Archer Evolv is the modern product suite:",
+            "ARCHER EVOLV RISK:",
+            "  - End-to-end risk management framework",
+            "  - AI and machine learning for risk prediction",
+            "  - Real-time security data integration",
+            "  - Centralized platform for monitoring and mitigating risks",
+            "ARCHER EVOLV COMPLIANCE:",
+            "  - Continuous monitoring of regulatory changes",
+            "  - Document processing with AI",
+            "  - Obligations catalog",
+            "  - Controls alignment",
+            "  - Building centralized global library of obligations"
+          ],
+          "exam_tip": "EXAM FACT: Archer Evolv Risk uses AI and machine learning to predict potential risks and optimize workflows. It provides a centralized platform for monitoring and mitigating risks in real time. Archer Evolv Compliance's value includes ALL of: AI-powered regulatory change program, centralized obligations library, and controls alignment."
+        }
+      ],
+      "level_complete": "Level 12 Complete! You understand Archer's solutions and products. Final boss level ahead!"
+    },
+    {
+      "level": 13,
+      "title": "FINAL BOSS: Master Quest Challenge",
+      "skills_learned": [
+        "Apply all learned skills",
+        "Complete realistic scenario",
+        "Demonstrate exam readiness"
+      ],
+      "scenario": "You are a new Risk Analyst at XYZ Corporation. Your manager asks you to complete the following tasks using Archer.",
+      "tasks": [
+        {
+          "task_id": "13.1",
+          "name": "Navigate and Create a Record",
+          "challenge": [
+            "1. Log in to Archer",
+            "2. Navigate to the Issues Management application (Workspace > Solution > Application)",
+            "3. Create a new Issue record about a data security concern",
+            "4. Fill in all required fields (red asterisks)",
+            "5. SAVE the record (don't be like Ruth!)",
+            "6. Note the Record ID"
+          ],
+          "skills_tested": [
+            "Navigation",
+            "Record creation",
+            "Required fields",
+            "Saving changes"
+          ]
+        },
+        {
+          "task_id": "13.2",
+          "name": "Search and Report",
+          "challenge": [
+            "1. Use Global Search to find all issues related to 'security'",
+            "2. Transfer the search to the Issues Management application",
+            "3. Add filters: Date range of last 30 days, Status = Open",
+            "4. Save the search as a Personal Report called 'My Open Security Issues'",
+            "5. Change visualization to Hierarchical, grouped by Priority",
+            "6. Export the report to PDF"
+          ],
+          "skills_tested": [
+            "Global search",
+            "Filters",
+            "Saving reports",
+            "Visualization",
+            "Export"
+          ]
+        },
+        {
+          "task_id": "13.3",
+          "name": "Dashboards and Quick Access",
+          "challenge": [
+            "1. Return to your homepage (click the logo!)",
+            "2. Find a chart on your dashboard and click on it to drill down",
+            "3. Set up a Quick Link to create new Issue records quickly",
+            "4. Check your Activity icon to see your recent records"
+          ],
+          "skills_tested": [
+            "Homepage navigation",
+            "Chart interaction",
+            "Quick Links",
+            "Activity tracking"
+          ]
+        },
+        {
+          "task_id": "13.4",
+          "name": "Communication and Automation",
+          "challenge": [
+            "1. Go to User Menu > Preferences > Email Subscription",
+            "2. Subscribe to any available report notifications",
+            "3. Open your newly created Issue record",
+            "4. Use Share > Email Record to send the link to yourself"
+          ],
+          "skills_tested": [
+            "Email subscriptions",
+            "Record sharing"
+          ]
+        },
+        {
+          "task_id": "13.5",
+          "name": "Demonstrate Knowledge",
+          "challenge": [
+            "Answer these questions WITHOUT looking them up:",
+            "1. What happens if you don't click Save before closing a record?",
+            "2. What are the 4 valid access rights in Archer (hint: NOT append)?",
+            "3. What's the difference between Data Feeds and Data Publications?",
+            "4. What built-in group does every user belong to?",
+            "5. What Use Case is seen in nearly every Solution Area?",
+            "6. How do you return to your homepage quickly?",
+            "7. What does a red asterisk on a field mean?",
+            "8. What can iViews display? (links, charts, embedded content)",
+            "9. What's the difference between Personal and Global reports?",
+            "10. What does Archer Evolv Risk use to predict potential risks?"
+          ],
+          "answers": [
+            "1. Changes are lost",
+            "2. CREATE, READ, UPDATE, DELETE",
+            "3. Data Feeds import INTO Archer; Data Publications export OUT OF Archer",
+            "4. Everyone",
+            "5. Issues Management",
+            "6. Click the logo in the top left",
+            "7. Required field",
+            "8. Any of these / All of these",
+            "9. Personal = only you; Global = can be shared with others",
+            "10. AI and machine learning"
+          ]
+        }
+      ],
+      "level_complete": "🎉 FINAL BOSS DEFEATED! You've completed the Archer Newbie Quest! You're now ready to SMASH the Archer Associate Exam!"
+    }
+  ],
+  "conclusion": {
+    "congratulations": "Congratulations, Archer Champion! You've gone from zero to hero.",
+    "what_you_learned": [
+      "✓ Navigate Archer's interface like a pro",
+      "✓ Create, edit, and manage records",
+      "✓ Search and find data efficiently",
+      "✓ Create and customize reports",
+      "✓ Work with dashboards and visualizations",
+      "✓ Set up notifications and automation",
+      "✓ Understand data management and integration",
+      "✓ Use advanced features and workflows",
+      "✓ Understand security and permissions",
+      "✓ Know Archer's solutions and products"
+    ],
+    "exam_readiness": "You've practiced every key concept that appears on the Archer Associate Exam. The questions you'll see will test exactly what you just learned.",
+    "next_steps": [
+      "1. Review the exam tips from each level",
+      "2. Practice in your Archer environment regularly",
+      "3. Take practice quizzes using the question bank",
+      "4. Schedule your exam with confidence!",
+      "5. Remember: You've got this! 💪"
+    ],
+    "final_wisdom": "Just like creating a D&D character sheet taught the basics of Archer, this quest has taught you everything you need. The exam is just validating what you already know. Go smash it!"
+  },
+  "quick_reference": {
+    "top_10_exam_facts": [
+      "1. Click SAVE to save record changes - not clicking loses all changes",
+      "2. Click the logo (top left) to return to homepage/default workspace",
+      "3. Red asterisks (*) = Required fields",
+      "4. Valid access rights: CREATE, READ, UPDATE, DELETE (NOT append)",
+      "5. Everyone group = all users automatically belong",
+      "6. Issues Management = Use Case seen in nearly every Solution Area",
+      "7. Data Feeds = import INTO Archer; Data Publications = export OUT OF Archer",
+      "8. Personal reports = only you; Global reports = can be shared",
+      "9. Keyword search searches within Applications (not workspaces/reports)",
+      "10. Calculated fields auto-populate based on other fields"
+    ],
+    "navigation_paths": {
+      "access_records": "Workspace > Solution > Application > Records",
+      "return_home": "Click logo (top left)",
+      "email_subscriptions": "User Menu > Preferences > Email Subscription",
+      "create_record": "Application > New Record (Classic) or Add New Record (SaaS)"
+    },
+    "common_mistakes_to_avoid": [
+      "❌ Forgetting to click Save before closing records",
+      "❌ Thinking you can filter by 'Size of Records' (you can't!)",
+      "❌ Confusing Data Feeds (import) with Data Publications (export)",
+      "❌ Thinking APPEND is a valid access right (it's not!)",
+      "❌ Trying to edit calculated fields manually (they're auto-calculated)",
+      "❌ Not checking if you have edit permissions when Edit is grayed out"
+    ]
+  }
+}

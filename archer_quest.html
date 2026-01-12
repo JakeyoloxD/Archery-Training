@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archer Newbie Quest - Zero to Hero</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .intro {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 5px solid #667eea;
+        }
+
+        .intro h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .level {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .level:hover {
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .level-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .level-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .level-title {
+            flex-grow: 1;
+        }
+
+        .level-title h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        .skills-badge {
+            display: inline-block;
+            background: #e7f3ff;
+            color: #0066cc;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin: 5px 5px 5px 0;
+        }
+
+        .task {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #28a745;
+        }
+
+        .task h4 {
+            color: #28a745;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .instructions {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .instructions li {
+            margin: 8px 0;
+            padding-left: 10px;
+        }
+
+        .exam-tip {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+
+        .exam-tip strong {
+            color: #856404;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .level-complete {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .quick-ref {
+            background: #e7f3ff;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .quick-ref h3 {
+            color: #0066cc;
+            margin-bottom: 15px;
+        }
+
+        .quick-ref ul {
+            list-style-position: inside;
+        }
+
+        .quick-ref li {
+            margin: 8px 0;
+        }
+
+        .toggle-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .toggle-content.active {
+            max-height: 5000px;
+        }
+
+        .expand-icon {
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+        }
+
+        .expand-icon.rotated {
+            transform: rotate(180deg);
+        }
+
+        .story-box {
+            background: #fff0f6;
+            border-left: 4px solid #d946ef;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-style: italic;
+        }
+
+        .final-boss {
+            background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%);
+            border: none;
+        }
+
+        .final-boss .level-number {
+            background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .conclusion {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .conclusion h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .conclusion ul {
+            text-align: left;
+            max-width: 600px;
+            margin: 20px auto;
+            list-style-position: inside;
+        }
+
+        .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .level-title h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚔️ Archer Newbie Quest ⚔️</h1>
+            <p>From Zero to Hero - Master Archer & Smash the Associate Exam</p>
+        </div>
+
+        <div class="content">
+            <div class="intro">
+                <h2>🎮 Welcome, Brave Adventurer!</h2>
+                <p><strong>Your Mission:</strong> Learn Archer from absolute scratch and become exam-ready in one epic quest!</p>
+                <p style="margin-top: 15px;"><strong>What is Archer?</strong> Think of it as a super-organized digital filing system where organizations track risks, compliance, audits, and other important business stuff. Instead of messy spreadsheets and emails, everything lives in one place.</p>
+                <p style="margin-top: 15px;"><strong>Prerequisites:</strong> NONE! This assumes you know absolutely nothing about Archer. Just have access to an on-prem Archer instance.</p>
+                <p style="margin-top: 15px;"><strong>Time:</strong> 4-6 hours | <strong>Levels:</strong> 13 (Complete them in order!)</p>
+            </div>
+
+            <div id="levels-container">
+                <!-- Levels will be loaded here by JavaScript -->
+            </div>
+
+            <div class="conclusion">
+                <h2>🎉 Quest Complete! 🎉</h2>
+                <p style="font-size: 1.3em; margin-bottom: 20px;">You've gone from zero to hero!</p>
+                <h3 style="margin-top: 30px;">What You've Mastered:</h3>
+                <ul>
+                    <li>✓ Navigate Archer's interface like a pro</li>
+                    <li>✓ Create, edit, and manage records</li>
+                    <li>✓ Search and find data efficiently</li>
+                    <li>✓ Create and customize reports</li>
+                    <li>✓ Work with dashboards and visualizations</li>
+                    <li>✓ Set up notifications and automation</li>
+                    <li>✓ Understand data management and integration</li>
+                    <li>✓ Use advanced features and workflows</li>
+                    <li>✓ Understand security and permissions</li>
+                    <li>✓ Know Archer's solutions and products</li>
+                </ul>
+                <h3 style="margin-top: 30px;">Next Steps:</h3>
+                <ul>
+                    <li>1. Review the exam tips from each level</li>
+                    <li>2. Practice in your Archer environment regularly</li>
+                    <li>3. Take practice quizzes using the question bank</li>
+                    <li>4. Schedule your exam with confidence!</li>
+                    <li>5. Remember: You've got this! 💪</li>
+                </ul>
+                <p style="font-size: 1.2em; margin-top: 30px; font-style: italic;">
+                    "Just like creating a D&D character sheet taught the basics of Archer, this quest has taught you everything you need. The exam is just validating what you already know. Go smash it!"
+                </p>
+            </div>
+
+            <div class="quick-ref">
+                <h3>📋 Quick Reference: Top 10 Exam Facts</h3>
+                <ul>
+                    <li>1. Click SAVE to save record changes - not clicking loses all changes</li>
+                    <li>2. Click the logo (top left) to return to homepage/default workspace</li>
+                    <li>3. Red asterisks (*) = Required fields</li>
+                    <li>4. Valid access rights: CREATE, READ, UPDATE, DELETE (NOT append)</li>
+                    <li>5. Everyone group = all users automatically belong</li>
+                    <li>6. Issues Management = Use Case seen in nearly every Solution Area</li>
+                    <li>7. Data Feeds = import INTO Archer; Data Publications = export OUT OF Archer</li>
+                    <li>8. Personal reports = only you; Global reports = can be shared</li>
+                    <li>9. Keyword search searches within Applications (not workspaces/reports)</li>
+                    <li>10. Calculated fields auto-populate based on other fields</li>
+                </ul>
+
+                <h3 style="margin-top: 25px;">⚠️ Common Mistakes to Avoid</h3>
+                <ul>
+                    <li>❌ Forgetting to click Save before closing records</li>
+                    <li>❌ Thinking you can filter by 'Size of Records' (you can't!)</li>
+                    <li>❌ Confusing Data Feeds (import) with Data Publications (export)</li>
+                    <li>❌ Thinking APPEND is a valid access right (it's not!)</li>
+                    <li>❌ Trying to edit calculated fields manually (they're auto-calculated)</li>
+                    <li>❌ Not checking if you have edit permissions when Edit is grayed out</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Load the quest data
+        fetch('archer_newbie_quest.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('levels-container');
+
+                data.levels.forEach((level, index) => {
+                    const levelDiv = document.createElement('div');
+                    levelDiv.className = level.level === 13 ? 'level final-boss' : 'level';
+
+                    let tasksHTML = '';
+                    level.tasks.forEach(task => {
+                        let instructionsHTML = '';
+                        if (task.instructions) {
+                            instructionsHTML = '<div class="instructions"><ul>';
+                            task.instructions.forEach(inst => {
+                                instructionsHTML += `<li>${inst}</li>`;
+                            });
+                            instructionsHTML += '</ul></div>';
+                        }
+
+                        if (task.practice) {
+                            instructionsHTML += '<div class="instructions" style="margin-top: 10px;"><strong>Practice:</strong><ul>';
+                            task.practice.forEach(p => {
+                                instructionsHTML += `<li>${p}</li>`;
+                            });
+                            instructionsHTML += '</ul></div>';
+                        }
+
+                        if (task.challenge) {
+                            instructionsHTML += '<div class="instructions" style="background: #fff0f6;"><strong>🎯 Challenge:</strong><ul>';
+                            task.challenge.forEach(c => {
+                                instructionsHTML += `<li>${c}</li>`;
+                            });
+                            instructionsHTML += '</ul></div>';
+                        }
+
+                        if (task.what_you_see) {
+                            instructionsHTML += `<div class="story-box"><strong>What you see:</strong> ${task.what_you_see}</div>`;
+                        }
+
+                        if (task.scenario) {
+                            instructionsHTML += `<div class="story-box"><strong>Scenario:</strong> ${task.scenario}</div>`;
+                        }
+
+                        let examTipHTML = '';
+                        if (task.exam_tip) {
+                            examTipHTML = `<div class="exam-tip"><strong>💡 EXAM TIP:</strong> ${task.exam_tip}</div>`;
+                        }
+
+                        tasksHTML += `
+                            <div class="task">
+                                <h4>${task.task_id}: ${task.name}</h4>
+                                ${instructionsHTML}
+                                ${examTipHTML}
+                            </div>
+                        `;
+                    });
+
+                    let storyHTML = '';
+                    if (level.story) {
+                        storyHTML = `<div class="story-box"><strong>📖 Story:</strong> ${level.story}</div>`;
+                    }
+                    if (level.scenario) {
+                        storyHTML = `<div class="story-box"><strong>🎭 Scenario:</strong> ${level.scenario}</div>`;
+                    }
+
+                    let skillsBadges = '';
+                    if (level.skills_learned) {
+                        level.skills_learned.forEach(skill => {
+                            skillsBadges += `<span class="skills-badge">${skill}</span>`;
+                        });
+                    }
+
+                    levelDiv.innerHTML = `
+                        <div class="level-header" onclick="toggleLevel(${index})">
+                            <div class="level-number">${level.level}</div>
+                            <div class="level-title">
+                                <h3>${level.title}</h3>
+                                <div class="badge-container">${skillsBadges}</div>
+                            </div>
+                            <span class="expand-icon" id="icon-${index}">▼</span>
+                        </div>
+                        <div class="toggle-content" id="content-${index}">
+                            ${storyHTML}
+                            ${tasksHTML}
+                            <div class="level-complete">${level.level_complete}</div>
+                        </div>
+                    `;
+
+                    container.appendChild(levelDiv);
+                });
+            })
+            .catch(error => console.error('Error loading quest data:', error));
+
+        function toggleLevel(index) {
+            const content = document.getElementById(`content-${index}`);
+            const icon = document.getElementById(`icon-${index}`);
+
+            content.classList.toggle('active');
+            icon.classList.toggle('rotated');
+        }
+    </script>
+</body>
+</html>
