@@ -144,7 +144,8 @@
           "name": "Find an Application You Can Edit",
           "instructions": [
             "Navigate to an Application (use the path from Level 2)",
-            "Look for a button that says 'New Record' (Classic UI) or 'Add New Record' (SaaS UI)",
+            "Look for a button that says 'New Record' (Classic UI) or 'Add New Record' (SaaS UI), if you hover over the application you will see 3 dots.",
+            "Create a record should be one of the options available!",
             "If you DON'T see this button, you don't have permission to create records here - try a different application",
             "Once you find an application with the New Record button, click it!"
           ],
@@ -998,3 +999,4 @@
     ]
   }
 }
+
