@@ -1,0 +1,3223 @@
+{
+  "meta": {
+    "name": "AZ-900 Question Bank",
+    "version": "1.2.0",
+    "generated_at_utc": "2025-10-21T02:39:04Z",
+    "source": "Microsoft Learn study guide for AZ-900",
+    "domains": [
+      "Cloud concepts",
+      "Azure architecture and services",
+      "Azure management and governance"
+    ]
+  },
+  "schema": {
+    "id": "string-uuid",
+    "domain": "string",
+    "objective": "string",
+    "question": "string",
+    "choices": [
+      "string",
+      "..."
+    ],
+    "answer_index": "int",
+    "explanation": "string",
+    "refs": [
+      "url",
+      "..."
+    ],
+    "difficulty": "easy|medium|hard",
+    "tags": [
+      "string",
+      "..."
+    ]
+  },
+  "questions": [
+    {
+      "id": "a5f02744-6f70-4b35-a76c-ce35d1a1c846",
+      "domain": "Cloud concepts",
+      "objective": "Define cloud computing and its benefits",
+      "question": "Which statement best describes cloud computing?",
+      "choices": [
+        "Renting computing resources over the internet on demand",
+        "Buying physical servers and hosting them in your office",
+        "Running all workloads on user laptops",
+        "Using only open source software"
+      ],
+      "answer_index": 0,
+      "explanation": "Cloud is on-demand access to computing resources via the internet with pay-as-you-go pricing.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "foundations"
+      ]
+    },
+    {
+      "id": "98b48244-fc51-40e8-bc34-5e09aa50a33a",
+      "domain": "Cloud concepts",
+      "objective": "Describe shared responsibility model",
+      "question": "In Azure's shared responsibility model, which task is Microsoft's responsibility?",
+      "choices": [
+        "Patching the guest OS inside your VM",
+        "Securing the physical datacenter",
+        "Configuring NSG rules for your subnet",
+        "Rotating application secrets inside your code"
+      ],
+      "answer_index": 1,
+      "explanation": "Microsoft secures the underlying cloud infrastructure, including physical hosts and facilities. Customers secure what they put in the cloud.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "6be11ae4-8ca1-491c-900b-19fe062f7ad0",
+      "domain": "Cloud concepts",
+      "objective": "Compare IaaS, PaaS, SaaS",
+      "question": "Which service model gives you the most control over the OS and networking?",
+      "choices": [
+        "Software as a Service",
+        "Platform as a Service",
+        "Infrastructure as a Service",
+        "Serverless"
+      ],
+      "answer_index": 2,
+      "explanation": "IaaS exposes VMs, storage, and networking for maximum control. PaaS and SaaS abstract more away.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "iaas",
+        "paas",
+        "saas"
+      ]
+    },
+    {
+      "id": "02255ab9-54b9-41fc-a8b5-247a39701bf9",
+      "domain": "Cloud concepts",
+      "objective": "CapEx vs OpEx",
+      "question": "Moving from on-prem servers to Azure primarily shifts spending from what to what?",
+      "choices": [
+        "OpEx to CapEx",
+        "CapEx to OpEx",
+        "Fixed to sunk cost",
+        "Sunk cost to CapEx"
+      ],
+      "answer_index": 1,
+      "explanation": "Cloud uses operational expenditure with pay-as-you-go instead of upfront capital purchases.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "cost"
+      ]
+    },
+    {
+      "id": "72600f50-d22d-44da-96c1-56d576a1a508",
+      "domain": "Cloud concepts",
+      "objective": "Scalability and elasticity",
+      "question": "Which term describes automatically adding or removing resources to match demand?",
+      "choices": [
+        "Fault tolerance",
+        "High availability",
+        "Elasticity",
+        "Disaster recovery"
+      ],
+      "answer_index": 2,
+      "explanation": "Elasticity means scaling up or down based on load. High availability focuses on uptime.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "scale"
+      ]
+    },
+    {
+      "id": "c6789fbd-d66e-477a-8f16-a31758a5645d",
+      "domain": "Azure architecture and services",
+      "objective": "Regions and availability zones",
+      "question": "What is the primary purpose of Azure Availability Zones?",
+      "choices": [
+        "Reduce latency between regions",
+        "Provide isolated datacenter fault domains within a region",
+        "Offer cheaper pricing tiers",
+        "Replace the need for backups"
+      ],
+      "answer_index": 1,
+      "explanation": "Availability Zones are physically separate datacenters in a region to improve resiliency against datacenter failures.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "ha",
+        "resiliency"
+      ]
+    },
+    {
+      "id": "5f801aa8-a3bd-4325-8c1f-435838a2f987",
+      "domain": "Azure architecture and services",
+      "objective": "Resource groups",
+      "question": "Which statement about Azure resource groups is true?",
+      "choices": [
+        "A resource can belong to multiple resource groups",
+        "Resource groups are tied to a single region only",
+        "Resource groups help manage and lifecycle resources as a unit",
+        "You must deploy a separate resource group for each resource type"
+      ],
+      "answer_index": 2,
+      "explanation": "Resource groups are logical containers for resources and simplify management, access control, and lifecycle operations.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "rg"
+      ]
+    },
+    {
+      "id": "580a65d0-fea0-4706-80e9-a85f7a1b4070",
+      "domain": "Azure architecture and services",
+      "objective": "Azure compute options",
+      "question": "You need full OS control and custom software. Which Azure compute option fits best?",
+      "choices": [
+        "App Service",
+        "Container Apps",
+        "Virtual Machines",
+        "Logic Apps"
+      ],
+      "answer_index": 2,
+      "explanation": "VMs provide full control of the OS and installed software. App Service and Logic Apps are managed platforms.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "compute"
+      ]
+    },
+    {
+      "id": "105726fc-b53d-40aa-8407-d4667c8f6465",
+      "domain": "Azure architecture and services",
+      "objective": "Serverless compute",
+      "question": "Which service is an example of serverless compute in Azure?",
+      "choices": [
+        "Azure Functions",
+        "Azure Virtual Machines",
+        "Azure Kubernetes Service",
+        "Azure Batch"
+      ],
+      "answer_index": 0,
+      "explanation": "Azure Functions runs code on demand without managing servers, billed per execution and time.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "serverless"
+      ]
+    },
+    {
+      "id": "30ca9736-7e92-4015-876d-5863758c88e2",
+      "domain": "Azure architecture and services",
+      "objective": "Containers and orchestration",
+      "question": "Which Azure service provides managed Kubernetes control plane for container orchestration?",
+      "choices": [
+        "Azure Container Registry",
+        "Azure Kubernetes Service",
+        "Azure App Service",
+        "Azure Functions"
+      ],
+      "answer_index": 1,
+      "explanation": "AKS manages Kubernetes masters so you focus on nodes and workloads. ACR is a private image registry.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "containers",
+        "aks"
+      ]
+    },
+    {
+      "id": "b05a076b-1367-4bbe-b1ff-6cb415f6efc0",
+      "domain": "Azure architecture and services",
+      "objective": "Storage options",
+      "question": "You need massively scalable object storage for images and videos with lifecycle management. Choose:",
+      "choices": [
+        "Azure Files",
+        "Azure Blob Storage",
+        "Azure Disk Storage",
+        "Azure SQL Database"
+      ],
+      "answer_index": 1,
+      "explanation": "Blob Storage provides object storage with tiers and lifecycle policies. Files is SMB, Disks attach to VMs.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "storage",
+        "blob"
+      ]
+    },
+    {
+      "id": "28b20a5c-e1a1-4fb0-99fd-394e928a953e",
+      "domain": "Azure architecture and services",
+      "objective": "Database options",
+      "question": "Which service is a fully managed relational database with automatic backups and scaling?",
+      "choices": [
+        "Azure Cosmos DB",
+        "Azure SQL Database",
+        "SQL Server on Azure VM",
+        "Azure Table Storage"
+      ],
+      "answer_index": 1,
+      "explanation": "Azure SQL Database is PaaS for relational workloads with built-in HA and backups.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "database",
+        "sql"
+      ]
+    },
+    {
+      "id": "5490e5a5-af29-4581-8772-9fb78e2c09d5",
+      "domain": "Azure architecture and services",
+      "objective": "Cosmos DB consistency",
+      "question": "Which is a valid consistency level in Azure Cosmos DB?",
+      "choices": [
+        "At-least-once",
+        "Linearizable",
+        "Strong-ish",
+        "Atomic"
+      ],
+      "answer_index": 1,
+      "explanation": "Cosmos DB offers Strong, Bounded Staleness, Session, Consistent Prefix, and Eventual. Linearizable aligns with Strong semantics.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "cosmos",
+        "consistency"
+      ]
+    },
+    {
+      "id": "893faef5-53d8-428c-9ed8-0c279137a2fe",
+      "domain": "Azure architecture and services",
+      "objective": "Networking basics",
+      "question": "Which component filters inbound and outbound traffic at subnet and NIC level?",
+      "choices": [
+        "Application Gateway",
+        "Network Security Group",
+        "Azure Firewall",
+        "Front Door"
+      ],
+      "answer_index": 1,
+      "explanation": "NSGs allow or deny traffic based on rules at subnet or NIC. Azure Firewall is a stateful service at network scale.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "network",
+        "nsg"
+      ]
+    },
+    {
+      "id": "629d0f7d-fde6-43a5-b25b-fbfb61e5e0ff",
+      "domain": "Azure architecture and services",
+      "objective": "Global routing",
+      "question": "Which service provides global HTTP load balancing and CDN-like acceleration for web apps?",
+      "choices": [
+        "Traffic Manager",
+        "Front Door",
+        "Application Gateway",
+        "Load Balancer"
+      ],
+      "answer_index": 1,
+      "explanation": "Azure Front Door offers global anycast, SSL offload, WAF, and routing at the edge. Traffic Manager is DNS-based only.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "frontdoor",
+        "waf"
+      ]
+    },
+    {
+      "id": "30e97e92-b2c5-487c-b031-ff45f3d1e459",
+      "domain": "Azure management and governance",
+      "objective": "Azure Active Directory basics",
+      "question": "What is the primary identity service for Azure and Microsoft 365?",
+      "choices": [
+        "Active Directory Domain Services",
+        "Azure Active Directory",
+        "AD FS",
+        "Local accounts"
+      ],
+      "answer_index": 1,
+      "explanation": "Azure AD (now Microsoft Entra ID) provides identity and access management for cloud resources.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "identity",
+        "entra"
+      ]
+    },
+    {
+      "id": "b92e1470-32ab-4466-8487-9d6bc5e64157",
+      "domain": "Azure management and governance",
+      "objective": "Role Based Access Control",
+      "question": "Which statement about Azure RBAC is correct?",
+      "choices": [
+        "Roles are assigned only at the subscription scope",
+        "RBAC controls access to Azure resources using roles and scopes",
+        "RBAC replaces need for Azure Policy",
+        "RBAC only supports built-in roles"
+      ],
+      "answer_index": 1,
+      "explanation": "RBAC assigns roles at scopes like resource group or resource to control actions. Custom roles are supported.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "rbac"
+      ]
+    },
+    {
+      "id": "ac1b8cbd-4ee6-45d0-bb4e-5dcc79b846dd",
+      "domain": "Azure management and governance",
+      "objective": "Azure Policy vs RBAC",
+      "question": "What does Azure Policy do?",
+      "choices": [
+        "Defines who can take actions on resources",
+        "Audits and enforces resource configurations at scale",
+        "Provides network traffic filtering",
+        "Encrypts data at rest"
+      ],
+      "answer_index": 1,
+      "explanation": "Policy evaluates resource properties for compliance and can deny or remediate configurations.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "governance",
+        "policy"
+      ]
+    },
+    {
+      "id": "de34e7fa-88cc-4a76-9504-57b578f9544d",
+      "domain": "Azure management and governance",
+      "objective": "Cost management",
+      "question": "Which tool helps you analyze and control Azure spending with budgets and alerts?",
+      "choices": [
+        "Azure Monitor Metrics",
+        "Azure Advisor",
+        "Cost Management + Billing",
+        "Azure Migrate"
+      ],
+      "answer_index": 2,
+      "explanation": "Cost Management provides budgets, cost analysis, and anomaly detection for spend control.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "cost"
+      ]
+    },
+    {
+      "id": "a93fd7df-84d7-4268-ae91-3b358a7c4fd3",
+      "domain": "Azure management and governance",
+      "objective": "Service Level Agreements",
+      "question": "Two instances of an app are deployed across Availability Zones with an SLA of 99.95% per instance in a combined offering of 99.99%. What does 99.99% roughly allow for yearly downtime?",
+      "choices": [
+        "~52 minutes per year",
+        "~8 hours per year",
+        "~4 hours per month",
+        "~5 minutes per month"
+      ],
+      "answer_index": 0,
+      "explanation": "99.99% availability is about 52 minutes of downtime per year.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "sla",
+        "ha"
+      ]
+    },
+    {
+      "id": "77f95cdf-d94a-4d66-8a55-30fd4347d7fc",
+      "domain": "Azure management and governance",
+      "objective": "Compliance",
+      "question": "Which Azure feature provides a centralized view of compliance posture against standards like ISO 27001?",
+      "choices": [
+        "Microsoft Defender for Cloud regulatory compliance dashboard",
+        "Azure Monitor Logs",
+        "Azure Advisor",
+        "Update Manager"
+      ],
+      "answer_index": 0,
+      "explanation": "Defender for Cloud includes regulatory compliance views that map to standards and show control status.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "compliance",
+        "defender"
+      ]
+    },
+    {
+      "id": "62c77218-df7c-4ea0-a4e2-eacd7df63cce",
+      "domain": "Azure management and governance",
+      "objective": "Monitoring",
+      "question": "Which service collects telemetry from applications and provides distributed tracing and Application Map?",
+      "choices": [
+        "Azure Monitor Logs",
+        "Application Insights",
+        "Azure Sentinel",
+        "Log Analytics agent"
+      ],
+      "answer_index": 1,
+      "explanation": "Application Insights is for app performance monitoring and tracing, part of Azure Monitor.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "monitoring",
+        "appinsights"
+      ]
+    },
+    {
+      "id": "5285322b-2030-4f11-b233-0bb032d5a7f9",
+      "domain": "Azure management and governance",
+      "objective": "Security",
+      "question": "Which capability is provided by Microsoft Defender for Cloud?",
+      "choices": [
+        "DNS zone hosting",
+        "Security posture management and workload protection recommendations",
+        "CI/CD pipeline orchestration",
+        "License assignment for Microsoft 365"
+      ],
+      "answer_index": 1,
+      "explanation": "Defender for Cloud assesses security posture, provides recommendations, and offers workload protections.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "security",
+        "defender"
+      ]
+    },
+    {
+      "id": "75ef83ef-99e2-4d0f-bb0d-50ed281045e8",
+      "domain": "Azure management and governance",
+      "objective": "Backup and DR",
+      "question": "Which service backs up Azure VMs and workloads with vaults and policies?",
+      "choices": [
+        "Azure Backup",
+        "Azure Site Recovery",
+        "Azure Files",
+        "Azure Archive Storage"
+      ],
+      "answer_index": 0,
+      "explanation": "Azure Backup protects data with Recovery Services vaults and policies. Site Recovery handles replication and failover.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "backup",
+        "recovery"
+      ]
+    },
+    {
+      "id": "b89b4c56-f1f3-4687-97ff-b2485cbd4ce8",
+      "domain": "Azure management and governance",
+      "objective": "Networking security",
+      "question": "Which Azure service provides a managed, cloud-native firewall with threat intelligence filtering and FQDN filtering?",
+      "choices": [
+        "Network Security Group",
+        "Azure Firewall",
+        "DDoS Protection Basic",
+        "Traffic Manager"
+      ],
+      "answer_index": 1,
+      "explanation": "Azure Firewall is a managed, stateful firewall with central policy and features like FQDN filtering.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "network",
+        "firewall"
+      ]
+    },
+    {
+      "id": "52062410-23ba-4b77-9cf2-4d76c5400a47",
+      "domain": "Azure management and governance",
+      "objective": "Identity protection",
+      "question": "Which feature supports conditional access and MFA to enforce strong sign-in policies?",
+      "choices": [
+        "Privileged Identity Management",
+        "Conditional Access in Entra ID",
+        "Azure Policy",
+        "Resource Locks"
+      ],
+      "answer_index": 1,
+      "explanation": "Conditional Access and MFA are Entra ID features to strengthen identity security.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "identity",
+        "mfa"
+      ]
+    },
+    {
+      "id": "2818f034-90fc-446a-9a07-d8ad6e47ef7e",
+      "domain": "Azure management and governance",
+      "objective": "Locks and tags",
+      "question": "You want to prevent accidental deletion of a resource group. What should you configure?",
+      "choices": [
+        "A tag",
+        "A deny assignment",
+        "A ReadOnly or Delete lock",
+        "A budget alert"
+      ],
+      "answer_index": 2,
+      "explanation": "Resource locks protect critical resources from accidental changes or deletion.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "locks"
+      ]
+    },
+    {
+      "id": "b2d30f4c-8d6c-4c4b-be65-64589ea1fd7c",
+      "domain": "Azure management and governance",
+      "objective": "CLI and PowerShell",
+      "question": "Which command line tool is cross-platform and commonly used for scripting Azure deployments?",
+      "choices": [
+        "az CLI",
+        "WMIC",
+        "netsh",
+        "dsquery"
+      ],
+      "answer_index": 0,
+      "explanation": "The Azure CLI runs on Windows, macOS, and Linux for automating Azure tasks.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "cli"
+      ]
+    },
+    {
+      "id": "9e534e80-a6ce-4abb-87b0-b17a90e826ec",
+      "domain": "Azure management and governance",
+      "objective": "ARM templates and Bicep",
+      "question": "What is Azure Bicep?",
+      "choices": [
+        "A load testing tool",
+        "A simplified language for authoring Azure Resource Manager templates",
+        "An Azure cost estimator",
+        "A Kubernetes add-on"
+      ],
+      "answer_index": 1,
+      "explanation": "Bicep is a declarative IaC language that compiles to ARM JSON templates.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "iac",
+        "bicep"
+      ]
+    },
+    {
+      "id": "32ec3f53-77e4-41cc-9792-a85057ed0cb7",
+      "domain": "Cloud concepts",
+      "objective": "High availability vs resiliency",
+      "question": "Which design increases resiliency against a single datacenter failure inside a region?",
+      "choices": [
+        "Deploy to an Availability Set",
+        "Deploy to multiple Availability Zones",
+        "Deploy to multiple subscriptions",
+        "Deploy to a free tier"
+      ],
+      "answer_index": 1,
+      "explanation": "Availability Zones are separate datacenters within a region, improving fault isolation.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "ha",
+        "resiliency"
+      ]
+    },
+    {
+      "id": "e3ebbbaa-16b3-4d2b-9f87-64119dbeff41",
+      "domain": "Cloud concepts",
+      "objective": "Scalability types",
+      "question": "Vertical scaling means what?",
+      "choices": [
+        "Adding more instances",
+        "Using autoscale rules",
+        "Increasing size/CPU/RAM of an instance",
+        "Scaling across regions"
+      ],
+      "answer_index": 2,
+      "explanation": "Vertical scale increases the capacity of a single instance. Horizontal adds more instances.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "scale"
+      ]
+    },
+    {
+      "id": "66d19116-8801-446a-9563-7785d98d3dca",
+      "domain": "Cloud concepts",
+      "objective": "Public vs private vs hybrid",
+      "question": "A company runs most workloads in Azure but keeps an on-prem AD for legacy apps. This is an example of:",
+      "choices": [
+        "Public cloud",
+        "Private cloud",
+        "Hybrid cloud",
+        "Multicloud"
+      ],
+      "answer_index": 2,
+      "explanation": "Combining on\u2011prem and public cloud is hybrid cloud.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "models"
+      ]
+    },
+    {
+      "id": "9d5ef83b-6ab7-4034-a942-5cd21c97f35f",
+      "domain": "Cloud concepts",
+      "objective": "Consumption-based model",
+      "question": "Which benefit aligns with consumption-based pricing?",
+      "choices": [
+        "Pay for maximum capacity at all times",
+        "Large upfront hardware purchases",
+        "Pay for what you use",
+        "Annual license only"
+      ],
+      "answer_index": 2,
+      "explanation": "Cloud commonly bills per-use instead of upfront CapEx.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "cost"
+      ]
+    },
+    {
+      "id": "c0dca2f0-fae6-46da-80c5-0a4fd57f10d7",
+      "domain": "Cloud concepts",
+      "objective": "Fault tolerance vs DR",
+      "question": "Disaster Recovery primarily focuses on:",
+      "choices": [
+        "Preventing all failures",
+        "Real-time app performance tuning",
+        "Restoring services after major outages with RTO/RPO targets",
+        "Encrypting data at rest"
+      ],
+      "answer_index": 2,
+      "explanation": "DR targets recovery objectives like RTO and RPO after disruption.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "dr",
+        "rto",
+        "rpo"
+      ]
+    },
+    {
+      "id": "0d8b1631-a5f1-48e1-a7d9-a190ef03adb0",
+      "domain": "Azure architecture and services",
+      "objective": "Availability sets",
+      "question": "What do Availability Sets protect against?",
+      "choices": [
+        "Region-wide failures",
+        "Datacenter loss",
+        "Rack-level or host-level failures using update and fault domains",
+        "DDoS attacks"
+      ],
+      "answer_index": 2,
+      "explanation": "Availability Sets spread VMs across fault and update domains.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "availability set"
+      ]
+    },
+    {
+      "id": "163d18ac-e5ec-4fdd-bac2-dda56a6feab8",
+      "domain": "Azure architecture and services",
+      "objective": "Storage redundancy",
+      "question": "Which redundancy keeps three copies within a single region but across multiple datacenters when available?",
+      "choices": [
+        "LRS",
+        "ZRS",
+        "GRS",
+        "RA-GRS"
+      ],
+      "answer_index": 1,
+      "explanation": "ZRS replicates synchronously across Availability Zones in the region.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "storage",
+        "redundancy"
+      ]
+    },
+    {
+      "id": "ea0bf312-6382-4e4d-b41f-a610b2ceddd6",
+      "domain": "Azure architecture and services",
+      "objective": "Geo-replication",
+      "question": "Which option provides cross-region replication with read access to the secondary?",
+      "choices": [
+        "LRS",
+        "ZRS",
+        "GRS",
+        "RA-GRS"
+      ],
+      "answer_index": 3,
+      "explanation": "RA\u2011GRS adds read access to the secondary region.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "storage",
+        "redundancy"
+      ]
+    },
+    {
+      "id": "4caeb7ad-b6d2-4810-9bac-92dddc88d3fa",
+      "domain": "Azure architecture and services",
+      "objective": "Disks",
+      "question": "Which disk type offers the highest performance for mission-critical workloads?",
+      "choices": [
+        "Standard HDD",
+        "Standard SSD",
+        "Premium SSD",
+        "Cold HDD"
+      ],
+      "answer_index": 2,
+      "explanation": "Premium SSD delivers high IOPS/low latency for production VMs.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "disks"
+      ]
+    },
+    {
+      "id": "85c42629-b6a2-4780-b4a9-33f411686757",
+      "domain": "Azure architecture and services",
+      "objective": "Files vs Blobs",
+      "question": "Which Azure storage option provides SMB file shares that can be mounted by multiple VMs?",
+      "choices": [
+        "Blob Storage",
+        "Azure Files",
+        "Disk Storage",
+        "Queue Storage"
+      ],
+      "answer_index": 1,
+      "explanation": "Azure Files exposes SMB shares for lift-and-shift scenarios.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "files"
+      ]
+    },
+    {
+      "id": "c5fa2b3f-097d-4a47-b239-9f6a4448850e",
+      "domain": "Azure architecture and services",
+      "objective": "Queues and messaging",
+      "question": "You need decoupled communication between components with simple FIFO-like behavior. Choose:",
+      "choices": [
+        "Azure Queue Storage",
+        "Azure Event Hubs",
+        "Azure Service Bus Topics",
+        "Azure CDN"
+      ],
+      "answer_index": 0,
+      "explanation": "Queue Storage is simple messaging. Service Bus adds richer features; Event Hubs handles telemetry streams.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "messaging"
+      ]
+    },
+    {
+      "id": "042a785e-d5aa-43a1-af24-143c48756ce2",
+      "domain": "Azure architecture and services",
+      "objective": "Event ingestion",
+      "question": "Which service is best for ingesting high\u2011throughput telemetry from devices and apps?",
+      "choices": [
+        "Event Hubs",
+        "Queue Storage",
+        "Service Bus Queues",
+        "Notification Hubs"
+      ],
+      "answer_index": 0,
+      "explanation": "Event Hubs is optimized for big streaming ingestion.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "event hubs"
+      ]
+    },
+    {
+      "id": "dc6840c3-bc7c-4aa4-8670-ce867910bc3e",
+      "domain": "Azure architecture and services",
+      "objective": "CDN",
+      "question": "Which service caches static content at edge locations to reduce latency?",
+      "choices": [
+        "Front Door",
+        "Traffic Manager",
+        "CDN",
+        "Application Gateway"
+      ],
+      "answer_index": 2,
+      "explanation": "Azure CDN accelerates delivery of static assets.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "cdn"
+      ]
+    },
+    {
+      "id": "812551d2-9e24-43de-ac97-9b747ba0c8ef",
+      "domain": "Azure architecture and services",
+      "objective": "Load balancing options",
+      "question": "Which service operates at Layer 7 and offers WAF features?",
+      "choices": [
+        "Azure Load Balancer",
+        "Application Gateway",
+        "Traffic Manager",
+        "NAT Gateway"
+      ],
+      "answer_index": 1,
+      "explanation": "Application Gateway is L7 and integrates WAF. Load Balancer is L4.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "waf",
+        "appgw"
+      ]
+    },
+    {
+      "id": "462bc624-f9b5-487c-940e-06fc94584bfc",
+      "domain": "Azure architecture and services",
+      "objective": "Global routing compare",
+      "question": "Which comparison is correct?",
+      "choices": [
+        "Traffic Manager is HTTP proxy at edge",
+        "Front Door is DNS\u2011based only",
+        "Traffic Manager uses DNS to route to endpoints",
+        "Front Door cannot do SSL offload"
+      ],
+      "answer_index": 2,
+      "explanation": "Traffic Manager is DNS\u2011based; Front Door is anycast proxy with SSL offload.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "routing"
+      ]
+    },
+    {
+      "id": "4796042d-d7d0-4c5f-a369-4fcbf1bdcb91",
+      "domain": "Azure architecture and services",
+      "objective": "Private connectivity",
+      "question": "Which option provides private dedicated connection to Azure with predictable latency?",
+      "choices": [
+        "Point\u2011to\u2011Site VPN",
+        "Site\u2011to\u2011Site VPN",
+        "ExpressRoute",
+        "Azure Bastion"
+      ],
+      "answer_index": 2,
+      "explanation": "ExpressRoute is private connectivity via a provider.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "network"
+      ]
+    },
+    {
+      "id": "8bfa14b6-fc8c-4288-8826-0e9699645c44",
+      "domain": "Azure architecture and services",
+      "objective": "P2S vs S2S",
+      "question": "Point\u2011to\u2011Site VPN is best for:",
+      "choices": [
+        "Connecting branch offices",
+        "Temporary individual user connections from remote devices",
+        "Permanent site connectivity",
+        "Cross\u2011tenant peering"
+      ],
+      "answer_index": 1,
+      "explanation": "P2S is for individual devices; S2S is for networks.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "vpn"
+      ]
+    },
+    {
+      "id": "960f0656-0f78-44c0-942a-e0f24a487b9c",
+      "domain": "Azure architecture and services",
+      "objective": "Name resolution",
+      "question": "Which service provides internal DNS for Azure VNets and supports private DNS zones?",
+      "choices": [
+        "Azure DNS private zones",
+        "Traffic Manager",
+        "Front Door",
+        "Application Gateway"
+      ],
+      "answer_index": 0,
+      "explanation": "Azure DNS private zones provide name resolution within VNets.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "dns"
+      ]
+    },
+    {
+      "id": "3fe5f676-1b0c-4179-8df0-84d4fc8de27f",
+      "domain": "Azure architecture and services",
+      "objective": "Security perimeter",
+      "question": "Which feature provides private access to PaaS services over a VNet IP?",
+      "choices": [
+        "Service Endpoints",
+        "Private Endpoints",
+        "UDR",
+        "Peering"
+      ],
+      "answer_index": 1,
+      "explanation": "Private Endpoints map a NIC with private IP to the service.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "network",
+        "private link"
+      ]
+    },
+    {
+      "id": "1fd8d57d-bdd3-40ba-b7d6-71774a98d907",
+      "domain": "Azure architecture and services",
+      "objective": "Key management",
+      "question": "Where should you store secrets, keys, and certificates?",
+      "choices": [
+        "Config files in the app",
+        "Azure Key Vault",
+        "Blob container with public access",
+        "Local VM disk"
+      ],
+      "answer_index": 1,
+      "explanation": "Key Vault centralizes secret management with access control and logging.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "security",
+        "key vault"
+      ]
+    },
+    {
+      "id": "705c483b-709d-4cb6-9000-ef08aba3fdbf",
+      "domain": "Azure architecture and services",
+      "objective": "Data encryption",
+      "question": "Which statement is true about Azure Storage encryption at rest?",
+      "choices": [
+        "It is disabled by default",
+        "Only premium tiers are encrypted",
+        "Server\u2011side encryption is enabled by default",
+        "Customer\u2011managed keys are required"
+      ],
+      "answer_index": 2,
+      "explanation": "SSE is on by default; you can use Microsoft\u2011managed or customer\u2011managed keys.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "encryption"
+      ]
+    },
+    {
+      "id": "66aa115d-44a2-460c-b2a2-d6491f55a1af",
+      "domain": "Azure management and governance",
+      "objective": "Tenants and subscriptions",
+      "question": "A tenant represents what in Azure?",
+      "choices": [
+        "A billing container only",
+        "An instance of Microsoft Entra ID for an organization",
+        "A resource group",
+        "A management group"
+      ],
+      "answer_index": 1,
+      "explanation": "Tenant equals Entra ID instance; subscriptions attach to a tenant.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "tenant"
+      ]
+    },
+    {
+      "id": "ffc18a40-b1aa-4228-9c99-d616a7c2a626",
+      "domain": "Azure management and governance",
+      "objective": "Management groups",
+      "question": "Why use Management Groups?",
+      "choices": [
+        "To deploy VNets",
+        "To organize subscriptions and apply governance at scale",
+        "To store images",
+        "To create DNS zones"
+      ],
+      "answer_index": 1,
+      "explanation": "They create a hierarchy above subscriptions for RBAC and Policy.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "governance"
+      ]
+    },
+    {
+      "id": "1c943ee1-dd5b-405e-9878-1667958a7187",
+      "domain": "Azure management and governance",
+      "objective": "RBAC scopes",
+      "question": "Which is not a valid RBAC scope?",
+      "choices": [
+        "Management group",
+        "Subscription",
+        "Resource group",
+        "Azure region"
+      ],
+      "answer_index": 3,
+      "explanation": "RBAC scopes are mgmt group, subscription, resource group, and resource.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "rbac"
+      ]
+    },
+    {
+      "id": "6a201463-5c55-4732-8fc0-43057684b69f",
+      "domain": "Azure management and governance",
+      "objective": "Policy effects",
+      "question": "Which Azure Policy effect can stop noncompliant deployments?",
+      "choices": [
+        "Audit",
+        "Append",
+        "Deny",
+        "Modify only"
+      ],
+      "answer_index": 2,
+      "explanation": "Deny blocks noncompliant resource creation or updates.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "policy"
+      ]
+    },
+    {
+      "id": "8e5ec131-ca40-4422-ac15-76a4d72a0369",
+      "domain": "Azure management and governance",
+      "objective": "Budgets",
+      "question": "Where do you configure budgets and cost alerts?",
+      "choices": [
+        "Azure Advisor",
+        "Cost Management + Billing",
+        "Azure Monitor Metrics",
+        "Update Manager"
+      ],
+      "answer_index": 1,
+      "explanation": "Budgets and alerts are in Cost Management.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "cost"
+      ]
+    },
+    {
+      "id": "59b9fe0e-a6b4-4ec1-b474-00358df6bafa",
+      "domain": "Azure management and governance",
+      "objective": "Advisor",
+      "question": "Azure Advisor provides recommendations for:",
+      "choices": [
+        "Only cost",
+        "Only reliability",
+        "Cost, security, reliability, performance, and operational excellence",
+        "Only governance"
+      ],
+      "answer_index": 2,
+      "explanation": "Advisor spans multiple pillars.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "advisor"
+      ]
+    },
+    {
+      "id": "49bfbd1f-8829-4db0-9c55-8fce1e79368c",
+      "domain": "Azure management and governance",
+      "objective": "Reservations",
+      "question": "Which option reduces VM costs if you can commit to 1 or 3 years?",
+      "choices": [
+        "Savings Plans only",
+        "Reserved VM Instances",
+        "Free tier",
+        "Spot VMs"
+      ],
+      "answer_index": 1,
+      "explanation": "Reservations trade commitment for lower prices. Spot is cheapest but interruptible.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "pricing"
+      ]
+    },
+    {
+      "id": "a62c82a0-1bc6-42bf-8218-16de1e842987",
+      "domain": "Azure management and governance",
+      "objective": "Spot",
+      "question": "Spot VMs are best for:",
+      "choices": [
+        "Mission\u2011critical databases",
+        "Preemptible, interrupt\u2011tolerant workloads like batch jobs",
+        "Always\u2011on web apps with strict SLAs",
+        "Stateful apps needing persistence"
+      ],
+      "answer_index": 1,
+      "explanation": "Spot can be evicted, so use for flexible workloads.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "pricing",
+        "spot"
+      ]
+    },
+    {
+      "id": "5dc05606-0ad3-4514-a587-c51b9a7b6da7",
+      "domain": "Azure management and governance",
+      "objective": "Hybrid Benefit",
+      "question": "Azure Hybrid Benefit lets you save by reusing what?",
+      "choices": [
+        "Power supplies",
+        "On\u2011premises Windows Server or SQL Server licenses with Software Assurance",
+        "Network cables",
+        "Support plans"
+      ],
+      "answer_index": 1,
+      "explanation": "Reuse licenses to cut costs on eligible services.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "licensing"
+      ]
+    },
+    {
+      "id": "a71685f1-e0dc-4d04-bb56-979c24bef749",
+      "domain": "Azure management and governance",
+      "objective": "Logging vs metrics",
+      "question": "Which pairing is correct?",
+      "choices": [
+        "Metrics are free\u2011form text; Logs are numeric time series",
+        "Metrics are numeric time series; Logs are records queried with KQL",
+        "Both are text blobs",
+        "Neither supports alerts"
+      ],
+      "answer_index": 1,
+      "explanation": "Metrics are time\u2011series; Logs go to Log Analytics and use KQL.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "2c433183-5630-46d0-b333-b7f2c156713e",
+      "domain": "Azure management and governance",
+      "objective": "Monitor alerts",
+      "question": "You want to alert on CPU > 80% for 5 minutes. Use:",
+      "choices": [
+        "Activity Log Alert",
+        "Metric Alert",
+        "Log Alert only",
+        "Budget Alert"
+      ],
+      "answer_index": 1,
+      "explanation": "CPU is a metric; use Metric Alerts.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "monitoring",
+        "alerts"
+      ]
+    },
+    {
+      "id": "f2e51f04-b442-4b6f-8b51-5ba1b1d272a4",
+      "domain": "Azure management and governance",
+      "objective": "Application Insights",
+      "question": "Which capability is part of Application Insights?",
+      "choices": [
+        "Distributed tracing and Application Map",
+        "Managing RBAC roles",
+        "Network packet capture",
+        "Creating tenants"
+      ],
+      "answer_index": 0,
+      "explanation": "App Insights is for APM.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "app insights"
+      ]
+    },
+    {
+      "id": "41efb5a9-35a2-4720-bf5d-d6effd606866",
+      "domain": "Azure management and governance",
+      "objective": "Sentinel",
+      "question": "Microsoft Sentinel is best described as:",
+      "choices": [
+        "A patching service",
+        "A SIEM/SOAR for threat detection and response",
+        "A firewall product",
+        "A DNS hosting service"
+      ],
+      "answer_index": 1,
+      "explanation": "Sentinel is cloud\u2011native SIEM/SOAR on top of Log Analytics.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "security",
+        "siem"
+      ]
+    },
+    {
+      "id": "1c9d2291-22a7-43d1-9432-ec41dabff241",
+      "domain": "Azure management and governance",
+      "objective": "Defender for Cloud vs Sentinel",
+      "question": "Which statement is accurate?",
+      "choices": [
+        "Defender for Cloud is SIEM; Sentinel is posture management",
+        "Defender for Cloud gives posture and workload protection; Sentinel is SIEM/SOAR",
+        "Both are identical",
+        "Neither integrates with Log Analytics"
+      ],
+      "answer_index": 1,
+      "explanation": "Defender = posture + recommendations; Sentinel = SIEM.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "9d9be36c-ba89-4165-b30e-80e7371c1b2d",
+      "domain": "Azure management and governance",
+      "objective": "Locks",
+      "question": "Which lock level prevents deletion but allows changes?",
+      "choices": [
+        "ReadOnly",
+        "Delete",
+        "CanNotDelete",
+        "AdminOnly"
+      ],
+      "answer_index": 2,
+      "explanation": "CanNotDelete prevents delete operations but permits updates.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "locks"
+      ]
+    },
+    {
+      "id": "f6cc930a-2157-457a-a553-0ada708c6279",
+      "domain": "Azure management and governance",
+      "objective": "Tagging",
+      "question": "Primary reason to tag resources:",
+      "choices": [
+        "Increase performance",
+        "Enable fine\u2011grained billing, ownership, and automation",
+        "Encrypt data",
+        "Speed up DNS"
+      ],
+      "answer_index": 1,
+      "explanation": "Tags help with cost allocation and governance.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "tags"
+      ]
+    },
+    {
+      "id": "b4ecbc8e-e6f0-453b-9bf2-b6341e91e575",
+      "domain": "Azure management and governance",
+      "objective": "Compliance dashboard",
+      "question": "Where can you see compliance against frameworks in Azure?",
+      "choices": [
+        "Defender for Cloud regulatory compliance",
+        "Network Watcher",
+        "Azure DNS",
+        "Traffic Manager"
+      ],
+      "answer_index": 0,
+      "explanation": "Regulatory compliance is surfaced in Defender for Cloud.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "compliance"
+      ]
+    },
+    {
+      "id": "e1eb07a2-3b92-4116-9836-d472992f2ca2",
+      "domain": "Azure management and governance",
+      "objective": "Blueprints / templates",
+      "question": "Which is the modern recommended way to package IaC and policies?",
+      "choices": [
+        "Classic Blueprints only",
+        "Template Specs and Policy initiatives",
+        "Manual portal clicks",
+        "PowerPoint"
+      ],
+      "answer_index": 1,
+      "explanation": "Template Specs plus Policy initiatives replace many Blueprint scenarios.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "iac",
+        "policy"
+      ]
+    },
+    {
+      "id": "24405770-2fe6-4fdd-8538-4f943439290f",
+      "domain": "Azure management and governance",
+      "objective": "ARM vs Bicep",
+      "question": "Choose the accurate statement:",
+      "choices": [
+        "Bicep compiles down to ARM JSON",
+        "ARM compiles to Bicep",
+        "Bicep is runtime engine",
+        "ARM is only for networking"
+      ],
+      "answer_index": 0,
+      "explanation": "Bicep is a DSL that transpiles to ARM.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "bicep"
+      ]
+    },
+    {
+      "id": "42aa588f-b4e8-4516-bcbc-3cfe6c43686e",
+      "domain": "Azure architecture and services",
+      "objective": "AKS basics",
+      "question": "AKS control plane is:",
+      "choices": [
+        "Managed by you on VMs",
+        "Fully managed by Azure",
+        "A third\u2011party add\u2011on",
+        "Only available on on\u2011prem"
+      ],
+      "answer_index": 1,
+      "explanation": "Azure manages the masters; you manage nodes/workloads.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "aks"
+      ]
+    },
+    {
+      "id": "bdb029ae-a658-4d4d-b870-409718dcd15a",
+      "domain": "Azure architecture and services",
+      "objective": "App Service plans",
+      "question": "App Service scaling primarily depends on:",
+      "choices": [
+        "App code only",
+        "App Service plan SKU and size",
+        "DNS provider",
+        "RBAC role count"
+      ],
+      "answer_index": 1,
+      "explanation": "Plan SKU/size controls scale and features.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "app service"
+      ]
+    },
+    {
+      "id": "ce431c97-646f-470e-8b09-6b6a40dc5d20",
+      "domain": "Azure architecture and services",
+      "objective": "Functions triggers",
+      "question": "Which is a valid trigger for Azure Functions?",
+      "choices": [
+        "KQL query",
+        "HTTP request",
+        "Group Policy",
+        "ARP broadcast"
+      ],
+      "answer_index": 1,
+      "explanation": "Common triggers include HTTP, timer, queue, blob, Event Hub, Service Bus.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "functions"
+      ]
+    },
+    {
+      "id": "ef892a58-c953-4f46-8e5d-15c05eac49a1",
+      "domain": "Azure architecture and services",
+      "objective": "Cosmos DB APIs",
+      "question": "Which API is available in Cosmos DB?",
+      "choices": [
+        "Gremlin",
+        "TDS only",
+        "ODBC only",
+        "NFS"
+      ],
+      "answer_index": 0,
+      "explanation": "Cosmos supports Core (SQL), Mongo, Cassandra, Gremlin, Table.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "cosmos"
+      ]
+    },
+    {
+      "id": "414d7f01-09de-4bf2-bfc7-d59ca104b6db",
+      "domain": "Azure management and governance",
+      "objective": "Free services",
+      "question": "Which option is typically free or low\u2011cost and useful for small deployments?",
+      "choices": [
+        "Azure Advisor",
+        "ExpressRoute",
+        "Dedicated HSM",
+        "Azure VMware Solution"
+      ],
+      "answer_index": 0,
+      "explanation": "Advisor is free and provides recommendations.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "cost"
+      ]
+    },
+    {
+      "id": "6b7e948e-9f60-423f-8a5e-dc667371660f",
+      "domain": "Azure architecture and services",
+      "objective": "Bastion",
+      "question": "Azure Bastion provides:",
+      "choices": [
+        "Public RDP endpoints",
+        "Browser\u2011based RDP/SSH over SSL without public IPs on VMs",
+        "Load testing",
+        "Container registry"
+      ],
+      "answer_index": 1,
+      "explanation": "Bastion lets you RDP/SSH via the portal privately.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "security",
+        "bastion"
+      ]
+    },
+    {
+      "id": "6ecbcdbe-6730-43e2-9881-4cb1408de4ee",
+      "domain": "Azure architecture and services",
+      "objective": "NAT Gateway",
+      "question": "NAT Gateway is used for:",
+      "choices": [
+        "Inbound HTTP load balancing",
+        "Outbound internet connectivity for private subnets",
+        "DNS resolution",
+        "Encrypting traffic"
+      ],
+      "answer_index": 1,
+      "explanation": "Provides scalable outbound SNAT for subnets.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "network"
+      ]
+    },
+    {
+      "id": "63dfca5b-3f87-4dd6-964b-8ce591d26322",
+      "domain": "Azure management and governance",
+      "objective": "TCO and pricing tools",
+      "question": "Which tool estimates migrating costs from on\u2011prem to Azure over years?",
+      "choices": [
+        "TCO Calculator",
+        "Azure Migrate appliance",
+        "Network Watcher",
+        "Service Health"
+      ],
+      "answer_index": 0,
+      "explanation": "TCO Calculator compares on\u2011prem vs Azure costs.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "cost"
+      ]
+    },
+    {
+      "id": "a8f264cf-27ba-4b4e-b629-ad94228a8af3",
+      "domain": "Azure management and governance",
+      "objective": "Service Health vs Status",
+      "question": "Azure Service Health provides:",
+      "choices": [
+        "Global status only",
+        "Personalized outage and maintenance info for your resources",
+        "Billing invoices",
+        "Marketplace offers"
+      ],
+      "answer_index": 1,
+      "explanation": "Service Health is scoped to your subscriptions and regions.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "service health"
+      ]
+    },
+    {
+      "id": "6203bf3e-f7d8-4d83-a911-0312eed02017",
+      "domain": "Cloud concepts",
+      "objective": "Shared responsibility nuance",
+      "question": "In PaaS, who is responsible for securing application code and data?",
+      "choices": [
+        "Microsoft",
+        "Customer",
+        "Both are fully responsible",
+        "A third-party only"
+      ],
+      "answer_index": 1,
+      "explanation": "In PaaS Microsoft secures platform. Customer secures data and app code.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "shared responsibility",
+        "paas"
+      ]
+    },
+    {
+      "id": "2983c896-9131-431b-8237-7851a4dbdeb1",
+      "domain": "Cloud concepts",
+      "objective": "Economies of scale",
+      "question": "Which benefit comes from cloud provider economies of scale?",
+      "choices": [
+        "Higher per-unit costs",
+        "Lower per-unit costs passed to customers",
+        "More CapEx for customers",
+        "No price transparency"
+      ],
+      "answer_index": 1,
+      "explanation": "Providers buy at scale and pass savings to customers as lower unit costs.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "cost"
+      ]
+    },
+    {
+      "id": "f7d25379-a069-4df7-92b9-43ad2d560072",
+      "domain": "Cloud concepts",
+      "objective": "Elasticity vs agility",
+      "question": "Agility in cloud primarily refers to:",
+      "choices": [
+        "Automating DNS only",
+        "Ability to rapidly provision and iterate resources",
+        "Only vertical scaling",
+        "Replacing DR"
+      ],
+      "answer_index": 1,
+      "explanation": "Agility means speed of change and experimentation.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "agility"
+      ]
+    },
+    {
+      "id": "b0d43646-540c-48a4-b82e-e2cafead4353",
+      "domain": "Azure architecture and services",
+      "objective": "NSG priority",
+      "question": "In an NSG, which rule is evaluated first?",
+      "choices": [
+        "Lowest priority number",
+        "Highest priority number",
+        "Default rules only",
+        "Random order"
+      ],
+      "answer_index": 0,
+      "explanation": "Lower numbers have higher precedence. Default rules are lowest priority numbers.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "nsg",
+        "priority"
+      ]
+    },
+    {
+      "id": "ae7e1b15-e004-4c21-b1c2-ed70d62582e8",
+      "domain": "Azure architecture and services",
+      "objective": "NSG scope",
+      "question": "Where can you associate an NSG?",
+      "choices": [
+        "Only to VNet",
+        "Subnet and NIC",
+        "Only to resource group",
+        "Only to VM scale set"
+      ],
+      "answer_index": 1,
+      "explanation": "NSGs attach to subnets and NICs.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "nsg"
+      ]
+    },
+    {
+      "id": "18c76cd4-9d6b-4132-9a46-656553b5a514",
+      "domain": "Azure architecture and services",
+      "objective": "UDR basics",
+      "question": "User Defined Routes are used to:",
+      "choices": [
+        "Override system routes for custom next hops",
+        "Increase VM RAM",
+        "Change subscription owner",
+        "Enable MFA"
+      ],
+      "answer_index": 0,
+      "explanation": "UDRs send traffic to NVA or specific next hops.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "udr"
+      ]
+    },
+    {
+      "id": "07dde205-68e8-4717-8b38-8de3d4673a09",
+      "domain": "Azure architecture and services",
+      "objective": "VNet peering",
+      "question": "Which is true about VNet peering?",
+      "choices": [
+        "Traffic between peered VNets goes over the internet",
+        "Supports private IP connectivity with low latency",
+        "Requires VPN gateway only",
+        "Not supported across regions"
+      ],
+      "answer_index": 1,
+      "explanation": "Peering uses Microsoft backbone and private IPs. Global peering works across regions.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "peering"
+      ]
+    },
+    {
+      "id": "3017aa89-5cb5-42f1-bcc1-f663cd1f3412",
+      "domain": "Azure architecture and services",
+      "objective": "VNet-to-VNet VPN",
+      "question": "When would you choose VNet-to-VNet VPN instead of peering?",
+      "choices": [
+        "When you need encryption and gateway features",
+        "When you want lower latency than backbone",
+        "When you need public IP exposure",
+        "When you do not need any gateways"
+      ],
+      "answer_index": 0,
+      "explanation": "Gateway-based VNet-to-VNet provides IPsec encryption and classic VPN features.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "vpn"
+      ]
+    },
+    {
+      "id": "c814a19c-f948-4790-a8ef-92358ac3eaab",
+      "domain": "Azure architecture and services",
+      "objective": "NAT vs Load Balancer",
+      "question": "Which service provides outbound SNAT for private subnets at scale?",
+      "choices": [
+        "Azure Load Balancer",
+        "NAT Gateway",
+        "Application Gateway",
+        "Front Door"
+      ],
+      "answer_index": 1,
+      "explanation": "NAT Gateway is for outbound SNAT. Load Balancer is for inbound/outbound L4 traffic distribution.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "nat"
+      ]
+    },
+    {
+      "id": "6bd21c89-eea8-43d6-8317-e6afb1069a8b",
+      "domain": "Azure architecture and services",
+      "objective": "DNS public vs private",
+      "question": "Azure DNS public zones are for:",
+      "choices": [
+        "Internal VNet name resolution",
+        "Publishing records to the public internet",
+        "Blocking malware domains",
+        "Private endpoints only"
+      ],
+      "answer_index": 1,
+      "explanation": "Public zones host internet-facing DNS.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "dns"
+      ]
+    },
+    {
+      "id": "c3c4bc94-3541-4c1b-813d-ece26a665eb7",
+      "domain": "Azure architecture and services",
+      "objective": "Access tiers",
+      "question": "Which Blob tier is best for infrequently accessed data with millisecond retrieval?",
+      "choices": [
+        "Hot",
+        "Cool",
+        "Archive",
+        "Premium only"
+      ],
+      "answer_index": 1,
+      "explanation": "Cool is for infrequent access with lower storage cost than Hot and similar retrieval time.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "blob",
+        "tiers"
+      ]
+    },
+    {
+      "id": "0521b752-d94a-42b7-a1ff-b26c5f185b97",
+      "domain": "Azure architecture and services",
+      "objective": "Archive",
+      "question": "Which statement about Archive tier is correct?",
+      "choices": [
+        "Data is instantly available",
+        "Data must be rehydrated before reading",
+        "It supports SMB mounts",
+        "It is for OS disks"
+      ],
+      "answer_index": 1,
+      "explanation": "Archive requires rehydration and is for long-term cold data.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "archive"
+      ]
+    },
+    {
+      "id": "64289aa0-80a3-461f-99d9-d6ea289f17bb",
+      "domain": "Azure architecture and services",
+      "objective": "Lifecycle mgmt",
+      "question": "What can Blob lifecycle management do?",
+      "choices": [
+        "Automatically move blobs between tiers based on rules",
+        "Rotate SSH keys",
+        "Create tenants",
+        "Install patches in VMs"
+      ],
+      "answer_index": 0,
+      "explanation": "Lifecycle policies transition or delete data based on age or filters.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "lifecycle"
+      ]
+    },
+    {
+      "id": "6b10227b-7c7e-4a9f-a634-e227de41010d",
+      "domain": "Azure architecture and services",
+      "objective": "Soft delete",
+      "question": "Soft delete in Blob Storage allows you to:",
+      "choices": [
+        "Block uploads",
+        "Recover deleted objects within retention window",
+        "Change account type",
+        "Improve IOPS"
+      ],
+      "answer_index": 1,
+      "explanation": "Soft delete protects against accidental deletes.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "soft delete"
+      ]
+    },
+    {
+      "id": "5c25e09e-423b-4640-acfb-565ed76cef8b",
+      "domain": "Azure architecture and services",
+      "objective": "Immutability",
+      "question": "Blob immutability policies are used to:",
+      "choices": [
+        "Allow edits by any owner",
+        "Prevent changes and deletes for a set period",
+        "Speed up CDN",
+        "Enable SMB access"
+      ],
+      "answer_index": 1,
+      "explanation": "Immutability helps meet compliance by making data WORM.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "immutability"
+      ]
+    },
+    {
+      "id": "25fd9366-cbff-4d3b-9b0a-2407ccac7036",
+      "domain": "Azure architecture and services",
+      "objective": "VM scale sets",
+      "question": "VM Scale Sets primarily provide:",
+      "choices": [
+        "Manual VM management",
+        "Auto-scaling sets of identical VMs",
+        "SQL PaaS",
+        "Serverless jobs"
+      ],
+      "answer_index": 1,
+      "explanation": "Scale sets let you scale a fleet of VMs automatically.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "vmss"
+      ]
+    },
+    {
+      "id": "5b2a8a96-26ca-4ca8-9650-62721b436d06",
+      "domain": "Azure architecture and services",
+      "objective": "App Service features",
+      "question": "Which feature is native to App Service?",
+      "choices": [
+        "Built-in staging slots (on certain SKUs)",
+        "Full kernel access",
+        "Custom hypervisor settings",
+        "Direct router configs"
+      ],
+      "answer_index": 0,
+      "explanation": "App Service offers deployment slots for zero-downtime swaps on supported SKUs.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "app service"
+      ]
+    },
+    {
+      "id": "10177519-9550-4163-9c61-b0854c39ff93",
+      "domain": "Azure architecture and services",
+      "objective": "Container Registry",
+      "question": "What is Azure Container Registry used for?",
+      "choices": [
+        "Managing Kubernetes nodes",
+        "Hosting private container images",
+        "Providing SIEM",
+        "Serving static websites only"
+      ],
+      "answer_index": 1,
+      "explanation": "ACR stores private container images and artifacts.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "acr"
+      ]
+    },
+    {
+      "id": "84d7b73b-ef1a-4f74-b68a-d016d0c00c3d",
+      "domain": "Azure architecture and services",
+      "objective": "Cosmos consistency set",
+      "question": "Which is NOT a Cosmos DB consistency level?",
+      "choices": [
+        "Consistent Prefix",
+        "Session",
+        "Bounded Staleness",
+        "At-most-once"
+      ],
+      "answer_index": 3,
+      "explanation": "Valid levels are Strong, Bounded Staleness, Session, Consistent Prefix, Eventual.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "cosmos"
+      ]
+    },
+    {
+      "id": "e99896fb-ee43-4d15-bccb-7d7a69df5d4b",
+      "domain": "Azure architecture and services",
+      "objective": "Azure SQL options",
+      "question": "Which option is PaaS for relational workloads with built-in HA?",
+      "choices": [
+        "SQL Server on VM",
+        "Azure SQL Database",
+        "MySQL on VM",
+        "Local SQL Express"
+      ],
+      "answer_index": 1,
+      "explanation": "Azure SQL Database is fully managed PaaS.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "sql"
+      ]
+    },
+    {
+      "id": "8d4b637f-ed2e-45a4-a51b-6e7c8c92de5a",
+      "domain": "Azure architecture and services",
+      "objective": "Synapse basics",
+      "question": "Azure Synapse Analytics primarily provides:",
+      "choices": [
+        "On-device ML",
+        "Unified analytics with data warehousing and big data processing",
+        "IoT device firmware",
+        "DNS management"
+      ],
+      "answer_index": 1,
+      "explanation": "Synapse brings DW, Spark, pipelines together.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "synapse"
+      ]
+    },
+    {
+      "id": "85b5e182-1d1f-451e-b010-9f8953cf1774",
+      "domain": "Azure management and governance",
+      "objective": "Identity types",
+      "question": "Which is a managed identity use case?",
+      "choices": [
+        "Hardcode secrets in code",
+        "Grant a resource an identity to access other Azure resources securely",
+        "Create local admin users on VMs",
+        "Replace all user accounts"
+      ],
+      "answer_index": 1,
+      "explanation": "Managed identities let Azure resources get tokens to call other services.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "managed identity"
+      ]
+    },
+    {
+      "id": "7ce749ce-cb9d-4603-9a2a-8629d114f11b",
+      "domain": "Azure management and governance",
+      "objective": "Service principals",
+      "question": "Service principals are:",
+      "choices": [
+        "Azure DNS records",
+        "Security identities used by apps and services",
+        "Human user accounts",
+        "Network interfaces"
+      ],
+      "answer_index": 1,
+      "explanation": "Service principals represent apps in Entra ID.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "service principal"
+      ]
+    },
+    {
+      "id": "c19bf53e-0cb9-48ca-8bfe-27c24491b693",
+      "domain": "Azure management and governance",
+      "objective": "Conditional Access",
+      "question": "Conditional Access can enforce:",
+      "choices": [
+        "CPU limits",
+        "Require MFA when risk is high or outside trusted locations",
+        "Change VM size automatically",
+        "Rotate NSG rules hourly"
+      ],
+      "answer_index": 1,
+      "explanation": "CA evaluates conditions then enforces controls like MFA.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "conditional access"
+      ]
+    },
+    {
+      "id": "8d36fa7d-b2ad-4d3a-9dde-7c2ec0e42728",
+      "domain": "Azure management and governance",
+      "objective": "PIM",
+      "question": "Privileged Identity Management provides:",
+      "choices": [
+        "Always-on admin roles",
+        "Just-in-time role activation with approval and auditing",
+        "DNSSEC",
+        "Storage tiering"
+      ],
+      "answer_index": 1,
+      "explanation": "PIM reduces standing privilege exposure.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "pim"
+      ]
+    },
+    {
+      "id": "2b1f7c21-973a-4d8e-9f0b-8042d2920a39",
+      "domain": "Azure management and governance",
+      "objective": "Policy initiative",
+      "question": "An Azure Policy initiative is:",
+      "choices": [
+        "Single policy only",
+        "A collection of policy definitions managed as one set",
+        "A billing account",
+        "A Log Analytics workspace"
+      ],
+      "answer_index": 1,
+      "explanation": "Initiatives group policies for easier assignment.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "policy"
+      ]
+    },
+    {
+      "id": "f73adea3-f177-43bf-a88a-d1c827c66df2",
+      "domain": "Azure management and governance",
+      "objective": "Deny vs Audit",
+      "question": "Which effect blocks noncompliant resource creation?",
+      "choices": [
+        "Audit",
+        "Deny",
+        "Append",
+        "DeployIfNotExists only"
+      ],
+      "answer_index": 1,
+      "explanation": "Deny prevents creation. Audit records but allows.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "policy"
+      ]
+    },
+    {
+      "id": "716c12c7-da6f-437a-af5a-eefcdf491ff3",
+      "domain": "Azure management and governance",
+      "objective": "Locks behavior",
+      "question": "ReadOnly lock allows:",
+      "choices": [
+        "Delete operations",
+        "Write operations",
+        "Read operations only",
+        "Nothing at all"
+      ],
+      "answer_index": 2,
+      "explanation": "ReadOnly lock prevents writes and deletes.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "locks"
+      ]
+    },
+    {
+      "id": "5d67b1fb-7da5-408d-b0ae-e73e7e040884",
+      "domain": "Azure management and governance",
+      "objective": "Pricing tools",
+      "question": "Which tool helps estimate monthly service costs before deployment?",
+      "choices": [
+        "Azure Pricing Calculator",
+        "TCO Calculator",
+        "Network Watcher",
+        "Advisor only"
+      ],
+      "answer_index": 0,
+      "explanation": "Pricing Calculator estimates service costs. TCO compares on\u2011prem vs Azure.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "pricing"
+      ]
+    },
+    {
+      "id": "2c1b5343-dd11-4428-ab1c-bda1a72564da",
+      "domain": "Azure management and governance",
+      "objective": "Cost saving options",
+      "question": "Which mix is valid for reducing compute costs?",
+      "choices": [
+        "Reserved instances, Spot VMs, right-sizing",
+        "Always choose premium disks",
+        "Disable autoscale",
+        "Use larger SKUs than needed"
+      ],
+      "answer_index": 0,
+      "explanation": "Reservations, Spot, and right-sizing are common savings tactics.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "cost"
+      ]
+    },
+    {
+      "id": "9d92f4d8-192a-436a-b0d2-ae47932de5d3",
+      "domain": "Azure management and governance",
+      "objective": "Resource tagging",
+      "question": "Which tag set is most useful for chargeback?",
+      "choices": [
+        "env, owner, costCenter",
+        "dns, mac, mtu",
+        "serial, rack, u-height",
+        "brand, theme"
+      ],
+      "answer_index": 0,
+      "explanation": "Tags like env, owner, costCenter help allocate costs.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "tags"
+      ]
+    },
+    {
+      "id": "1e66dc0d-2046-4e6d-9a68-dc3d8e972864",
+      "domain": "Azure management and governance",
+      "objective": "Activity log",
+      "question": "Azure Activity Log records:",
+      "choices": [
+        "Guest OS events inside VMs",
+        "Control-plane operations on resources",
+        "All packet flows",
+        "User passwords"
+      ],
+      "answer_index": 1,
+      "explanation": "Activity Log shows create, update, delete operations at the subscription level.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "activity log"
+      ]
+    },
+    {
+      "id": "4e533e53-28c9-475e-9c40-dc250cbf9b24",
+      "domain": "Azure management and governance",
+      "objective": "Diagnostic settings",
+      "question": "To send resource logs to Log Analytics you must configure:",
+      "choices": [
+        "NSG flow logs only",
+        "Diagnostic settings on the resource",
+        "A VM extension",
+        "Private endpoint"
+      ],
+      "answer_index": 1,
+      "explanation": "Diagnostic settings route logs/metrics to destinations.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "logs"
+      ]
+    },
+    {
+      "id": "ffbf9c69-c5f1-4539-8c7c-8a1c52716559",
+      "domain": "Azure management and governance",
+      "objective": "Log Analytics",
+      "question": "KQL queries run against data in:",
+      "choices": [
+        "Azure Monitor Metrics",
+        "Log Analytics workspaces",
+        "Network Watcher only",
+        "Azure DNS"
+      ],
+      "answer_index": 1,
+      "explanation": "Logs are stored in Log Analytics and queried with KQL.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "kql",
+        "log analytics"
+      ]
+    },
+    {
+      "id": "a58b3dcb-894b-48bb-a324-66899061e4b7",
+      "domain": "Azure management and governance",
+      "objective": "Service Health vs Status",
+      "question": "Azure Status page shows global outages. Azure Service Health shows:",
+      "choices": [
+        "Marketing events",
+        "Personalized issues and maintenance impacting your resources",
+        "Only security alerts",
+        "Only billing invoices"
+      ],
+      "answer_index": 1,
+      "explanation": "Service Health is scoped to your subscriptions and regions.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "service health"
+      ]
+    },
+    {
+      "id": "436ced54-88ab-4c0c-a017-d69666e9dc0b",
+      "domain": "Azure management and governance",
+      "objective": "Management hierarchy",
+      "question": "Correct order from top to bottom:",
+      "choices": [
+        "Subscription > Management group > Resource group > Resource",
+        "Management group > Subscription > Resource group > Resource",
+        "Tenant > Resource group > Subscription > Resource",
+        "Resource > Resource group > Subscription > Tenant"
+      ],
+      "answer_index": 1,
+      "explanation": "Management groups contain subscriptions, which contain RGs, which contain resources.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "hierarchy"
+      ]
+    },
+    {
+      "id": "b53c49ec-08c3-49c2-a79e-acddd8cbd3d5",
+      "domain": "Azure management and governance",
+      "objective": "Move resources",
+      "question": "Which statement is true about moving resources?",
+      "choices": [
+        "All resources can move between regions",
+        "Some resources can be moved between RGs or subscriptions with constraints",
+        "Moves always cause downtime",
+        "Policy is removed on move"
+      ],
+      "answer_index": 1,
+      "explanation": "Moves are supported for many resources across RGs/subs with rules. Region moves often require redeploy.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "move"
+      ]
+    },
+    {
+      "id": "1ae3b52f-9b0e-4055-9f70-c71d39b2d5d5",
+      "domain": "Azure architecture and services",
+      "objective": "WAF options",
+      "question": "Which services provide WAF capability?",
+      "choices": [
+        "Application Gateway and Front Door (selected tiers)",
+        "Load Balancer Basic only",
+        "Traffic Manager",
+        "Azure DNS"
+      ],
+      "answer_index": 0,
+      "explanation": "WAF is available with App Gateway WAF SKU and Front Door tiers.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "waf"
+      ]
+    },
+    {
+      "id": "ea0aa047-9c18-4b7f-b64b-d15cbff27911",
+      "domain": "Azure management and governance",
+      "objective": "Defender plans",
+      "question": "Microsoft Defender for Cloud can provide recommendations across which areas?",
+      "choices": [
+        "Compute, data, networking, identity",
+        "Only DNS",
+        "Only pricing",
+        "Only containers"
+      ],
+      "answer_index": 0,
+      "explanation": "Defender for Cloud covers multiple resource types.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "defender"
+      ]
+    },
+    {
+      "id": "565d2004-ef91-4e33-9127-8c5d93e4e8bf",
+      "domain": "Azure management and governance",
+      "objective": "SLA math",
+      "question": "An app requires 99.95% SLA. What is the approximate max yearly downtime?",
+      "choices": [
+        "~4 hours 23 minutes",
+        "~8 hours",
+        "~52 minutes",
+        "~26 minutes"
+      ],
+      "answer_index": 0,
+      "explanation": "99.95% equals about 4.38 hours per year.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "sla"
+      ]
+    },
+    {
+      "id": "f6140028-9596-4d9f-932c-54fe5177e525",
+      "domain": "Azure management and governance",
+      "objective": "Composite SLA",
+      "question": "Combining independent services multiplies SLA percentages. Two 99.9% dependencies yields roughly:",
+      "choices": [
+        "99.9%",
+        "99.8%",
+        "99.99%",
+        "100%"
+      ],
+      "answer_index": 1,
+      "explanation": "0.999 \u00d7 0.999 \u2248 0.998 or 99.8%.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "sla"
+      ]
+    },
+    {
+      "id": "72517984-dfec-4cc0-8625-2fc0e8f6ef67",
+      "domain": "Azure architecture and services",
+      "objective": "Event Grid",
+      "question": "Event Grid is used for:",
+      "choices": [
+        "Command and control of VMs",
+        "Reactive event routing between publishers and subscribers",
+        "DNSSEC",
+        "VPN tunnels"
+      ],
+      "answer_index": 1,
+      "explanation": "Event Grid routes lightweight events between services.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "event grid"
+      ]
+    },
+    {
+      "id": "7b468800-a828-4f12-9a8f-cbd197623f95",
+      "domain": "Azure architecture and services",
+      "objective": "Notification Hubs",
+      "question": "Notification Hubs are for:",
+      "choices": [
+        "Pushing mobile notifications at scale",
+        "Hosting APIs",
+        "Firewalling traffic",
+        "File shares"
+      ],
+      "answer_index": 0,
+      "explanation": "Notification Hubs push to iOS/Android/Windows devices.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "notification"
+      ]
+    },
+    {
+      "id": "ec9b76f2-1610-48d2-9d56-f1ea971321c0",
+      "domain": "Azure architecture and services",
+      "objective": "API Management",
+      "question": "Azure API Management provides:",
+      "choices": [
+        "Container orchestration",
+        "API gateway, throttling, transforms, developer portal",
+        "VM backup",
+        "MFA"
+      ],
+      "answer_index": 1,
+      "explanation": "APIM exposes APIs securely with policies and dev portal.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "apim"
+      ]
+    },
+    {
+      "id": "23b8b846-80af-482a-b65f-5f9b553aa56d",
+      "domain": "Azure management and governance",
+      "objective": "MFA basics",
+      "question": "MFA primarily protects against:",
+      "choices": [
+        "Layer 2 attacks",
+        "Credential theft and unauthorized logins",
+        "Disk failures",
+        "DNS outages"
+      ],
+      "answer_index": 1,
+      "explanation": "MFA adds a second factor to reduce account compromise risk.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "mfa"
+      ]
+    },
+    {
+      "id": "5be2a4a5-185b-4ae3-92ef-c7d80e212d2d",
+      "domain": "Azure management and governance",
+      "objective": "SSPR",
+      "question": "Self-service password reset (SSPR) allows users to:",
+      "choices": [
+        "Reset Azure subscription owners",
+        "Reset their own passwords with configured methods",
+        "Change NSG rules",
+        "Change VM sizes"
+      ],
+      "answer_index": 1,
+      "explanation": "SSPR reduces helpdesk load and improves security.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "sspr"
+      ]
+    },
+    {
+      "id": "dbe922e7-40b7-45f7-ab65-87d02533f23c",
+      "domain": "Azure management and governance",
+      "objective": "Support plans",
+      "question": "Which plan provides fastest technical response times for critical issues?",
+      "choices": [
+        "Basic",
+        "Developer",
+        "Standard",
+        "Professional Direct"
+      ],
+      "answer_index": 3,
+      "explanation": "ProDirect has the fastest response and advisory benefits.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "support"
+      ]
+    },
+    {
+      "id": "4a964ab6-ea99-45fc-9b41-6baa7256dc64",
+      "domain": "Azure management and governance",
+      "objective": "Quotas",
+      "question": "Subscription quotas are:",
+      "choices": [
+        "Unlimited by default",
+        "Limits that can often be increased via support request",
+        "Charges for premium SKUs",
+        "Network-only settings"
+      ],
+      "answer_index": 1,
+      "explanation": "Many quotas can be raised. Plan capacity accordingly.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "quotas"
+      ]
+    },
+    {
+      "id": "87a79268-b01a-4331-bcc8-556ef9f96c37",
+      "domain": "Azure management and governance",
+      "objective": "Encryption at rest",
+      "question": "By default, Azure Storage data at rest is:",
+      "choices": [
+        "Unencrypted",
+        "Encrypted with Microsoft-managed keys",
+        "Encrypted only with customer keys",
+        "Signed but not encrypted"
+      ],
+      "answer_index": 1,
+      "explanation": "SSE with platform-managed keys is on by default.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "encryption"
+      ]
+    },
+    {
+      "id": "9cc6dac3-c258-427a-9871-a822701ddf36",
+      "domain": "Azure management and governance",
+      "objective": "Disk encryption",
+      "question": "Which option provides OS disk encryption for VMs with centralized key control?",
+      "choices": [
+        "Azure Disk Encryption with Key Vault",
+        "NSG rules",
+        "Front Door",
+        "Bastion"
+      ],
+      "answer_index": 0,
+      "explanation": "ADE uses BitLocker or DM-Crypt with keys in Key Vault.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "encryption"
+      ]
+    },
+    {
+      "id": "80c32bb7-515f-4c56-b3c9-cf248d613f21",
+      "domain": "Azure management and governance",
+      "objective": "ASR vs Backup",
+      "question": "Azure Site Recovery primarily provides:",
+      "choices": [
+        "File-level restore",
+        "Replication and orchestrated failover for DR",
+        "Pricing analytics",
+        "DNS failover"
+      ],
+      "answer_index": 1,
+      "explanation": "ASR is for DR replication and failover. Azure Backup is for backups.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "dr"
+      ]
+    },
+    {
+      "id": "422f110b-efe5-4003-b33f-190320f7e1dc",
+      "domain": "Azure management and governance",
+      "objective": "Backup vault",
+      "question": "Azure Backup stores recovery points in:",
+      "choices": [
+        "Recovery Services vaults",
+        "Resource groups only",
+        "Key Vault",
+        "Log Analytics"
+      ],
+      "answer_index": 0,
+      "explanation": "RS vaults hold backup data and policies.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "backup"
+      ]
+    },
+    {
+      "id": "9eac848f-1246-4e7d-9eeb-149ef3bab225",
+      "domain": "Azure architecture and services",
+      "objective": "Logic Apps vs Functions",
+      "question": "Logic Apps are best described as:",
+      "choices": [
+        "Code-first serverless functions",
+        "Low-code workflow integration with connectors",
+        "Only for on-prem",
+        "A VM feature"
+      ],
+      "answer_index": 1,
+      "explanation": "Logic Apps enable workflow automation with many connectors.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "logic apps"
+      ]
+    },
+    {
+      "id": "827dfe46-83e7-4c28-b340-30f8f9231afc",
+      "domain": "Azure management and governance",
+      "objective": "Resource Graph",
+      "question": "Azure Resource Graph helps you:",
+      "choices": [
+        "Compile ARM templates",
+        "Query at scale across subscriptions for inventory and governance",
+        "Create VMs",
+        "Configure DNS"
+      ],
+      "answer_index": 1,
+      "explanation": "Resource Graph is for at-scale inventory with a Kusto-like query language.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "resource graph"
+      ]
+    },
+    {
+      "id": "3ea45a57-d1b7-4eb5-a75b-0045c306ec84",
+      "domain": "Azure management and governance",
+      "objective": "Blueprints note",
+      "question": "Modern recommendation for packaging policies and templates is:",
+      "choices": [
+        "Azure Blueprints classic",
+        "Template Specs + Policy initiatives",
+        "Only manual portal",
+        "Excel macros"
+      ],
+      "answer_index": 1,
+      "explanation": "Template Specs and Policy initiatives supersede many Blueprint scenarios.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "templates"
+      ]
+    },
+    {
+      "id": "feb1dc75-8f67-459d-97a4-e5ad06f37b90",
+      "domain": "Azure architecture and services",
+      "objective": "DDoS",
+      "question": "Which protects against volumetric DDoS at the network edge?",
+      "choices": [
+        "NSG",
+        "DDoS Protection Standard",
+        "Application Gateway only",
+        "Private Endpoint"
+      ],
+      "answer_index": 1,
+      "explanation": "DDoS Standard provides enhanced protection and telemetry.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "ddos"
+      ]
+    },
+    {
+      "id": "15c009c1-bf7f-473c-af6a-8c227737c141",
+      "domain": "Azure architecture and services",
+      "objective": "Network Watcher",
+      "question": "NSG flow logs are part of:",
+      "choices": [
+        "Network Watcher",
+        "Azure Monitor Metrics",
+        "Front Door",
+        "Traffic Manager"
+      ],
+      "answer_index": 0,
+      "explanation": "Network Watcher provides NSG flow logs and diagnostics.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "network watcher"
+      ]
+    },
+    {
+      "id": "16981b99-9209-4f70-b1d7-51aef30921bf",
+      "domain": "Azure architecture and services",
+      "objective": "Storage account kind",
+      "question": "For modern features like tiering and Data Lake Gen2, choose:",
+      "choices": [
+        "General-purpose v2",
+        "BlobStorage (classic)",
+        "General-purpose v1",
+        "FileStorage classic"
+      ],
+      "answer_index": 0,
+      "explanation": "GPv2 supports most new features and tiers.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "storage account"
+      ]
+    },
+    {
+      "id": "31fdc0a2-bcb8-4b89-a0ca-c4a04289935f",
+      "domain": "Azure architecture and services",
+      "objective": "Data Lake Gen2",
+      "question": "Primary benefit of enabling hierarchical namespace on Blob (ADLS Gen2) is:",
+      "choices": [
+        "Faster VM boot",
+        "POSIX-like directory and ACL semantics for big data",
+        "Cheaper archive",
+        "Automatic CDN"
+      ],
+      "answer_index": 1,
+      "explanation": "ADLS Gen2 adds hierarchical namespace and ACLs for analytics workloads.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "adls"
+      ]
+    },
+    {
+      "id": "bcae600e-b53c-4382-a94a-35401faca19f",
+      "domain": "Azure architecture and services",
+      "objective": "Front Door vs CDN",
+      "question": "Front Door primarily provides:",
+      "choices": [
+        "Global anycast reverse proxy with WAF and routing",
+        "Only static file caching",
+        "VPN termination",
+        "BGP peering"
+      ],
+      "answer_index": 0,
+      "explanation": "Front Door is a global HTTP reverse proxy with acceleration and WAF.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "front door"
+      ]
+    },
+    {
+      "id": "6a9ebeec-5a00-40e3-ab5e-9ece8049234f",
+      "domain": "Azure management and governance",
+      "objective": "Advisor score",
+      "question": "Advisor score helps track:",
+      "choices": [
+        "Compliance fines",
+        "Overall posture across cost, security, reliability, performance, and ops excellence",
+        "Exact monthly invoice",
+        "Ticket SLAs"
+      ],
+      "answer_index": 1,
+      "explanation": "Advisor score summarizes recommendations across pillars.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "advisor"
+      ]
+    },
+    {
+      "id": "6bbd7079-04d6-4442-90a6-5dd812e126f5",
+      "domain": "Azure management and governance",
+      "objective": "Budgets alerts action",
+      "question": "When a budget threshold is reached, you can:",
+      "choices": [
+        "Automatically delete resources",
+        "Trigger alerts and optionally run automation via Action Groups",
+        "Change tenant name",
+        "Force reboot of VMs"
+      ],
+      "answer_index": 1,
+      "explanation": "Budgets integrate with Action Groups for notifications or automation.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "budget"
+      ]
+    },
+    {
+      "id": "6289d960-41f9-40db-b44b-9921578b7e54",
+      "domain": "Azure architecture and services",
+      "objective": "AKS ingress",
+      "question": "To expose HTTP apps on AKS with WAF and L7 routing without DIY NGINX, you can use:",
+      "choices": [
+        "Application Gateway Ingress Controller",
+        "DNS zone transfers",
+        "NAT Gateway",
+        "DDoS Basic only"
+      ],
+      "answer_index": 0,
+      "explanation": "AGIC integrates App Gateway with AKS for L7 ingress.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "aks",
+        "ingress"
+      ]
+    },
+    {
+      "id": "6948c664-ec3f-448e-b632-921f3d976a27",
+      "domain": "Azure architecture and services",
+      "objective": "Storage SAS",
+      "question": "A shared access signature (SAS) grants:",
+      "choices": [
+        "Permanent admin access",
+        "Time-limited, scoped access to storage resources",
+        "Only blob listing",
+        "Only read access forever"
+      ],
+      "answer_index": 1,
+      "explanation": "SAS provides scoped, time-bound access tokens.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "sas"
+      ]
+    },
+    {
+      "id": "ae75ec29-4ab7-4ce9-86f2-15fdb910f3a9",
+      "domain": "Azure architecture and services",
+      "objective": "Queues vs Service Bus",
+      "question": "Choose Service Bus over Queue Storage when you need:",
+      "choices": [
+        "Simple at-least-once FIFO",
+        "Advanced messaging (sessions, topics, transactions)",
+        "Only CDN",
+        "Only email alerts"
+      ],
+      "answer_index": 1,
+      "explanation": "Service Bus adds rich messaging features beyond Queue Storage.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "service bus"
+      ]
+    },
+    {
+      "id": "af639bb7-0180-4b61-b00f-56359785cc4b",
+      "domain": "Azure management and governance",
+      "objective": "Resource locks scope",
+      "question": "A lock on a resource group affects:",
+      "choices": [
+        "Only the RG object, not resources",
+        "The RG and all resources inside it",
+        "Subscriptions only",
+        "Nothing"
+      ],
+      "answer_index": 1,
+      "explanation": "Locks inherit to child resources.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "locks"
+      ]
+    },
+    {
+      "id": "5394eec1-2c5d-46d6-89c5-e01f22f102c5",
+      "domain": "Azure management and governance",
+      "objective": "Access reviews",
+      "question": "Access reviews in Entra ID help:",
+      "choices": [
+        "Optimize NSG rules",
+        "Regularly validate user and guest access to groups and apps",
+        "Patch OS",
+        "Encrypt disks"
+      ],
+      "answer_index": 1,
+      "explanation": "Access reviews support periodic attestation for least privilege.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "identity"
+      ]
+    },
+    {
+      "id": "9df8ed65-0c84-4849-906a-5996ecb7ba9c",
+      "domain": "Azure architecture and services",
+      "objective": "Private Link vs Service Endpoints",
+      "question": "Private Endpoint provides:",
+      "choices": [
+        "Public IP to service",
+        "Private IP in your VNet for the service",
+        "Only DNS delegation",
+        "BGP peering"
+      ],
+      "answer_index": 1,
+      "explanation": "Private Endpoint maps the service to a NIC with private IP.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "private link"
+      ]
+    },
+    {
+      "id": "e1fba465-cbd7-4208-be1e-c8e4b9922b0b",
+      "domain": "Azure management and governance",
+      "objective": "CAF",
+      "question": "Cloud Adoption Framework provides:",
+      "choices": [
+        "Only billing tips",
+        "Guidance and best practices for planning, readiness, governance, and management",
+        "Device drivers",
+        "Kernel updates"
+      ],
+      "answer_index": 1,
+      "explanation": "CAF gives structured guidance across the cloud journey.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "caf"
+      ]
+    },
+    {
+      "id": "6dd70ba3-134c-4ea4-8b78-144012247cf1",
+      "domain": "Azure architecture and services",
+      "objective": "Bicep registries",
+      "question": "Bicep modules can be shared via:",
+      "choices": [
+        "ARM policies only",
+        "Bicep/Template Specs or registries",
+        "NSG rules",
+        "Front Door rules only"
+      ],
+      "answer_index": 1,
+      "explanation": "Modules can be stored in registries or Template Specs.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "medium",
+      "tags": [
+        "bicep"
+      ]
+    },
+    {
+      "id": "7e709e17-ff1b-4bc5-910f-ff1d292b6cc5",
+      "domain": "Azure architecture and services",
+      "objective": "REST endpoints",
+      "question": "Most Azure services expose a control-plane API via:",
+      "choices": [
+        "SOAP only",
+        "Azure Resource Manager (ARM) REST API",
+        "Only CLI",
+        "Only PowerShell"
+      ],
+      "answer_index": 1,
+      "explanation": "ARM provides a unified control-plane REST API.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "arm"
+      ]
+    },
+    {
+      "id": "b8f2e848-227b-403e-bd26-525602ba0146",
+      "domain": "Azure management and governance",
+      "objective": "Resource naming",
+      "question": "Why standardize naming conventions?",
+      "choices": [
+        "Aesthetics only",
+        "Consistency for discovery, automation, and governance",
+        "To pass audits only",
+        "To speed up DNS only"
+      ],
+      "answer_index": 1,
+      "explanation": "Consistent names improve ops and automation.",
+      "refs": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
+      ],
+      "difficulty": "easy",
+      "tags": [
+        "naming"
+      ]
+    }
+  ]
+}

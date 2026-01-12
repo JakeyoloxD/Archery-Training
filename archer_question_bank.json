@@ -1,0 +1,1435 @@
+{
+  "meta": {
+    "name": "Archer Associate Exam Question Bank",
+    "version": "1.0.0",
+    "generated_at_utc": "2026-01-08T02:58:43Z",
+    "source": "Archer Associate Exam CSV files",
+    "domains": [
+      "Archer Platform"
+    ]
+  },
+  "schema": {
+    "id": "string-uuid",
+    "domain": "string",
+    "objective": "string",
+    "question": "string",
+    "choices": [
+      "string",
+      "..."
+    ],
+    "answer_index": "int",
+    "explanation": "string",
+    "refs": [
+      "url",
+      "..."
+    ],
+    "difficulty": "easy|medium|hard",
+    "tags": [
+      "string",
+      "..."
+    ]
+  },
+  "questions": [
+    {
+      "id": "d27e693c-8400-4d4e-9f02-48d1a0cb865f",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Which of the following options will save edits made to a record?",
+      "choices": [
+        "Export",
+        "Deploy",
+        "View",
+        "Save"
+      ],
+      "answer_index": 3,
+      "explanation": "The correct answer is: Save",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "365ca807-7225-426c-8b08-bb0f18459051",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "How would a user return to their default homepage/default workspace?",
+      "choices": [
+        "By clicking on the image in the top left corner",
+        "Through the main menu icon in the left panel",
+        "By clicking their user menu on the top right corner",
+        "By refreshing the entire browser page"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: By clicking on the image in the top left corner",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "1e485ab5-9b54-40c4-b69d-6c86c56daea4",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Data publications allow a user to extract data from Archer and load it to:",
+      "choices": [
+        "An external database",
+        "An external content server",
+        "A zip file",
+        "An RSS Feed"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: An external database",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "e2123ef5-956f-4277-8cbe-add94b6d6b07",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "An iView or Widget can be used to display which of the following?",
+      "choices": [
+        "Links",
+        "Embedded external content",
+        "Charts",
+        "Any of these"
+      ],
+      "answer_index": 3,
+      "explanation": "The correct answer is: Any of these",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "8e622827-1fed-4d30-9731-dbafe788fd1e",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Ruth noticed that after updating a record and closing it, the new information wasn't in the records when she opened it again. This is because:",
+      "choices": [
+        "She did not select Save",
+        "She did not have permission to edit that record",
+        "She did not select apply",
+        "She did not select Submit Record to Workflow",
+        "Reports"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: She did not select Save",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "94d6d0b0-642a-4d4f-8a52-991a72c10bda",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "What is the focus of the Third Party Management solution area in Archer?",
+      "choices": [
+        "Managing audit trails for external partners",
+        "Managing supplier relationships and monitoring third-part risks",
+        "Handling internal employee compliance",
+        "Configuring data feeds between systems"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: Managing supplier relationships and monitoring third-part risks",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "092192c0-7ae4-45c9-a966-699e5710845c",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "A keyword search searches for a specific word or string within one or more:",
+      "choices": [
+        "Workspaces",
+        "Applications",
+        "Reports",
+        "Data-Driven Events"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: Applications",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "9ad24d41-23c7-473d-af68-bf9fdfc1670d",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Applications which are entirely designed and deployed by your organization for your specific business needs are called:",
+      "choices": [
+        "Custom Applications",
+        "Blank Applications",
+        "Skeleton Applications",
+        "On-Demand Applications"
+      ],
+      "answer_index": 3,
+      "explanation": "The correct answer is: On-Demand Applications",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "9d5520c2-a886-40d6-b407-2a19806fc9ff",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Applications house specific sets of ___________:",
+      "choices": [
+        "Databases",
+        "Records",
+        "Tasks",
+        "Attachments"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: Records",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "39053c4c-e489-4f1e-85cf-6e1696fb0653",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "A field that cannot be edited but changes based on information entered into other fields is a:",
+      "choices": [
+        "Dynamic field",
+        "Systems field",
+        "Calculated field",
+        "Operational field"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: Calculated field",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "f4bd393d-5eb3-4258-9d50-2481f2872303",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Which of the following best describes a Solution within Archer?",
+      "choices": [
+        "A database used for backups",
+        "A grouping of applications designed to address a specific business need",
+        "A collection of users with the same access level",
+        "A standalone mobile application"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: A grouping of applications designed to address a specific business need",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "4fa5a9ca-7155-44ab-b023-96f6b32e8fe1",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "In Archer, which feature allows importing data from external systems?",
+      "choices": [
+        "Mail Merge",
+        "Report Builder",
+        "Data Feed Manager",
+        "Field Editor"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: Data Feed Manager",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "76eba166-3a07-49fe-8bff-7e3cbaf2e4d6",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "In order to determine what an organization has purchased from Archer, an administrator should check the ______________:",
+      "choices": [
+        "Application Database",
+        "Licensing Information",
+        "User Agreement",
+        "Visible Workspace names"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: Licensing Information",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "1b926565-d5d9-4480-ae55-c09cbade65c9",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Users can filter search results based on any of the following EXCEPT which of the following options?",
+      "choices": [
+        "Data ranges",
+        "Size of Records",
+        "Cross-referenced field selections",
+        "Value List Fields"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: Size of Records",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "93c97eb5-a8da-4412-9cdf-7e2095896515",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Sonja was viewing a record in Archer. She wanted to add a note to it, but the Edit button was greyed out. What would cause this?",
+      "choices": [
+        "This application was set to Retired",
+        "Someone else was working on the record at the same time",
+        "Sonja does not have editing permissions for this record",
+        "Sonja's account has been locked for security reasons"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: Sonja does not have editing permissions for this record",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "c95ddb65-d846-4f71-9c2d-c3a7a1622848",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "How does Archer Evolv Risk help organizations manage risk more effectively?",
+      "choices": [
+        "By automating IT infrastructure monitoring",
+        "By focusing only on financial risks",
+        "By integrating media analytics with risk management",
+        "By providing a centralized platform for monitoring and mitigating risks in real time"
+      ],
+      "answer_index": 3,
+      "explanation": "The correct answer is: By providing a centralized platform for monitoring and mitigating risks in real time",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "716e271b-9144-45b4-a42b-a6d3a7231cd7",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Which is NOT a method by which data can be imported into Archer?",
+      "choices": [
+        "Scanning",
+        "Data feeds",
+        "manual Data import",
+        "API"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: Scanning",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "054820ed-d8a8-4663-84c2-038e4fe32aad",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Which of the following features is most commonly associated with Archer Evolv Compliance?",
+      "choices": [
+        "Financial Transaction tracking",
+        "Employee training management",
+        "Continuous monitoring of regulatory changes, document processing, obligations catalog, and controls alignment",
+        "Inventory management and optimization"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: Continuous monitoring of regulatory changes, document processing, obligations catalog, and controls alignment",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "16a0bc84-2e8b-4d28-8868-1bab7d5288d4",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Once a user performs an advanced search against an application, the search may be saved as a(n):",
+      "choices": [
+        "Query log",
+        "Report",
+        "Application File",
+        "Record"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: Report",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "a5dc9d87-d64a-439f-ba8c-3f98187a37d4",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "If a user wanted to provide additional information to a questionnaire item, they should:",
+      "choices": [
+        "Open and submit a comment attached to the question",
+        "Add a question to the Question Library that pertains to the additional information",
+        "Add an attachment to the questionnaire and reference the question number",
+        "Send an email to the requester"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: Open and submit a comment attached to the question",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "58668021-24f3-4e5f-a7f5-09bac59748b2",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Andre's job as a business resiliency analyst includes logging and reporting crisis events to his Chief Risk Officer and Chief InfoSec Officer. Currently, Andre maintains this data on a spreadsheet that he updates and emails to the CRO and CISO as necessary. How might this practice be putting his organization in danger of increased risk?",
+      "choices": [
+        "Potential data loss due to corrupted files/attachments",
+        "All of these",
+        "Human error involved in manually updating a spreadsheet",
+        "Updating and sharing a file after a crisis event does not allow for risk teams to analyse trends and proactively prevent risk"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: All of these",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "061ae357-b8e1-4d8d-9bc7-8e9937af6508",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Data Feeds are ideally used for which of the following?",
+      "choices": [
+        "Small uploads of data on an ad-hoc basis",
+        "End users to designate another use to serve in their place during periods when they are out of office",
+        "Data to be sent out of Archer and into an external database on a regular cadence",
+        "Archer data feed to be added or modified on a pre-defined schedule"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: Data to be sent out of Archer and into an external database on a regular cadence",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "cc73dd98-b35f-4680-83ef-4290d643833f",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Ayanna no longer needs to receive a specific weekly risk report Subscription Notification. In order to opt out of the emailed report, she should:",
+      "choices": [
+        "Archive the report",
+        "Contact her administrator and ask them to remove her from the distribution list",
+        "Navigate to email subscriptions, locate the report in her subscriptions list, and uncheck the subscribed box",
+        "Create a filter to automatically delete the report in her email client"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: Navigate to email subscriptions, locate the report in her subscriptions list, and uncheck the subscribed box",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "7d3a2afe-5827-427a-ba1a-731695dd4c9a",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "What does Archer Evolv Risk use to enhance its risk management processes?",
+      "choices": [
+        "Real-time manual data entry",
+        "AI and machine learning predict potential risks and optimize workflows",
+        "manual risk assessments",
+        "Only historical data trends"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: AI and machine learning predict potential risks and optimize workflows",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "ee5c0d96-9434-4181-a7c9-d39bf3bb15a1",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Which is NOT a right that can be assigned to a user in Archer?",
+      "choices": [
+        "APPEND",
+        "CREATE",
+        "DELETE",
+        "READ"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: APPEND",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "08dc760a-c83c-48dd-858f-7fd428e4533c",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Terri created a report and saved it, but wants to edit the filters she used to make the data more relevant for her team. Which option should she select from the report toolbar?",
+      "choices": [
+        "Modify (Classic UI) or Edit Search (SaaS UI)",
+        "Save as",
+        "Related Data",
+        "New Report"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: Modify (Classic UI) or Edit Search (SaaS UI)",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "e4371508-67d2-4f0d-b745-192f0ba12f79",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Serena has five tasks within Archer assigned to her, and she can see all five tasks in a \"My Tasks\" report on her dashboard. Serena visits her teammate Beth, and peers over her shoulder to see the same dashboard on Beth's screen. Beth's dashboard displays ten tasks, not the five that Serena sees. What is the most likely cause?",
+      "choices": [
+        "Serena's tasks have not reached the same status value as Beth's",
+        "Beth's My Tasks report has been modified to include tasks assigned to both Beth and Serena",
+        "The report on the dashboard is using a filter on the Assigned To field, that limits the results returned to be only those for whom the user currently logged in can access",
+        "Five additional tasks have been assigned during the walk Serena took from her desk to Beth's desk."
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: The report on the dashboard is using a filter on the Assigned To field, that limits the results returned to be only those for whom the user currently logged in can access",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "b6aabcea-d922-4c8f-901c-8fd9617e5df5",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "If granted the appropriate administrative rights, end users can:",
+      "choices": [
+        "Edit and share global dashboards",
+        "Create and edit personal dashboards",
+        "Create global reports",
+        "All of these"
+      ],
+      "answer_index": 3,
+      "explanation": "The correct answer is: All of these",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "9472dda2-da3a-4c2f-8746-6e8ef46b43fc",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "The main difference between a Personal Report and a Global Report is:",
+      "choices": [
+        "Global reports are clickable, while Persona reports are display-only",
+        "personal reports cannot be exported",
+        "Personal reports are only visible to the person who created the report, which Global reports are always visible to all Archer users",
+        "Personal reports are only visible to the person who created the report, which Global reports can be set to be seen by others, as deigned by the person saving the report"
+      ],
+      "answer_index": 3,
+      "explanation": "The correct answer is: Personal reports are only visible to the person who created the report, which Global reports can be set to be seen by others, as deigned by the person saving the report",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "fc32f78c-f09d-44e3-8f4a-388bc93ee9dd",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "The Audit Management solution area in Archer focuses on which primary activity?",
+      "choices": [
+        "Conducting employee performance reviews",
+        "Performing IT hardware audits",
+        "Managing internal and external audit processes and tracking findings",
+        "Scanning for network vulnerabilities"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: Managing internal and external audit processes and tracking findings",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "7e17572f-1dc9-4dd5-abf2-6f1e650e4468",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "The Activity icon in the top bar shows:",
+      "choices": [
+        "Full audit logs of all user activity",
+        "A list of system-integrated notifications",
+        "The user's 10 most recently added, edited, or viewed records",
+        "All records added in the last hour"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: The user's 10 most recently added, edited, or viewed records",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "cc683e6a-8e6d-4f6c-9e2d-fb74fa15115b",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Archer's Global Search allows users to search across:",
+      "choices": [
+        "Both Archer and the Internet",
+        "Both Archer and the user's intranet",
+        "Only data within Archer that has been updated in the past 12 months",
+        "All data within Archer that the use has access to"
+      ],
+      "answer_index": 3,
+      "explanation": "The correct answer is: All data within Archer that the use has access to",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "49c043e9-e5d0-485b-a147-a52c9d702594",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Which Archer Use Case allows an organization to consolidate information from multiple regulatory bodies into a single, searchable repository?",
+      "choices": [
+        "Issues Management",
+        "Regulatory and Corporate Compliance management",
+        "Audit Management",
+        "Third Party Governance"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: Regulatory and Corporate Compliance management",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "3f42e61a-7a53-4e28-b66e-ba109695e345",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Reymundo wants to create a report that allows the user to group the results by a specific field. In the Visualization Display Options, he should select:",
+      "choices": [
+        "Summary",
+        "Hierarchical",
+        "Row",
+        "Flat"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: Hierarchical",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "b03d7f80-050d-45a2-8cc8-9048e2a89790",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "JavaScript Transporters are a type of:",
+      "choices": [
+        "API",
+        "Data Publication",
+        "Data Feed",
+        "Notification"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: Data Feed",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "30c58c0c-6e2c-45b6-95d8-f33b63fa753c",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Which of the following best describes a record in Archer?",
+      "choices": [
+        "A user access setting",
+        "A visual dashboard component",
+        "An individual data entry in an application",
+        "A list of configuration files"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: An individual data entry in an application",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "0331bb15-84cf-46f5-a652-807346833f09",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Which of the following is a key feature of Archer Evolv Risk?",
+      "choices": [
+        "Integration of risk data with real-time security data",
+        "managing system software updates",
+        "Creating and managing marketing campaigns",
+        "Generating financial reports only"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: Integration of risk data with real-time security data",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "5c36ee64-17b2-4363-8804-38bf2becf7e6",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "A workspace is an organized display of which of the following?",
+      "choices": [
+        "Dashboards",
+        "Applications",
+        "User data",
+        "Files"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: Dashboards",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "0579e9bb-f97c-48be-b2dd-af6ca53e0d52",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "In Archer's Classic UI, the History Log field can be displayed as a grid or as a simple link. How does the History log behave in the new SaaS UI?",
+      "choices": [
+        "All of these behaviours are true in the SaaS UI",
+        "Changes in the log can be clicked to bring attention to the fields that were changed",
+        "Users can filter the changes made by data, user(s), and/or fields",
+        "It appears as a change Log in the right panel"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: All of these behaviours are true in the SaaS UI",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "e50345c1-777f-46c7-a96e-5cb0c8ac007a",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Archer records that leverage Advanced Workflow will have an interactive feature that non-Advanced Workflow records do not have. Which of the following best describes this addition to the record?",
+      "choices": [
+        "A Remove icon appears bear the top of the record. Users can either unsubscribe from the workflow for this record, or delete the record entirely",
+        "An Actions dropdown menu appears near the top of the record. Users can use this dropdown to advance the record to the next stage of the workflow",
+        "An email icon appears near the top of the record. Users can use this icon to quickly notify other users that the record is read to move to the next stage of the workflow",
+        "A copy icon appears near the top of the record. Users can use the Copy functionality to replicate the record and send it to multiple users all within the current stage of the workflow"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: An Actions dropdown menu appears near the top of the record. Users can use this dropdown to advance the record to the next stage of the workflow",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "24cb8416-e1fe-427b-8dde-0c437322dc99",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Anca hasn't seen a specific quarterly report email and wants to see whether she's subscribed to that particular email notification. Which menu should she access to determine whether she is subscribed to that email?",
+      "choices": [
+        "User Name Menu > Preferences > Data Import History",
+        "User Name Menu > Discussion Forum Preferences",
+        "User Name Menu > Help Home",
+        "User Name Menu> Preferences > Email Subscription"
+      ],
+      "answer_index": 3,
+      "explanation": "The correct answer is: User Name Menu> Preferences > Email Subscription",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "d42e388e-d89d-442b-a429-ea92bfc46e18",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "If a user selects the Email Record (Share > Email) option, this feature will:",
+      "choices": [
+        "Open a new email in the user's email client with a link top the record",
+        "Sign the recipient up for the email notifications",
+        "Send the recipient an email that a record is available for view",
+        "Send the recipient a downloadable copy of the record to their email"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: Open a new email in the user's email client with a link top the record",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "f5443679-272e-4bfe-81ee-c0e1ca4648db",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Doug wants to create a report that can include one or more fields from a cross-referenced application. On the search page, Doug should choose:",
+      "choices": [
+        "Add New Relationship",
+        "Add New Filter",
+        "Statistics Mode",
+        "Return All Results"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: Add New Relationship",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "c938f26a-4e76-4277-8c53-f9982457cb07",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Beatrice wants to remind her team when quarterly risk reports are due within 7 days. Her best course of action would be to:",
+      "choices": [
+        "Create a task for each team member each quarter and assign them to the task",
+        "Create a scheduled notification based on the risk report due date",
+        "Create an external document with a running list of upcoming due dates and embed It into a team iView",
+        "Create an embedded video on the team dashboard so team members can remind each other of due dates"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: Create a scheduled notification based on the risk report due date",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "10ce7e6a-ec62-4a72-a7b9-539a7a9e027f",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "What is the value of Archer Evolv Compliance?",
+      "choices": [
+        "Powering your regulatory change program with AI",
+        "Building a centralized global library of both regulatory and non-regulatory obligations",
+        "All of these answers are correct",
+        "Establishing controls aligned with business requirements"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: All of these answers are correct",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "841be9c1-d22e-4fb6-b1b3-d6dd39afb2ff",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Archer offers one Use Case that is seen in nearly every Solution Area. This Use Case helps organizations document events (Findings) that need to resolved, often for compliance reasons. What is the name of this often-shared Use Case?",
+      "choices": [
+        "Workflow Resolution",
+        "Issues Management",
+        "Problems Solved and Noted (PSAN)",
+        "Remediation Activities"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: Issues Management",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "595d2e16-f05f-43bb-8464-e36de17652f9",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Saving a search as a report:",
+      "choices": [
+        "Allows you to enter a description of the report for later reference",
+        "All of these statements are true",
+        "Saves the search settings, but does not save the exact data set returned in the search",
+        "Allows you to designate the search as Personal, Shared or Global"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: All of these statements are true",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "13e32ead-d6e6-4693-87ef-d8d92d62ceeb",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "When an end user logs in to Archer their home view is of a(n):",
+      "choices": [
+        "Calendar",
+        "Analytics view",
+        "Data Feed",
+        "Dashboard"
+      ],
+      "answer_index": 3,
+      "explanation": "The correct answer is: Dashboard",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "7f9a872c-223d-427b-b7c1-994a3fd429f8",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Srishti and Jamie both work as audit managers at XYZ Corporation. Srishti notices that Jamie has additional reports showing in her Audit Manager dashboard, and Srishti does not have access to them. What might be the cause of this?",
+      "choices": [
+        "Srishti was hired after Jamie, so any records created before her first day of employment would not show up",
+        "Srishti has not added the addition Audit Manager iViews or widgets to her dashboard",
+        "Srishti and Jame do not have the same access rights",
+        "Srishti's account has been hacked"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: Srishti and Jame do not have the same access rights",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "9d6e9fcc-754f-41fd-900d-9741877a684c",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Which of the following is not found in the Archer menu bar?",
+      "choices": [
+        "Map display controls",
+        "Global search field",
+        "Help icon",
+        "Activity icon"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: Map display controls",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "c412602c-8535-4c0a-80fd-036ec13c1a8d",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Record fields marked with red asterisks are:",
+      "choices": [
+        "Calculated fields",
+        "Data-driven fields",
+        "Required fields",
+        "Cross-referenced fields"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: Required fields",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "1fb6f1c6-0b6c-4e5e-9bc6-d6a258c9192a",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Nate's primary task in Archer is to log findings as a submitter. Which Archer workspace option would allow him to quickly create a new finding without having to navigate to the application every time?",
+      "choices": [
+        "Quick Links",
+        "Data Feed",
+        "Advanced Workflow",
+        "Advanced Search"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: Quick Links",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "c5799c7e-bf94-4820-8deb-65e85c47bcac",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "After performing a global search, the user may opt to transfer the search to:",
+      "choices": [
+        "Any of these",
+        "A specific database",
+        "An external web browser",
+        "A specific application"
+      ],
+      "answer_index": 3,
+      "explanation": "The correct answer is: A specific application",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "371def2f-2a2b-4286-8673-aa6e3507362f",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "A report can be exported in which file format(s)?",
+      "choices": [
+        "Any of these answers",
+        "CSV",
+        "Excel",
+        "PDF"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: Any of these answers",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "69e82790-5147-4fb4-8b87-98d32b492c82",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "When a user creates a Scheduled Report Distribution, Archer will run the report:",
+      "choices": [
+        "When pushed by the report creator",
+        "Automatically",
+        "When pushed by an administrator",
+        "When a user requests the report"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: Automatically",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "f2feb116-153f-41f3-b11d-1b8514cef065",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Chenoa opened a record and noticed a field was uneditable. This could possibly be because:",
+      "choices": [
+        "The field is a calculated field",
+        "All of these are possible reasons",
+        "The field is private",
+        "The field is marked Read-Only by a data-driven event"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: All of these are possible reasons",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "221a30e7-b955-4786-ae2f-38e254a43c28",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Laszlo transferred from the Risk Analysis team to the Business Resiliency team. He needs to be able to access records and Business Resiliency plans in Archer. Laszlo should:",
+      "choices": [
+        "All of these are correct",
+        "Ask his Archer administrator to assign him to the appropriate groups and access roles for his new position",
+        "Update his user profile and change his password",
+        "Contact Human Resources"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: Ask his Archer administrator to assign him to the appropriate groups and access roles for his new position",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "afe0a961-f66f-45ec-af0b-889a393285cb",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "When creating a new record, you may encounter some fields marked as required, but there is no mechanism for you to manually enter data in these fields. What is the most likely reason for this?",
+      "choices": [
+        "These fields can only be populated by an administrator",
+        "These fields only accept data entry from a scheduled data feed",
+        "These fields are calculated and will be populated once the record is saved",
+        "These are private fields and you have not been given access to view the data within"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: These fields are calculated and will be populated once the record is saved",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "72f86032-d860-4391-91da-9a81662aa9a0",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Groups of pre-configured Applications that are ready to use immediately after deployment of Archer are called:",
+      "choices": [
+        "On-Demand Applications",
+        "Proprietary Applications",
+        "Default Cases",
+        "Use Cases"
+      ],
+      "answer_index": 3,
+      "explanation": "The correct answer is: Use Cases",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "1a4b03c8-83e5-4602-801f-40edc8a8ec2e",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "If a user ran multiple searches to verify the existence of specific data within Archer and they realized the data they were looking for did not exist, which of the following actions should the user take to add a new record into Archer? (Assume the user has access rights to create records for this scenario.)",
+      "choices": [
+        "Click the Modify (Classic UI) or edit Search (SaaS) icon to modify Archer's structure",
+        "Click the Email icon to send an email to the administrator and ask for the data to be added",
+        "Adjust the current search criteria to expand the search to include records outside of Archer",
+        "Click the New Record icon (Classic UI) or Add New Record (Saas) to create a new record in Archer"
+      ],
+      "answer_index": 3,
+      "explanation": "The correct answer is: Click the New Record icon (Classic UI) or Add New Record (Saas) to create a new record in Archer",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "bcc25eb8-bfd5-4109-9f38-7e112268724c",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Access to the Archer platform is controlled by:",
+      "choices": [
+        "Inclusion of a person in stage within Advanced Workflow",
+        "Human Resources",
+        "User Accounts (username and password)",
+        "Selection of a person's name in an Assigned To field"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: User Accounts (username and password)",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "04b7480a-133e-41b6-ad1b-ddc9e206f658",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "All system users automatically belong to a built-in group named ______________",
+      "choices": [
+        "Enterprise Management",
+        "All",
+        "Basic User Parameter",
+        "Everyone"
+      ],
+      "answer_index": 3,
+      "explanation": "The correct answer is: Everyone",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "dbea095b-bfc1-403f-a4a5-2fca818152d2",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "If a user wished to access all of the available records in a specific application, the correct navigation path would be:",
+      "choices": [
+        "Workspace > Application > Record",
+        "Workspace > Solution > Application",
+        "None of these answers are correct",
+        "Workspace > Dashboard > iView"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: Workspace > Solution > Application",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "5567cbf5-3bad-4f19-995f-030c8ad13746",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Steven is looking at a returned set of search results in the Classic UI. He sees a small pencil icon next to a field name in one of the columns of data. What does this pencil icon signify?",
+      "choices": [
+        "The field with a pencil icon is still sitting in Draft status",
+        "The data is this field can be emailed separately from the rest of the data set",
+        "Steven can edit the field for various records right from within the search results themselves",
+        "Steven is a system administrator"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: Steven can edit the field for various records right from within the search results themselves",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "6063033c-e825-40bd-9961-8b0b604284d9",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "What is the primary purpose of Archer Evolv?",
+      "choices": [
+        "To conduct marketing analytics",
+        "To manage employee payroll",
+        "To provide an end-to-end risk management and compliance framework",
+        "To manage inventory levels in real-time"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: To provide an end-to-end risk management and compliance framework",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "8321d098-08bc-4d11-b03a-48ee317eedec",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "In the new SaaS UI, what does the Attention feature in the right panel do?",
+      "choices": [
+        "It draws the user's attention to comments left in a questionnaire that needs to be addressed",
+        "It draws the user's attention to new features in Archer",
+        "It draws the user's attention to fields that are empty",
+        "It draws the admin's attention to the faulted data feeds"
+      ],
+      "answer_index": 2,
+      "explanation": "The correct answer is: It draws the user's attention to fields that are empty",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "6ced9d94-58cb-46ec-b83e-a73d88fb2434",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Archer's primary purpose is:",
+      "choices": [
+        "To support risk management and compliance activities",
+        "To create social media campaigns",
+        "To manage IT hardware lifecycles",
+        "To generate financial reports"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: To support risk management and compliance activities",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "d45f1004-43d5-48ef-9da7-91dc19ea36ba",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Archer Solution Areas contain groups of related:",
+      "choices": [
+        "Files",
+        "Use Cases",
+        "Records",
+        "Problems"
+      ],
+      "answer_index": 1,
+      "explanation": "The correct answer is: Use Cases",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "5b687111-3f70-499e-a8b3-6d0149a8031c",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "Clicking on the area representing results within a chart will open:",
+      "choices": [
+        "An enlarged version of the chart",
+        "A list of related charts",
+        "A list of cross-referenced fields",
+        "A list of records associated with that chart statistic"
+      ],
+      "answer_index": 3,
+      "explanation": "The correct answer is: A list of records associated with that chart statistic",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    },
+    {
+      "id": "474d4386-692a-45ad-a7b9-f8215dd137d1",
+      "domain": "Archer Platform",
+      "objective": "Archer Associate Exam",
+      "question": "If a user clicks on a linked record ID, the link will take the user to:",
+      "choices": [
+        "The record itself",
+        "Any available attachments to the record",
+        "A diagram showing all related records",
+        "The linked application"
+      ],
+      "answer_index": 0,
+      "explanation": "The correct answer is: The record itself",
+      "refs": [],
+      "difficulty": "medium",
+      "tags": [
+        "archer",
+        "associate"
+      ]
+    }
+  ]
+}
