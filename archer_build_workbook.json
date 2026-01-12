@@ -1,0 +1,789 @@
+{
+  "meta": {
+    "name": "Archer Build Workbook: Learn by Creating",
+    "version": "2.0.0",
+    "created": "2026-01-12",
+    "description": "A hands-on workbook where you BUILD an Archer application from scratch and learn all skills needed to pass the Associate Exam.",
+    "target_audience": "Complete beginners with zero Archer knowledge and access to on-prem Archer",
+    "estimated_time": "6-8 hours",
+    "prerequisites": "Access to an on-prem Archer instance with admin/builder permissions"
+  },
+  "introduction": {
+    "title": "Welcome to the Archer Build Workbook!",
+    "mission": "You're going to BUILD a complete 'Security Training Tracker' application from absolute scratch. By the time you're done, you'll know how to create applications, add fields, build forms, create workflows, and everything else needed to SMASH the Archer Associate Exam.",
+    "why_build": "Just like learning Archer by creating a D&D character sheet, the best way to learn is by BUILDING something real. You'll start with nothing and progressively add more advanced features until you have a fully functional application.",
+    "what_youll_build": "A Security Training Tracker that tracks employee security training completion, with automated workflows, notifications, reports, and dashboards."
+  },
+  "part_0_big_picture": {
+    "title": "PART 0: The Big Picture",
+    "duration": "15-20 minutes",
+    "sections": [
+      {
+        "section": "What is Archer?",
+        "content": [
+          "Archer is a **Governance, Risk, and Compliance (GRC) platform**. Think of it as a super-organized digital system where organizations manage:",
+          "• **Risks** - What could go wrong? How likely? How bad?",
+          "• **Compliance** - Are we following regulations? (GDPR, HIPAA, SOX, etc.)",
+          "• **Audits** - Tracking findings and remediation",
+          "• **Policies** - Managing corporate policies and procedures",
+          "• **Third Parties** - Monitoring vendor risks",
+          "• **Incidents** - Documenting and responding to security events",
+          "",
+          "Instead of using messy spreadsheets, emails, and shared drives, everything lives in ONE centralized platform with proper tracking, workflows, and reporting."
+        ]
+      },
+      {
+        "section": "What is GRC?",
+        "content": [
+          "**G**overnance - How the organization is run (policies, standards, oversight)",
+          "**R**isk - Identifying, assessing, and mitigating threats",
+          "**C**ompliance - Following laws, regulations, and standards",
+          "",
+          "**Why does this matter?**",
+          "Organizations face massive problems with manual GRC management:",
+          "❌ **Data Loss** - Spreadsheets get corrupted, files get lost",
+          "❌ **Human Error** - Manual updates lead to mistakes",
+          "❌ **No Visibility** - Can't see trends or analyze risks proactively",
+          "❌ **Inefficiency** - People waste time hunting for information",
+          "❌ **Compliance Failures** - Missing deadlines, failing audits",
+          "",
+          "**Archer solves this by providing:**",
+          "✅ Centralized, secure data storage",
+          "✅ Automated workflows and notifications",
+          "✅ Real-time reporting and dashboards",
+          "✅ Audit trails (who changed what, when)",
+          "✅ Integration with other systems"
+        ]
+      },
+      {
+        "section": "How We Use Archer in GRC",
+        "content": [
+          "**Common GRC Use Cases in Archer:**",
+          "",
+          "1. **Risk Management** - Track risks across the organization, assign owners, monitor mitigation",
+          "2. **Compliance Management** - Track regulatory requirements, map controls, demonstrate compliance",
+          "3. **Audit Management** - Manage audit schedules, track findings, monitor remediation",
+          "4. **Issues Management** - Document problems/findings that need resolution (MOST COMMON - seen in almost every solution!)",
+          "5. **Third Party Risk** - Assess vendor risks, monitor contracts, track security assessments",
+          "6. **Incident Management** - Log security incidents, investigate, remediate",
+          "7. **Policy Management** - Publish policies, track acknowledgments, manage exceptions",
+          "8. **Business Continuity** - Plan for disasters, document recovery procedures"
+        ]
+      },
+      {
+        "section": "Archer Architecture - The Hierarchy",
+        "content": [
+          "Archer organizes everything in a hierarchy. You MUST understand this:",
+          "",
+          "**SOLUTION AREA** (Top level)",
+          "  ↳ Groups of related applications for a business need",
+          "  ↳ Examples: 'IT & Security', 'Operational Risk', 'Compliance'",
+          "",
+          "**USE CASE** (Pre-built application groups)",
+          "  ↳ Ready-to-use applications that come with Archer",
+          "  ↳ Examples: 'Issues Management', 'Audit Management', 'Third Party Risk'",
+          "",
+          "**APPLICATION** (What you're about to build!)",
+          "  ↳ Houses specific sets of RECORDS",
+          "  ↳ Can be pre-built (Use Case) or custom (On-Demand)",
+          "  ↳ Examples: 'Security Findings', 'Risk Register', 'Training Tracker'",
+          "",
+          "**RECORDS** (Individual data entries)",
+          "  ↳ The actual data (like rows in a database)",
+          "  ↳ Examples: 'Risk #12345', 'Finding #678', 'Training Record #999'",
+          "",
+          "**Navigation Path:**",
+          "Workspace → Solution Area → Application → Records",
+          "",
+          "**EXAM TIP:** This hierarchy is HEAVILY tested! Know it cold!"
+        ]
+      },
+      {
+        "section": "Your Mission",
+        "content": [
+          "You're going to build a **Security Training Tracker** application from scratch.",
+          "",
+          "**What it will do:**",
+          "• Track employee security training completion",
+          "• Store training records (who, what training, when, status)",
+          "• Auto-calculate days until expiration",
+          "• Send notifications when training is due",
+          "• Create reports and dashboards",
+          "• Use workflows for approval processes",
+          "",
+          "**By building this, you'll learn:**",
+          "✓ How to create an application",
+          "✓ All the different field types",
+          "✓ How to design forms",
+          "✓ How to create and manage records",
+          "✓ Calculated fields and business logic",
+          "✓ Search and reporting",
+          "✓ Dashboards and visualizations",
+          "✓ Notifications and scheduling",
+          "✓ Data-Driven Events (DDEs)",
+          "✓ Advanced Workflows",
+          "✓ Permissions and access control",
+          "",
+          "**AND you'll be ready to SMASH the exam!**"
+        ]
+      }
+    ],
+    "checkpoint": [
+      "Before moving on, make sure you understand:",
+      "□ What Archer is and why organizations use it",
+      "□ The problems Archer solves (data loss, human error, lack of visibility)",
+      "□ The Archer hierarchy: Solution → Use Case → Application → Records",
+      "□ Your mission: Build a Security Training Tracker"
+    ]
+  },
+  "part_1_foundation": {
+    "title": "PART 1: FOUNDATION (Easy)",
+    "subtitle": "Building Your First Application",
+    "duration": "1.5-2 hours",
+    "difficulty": "Beginner",
+    "what_youll_learn": [
+      "How to create an application from scratch",
+      "How to add basic fields (text, numbers, dates, value lists)",
+      "How to design a form layout",
+      "How to create and save records",
+      "How to navigate the Archer interface"
+    ],
+    "activities": [
+      {
+        "activity_number": 1,
+        "title": "Create Your Application",
+        "learning_objectives": [
+          "Navigate to the application builder",
+          "Understand application properties",
+          "Create your first application"
+        ],
+        "why_this_matters": "Every Archer implementation starts with creating applications. This is the foundation of everything.",
+        "steps": [
+          {
+            "step": 1,
+            "action": "Log in to Archer",
+            "details": [
+              "Open your web browser",
+              "Navigate to your organization's Archer URL",
+              "Enter your username and password",
+              "Click 'Login'",
+              "You should see your default dashboard/homepage"
+            ],
+            "screenshot_tip": "If you get lost, click the LOGO in the top left corner to return to your homepage",
+            "exam_tip": "EXAM FACT: When users log in to Archer, their home view is a Dashboard. Clicking the logo (top left) returns you to your default homepage/workspace."
+          },
+          {
+            "step": 2,
+            "action": "Navigate to the Application Builder",
+            "details": [
+              "Look at the top menu bar",
+              "Click on 'Manage' (you need admin/builder permissions for this)",
+              "From the dropdown, select 'Applications'",
+              "You'll see a list of existing applications",
+              "This is the Application Catalog"
+            ],
+            "troubleshooting": "If you don't see 'Manage', you don't have admin rights. Ask your Archer administrator to grant you 'Application Builder' permissions.",
+            "exam_tip": "EXAM FACT: Applications house specific sets of Records. To create an application, you need appropriate administrative rights."
+          },
+          {
+            "step": 3,
+            "action": "Create a New Application",
+            "details": [
+              "Look for a button that says 'Add New' or has a green plus icon (+)",
+              "Click it",
+              "A dialog box will appear asking for application details"
+            ]
+          },
+          {
+            "step": 4,
+            "action": "Fill in Application Properties",
+            "details": [
+              "**Name:** Security Training Tracker",
+              "**Description:** Tracks employee security training completion and expiration dates",
+              "**Type:** On-Demand Application (you're building a custom app, not using a pre-built Use Case)",
+              "**Acronym:** STT (optional but recommended - makes it easier to reference)",
+              "Leave other settings as default for now"
+            ],
+            "exam_tip": "EXAM FACT: Applications entirely designed and deployed by your organization for specific business needs are called On-Demand Applications. Use Cases are pre-configured and ready to use immediately."
+          },
+          {
+            "step": 5,
+            "action": "Save Your Application",
+            "details": [
+              "Click 'Save' or 'OK'",
+              "Your application is now created!",
+              "You'll see it in the Application Catalog",
+              "**IMPORTANT:** Right now, your application is empty - no fields, no forms, nothing. That's what we're about to build!"
+            ]
+          }
+        ],
+        "checkpoint": [
+          "□ You've successfully created an application named 'Security Training Tracker'",
+          "□ You can see it in the Application Catalog",
+          "□ You understand the difference between On-Demand Applications and Use Cases"
+        ],
+        "whats_next": "Now we need to add FIELDS so we can store data!"
+      },
+      {
+        "activity_number": 2,
+        "title": "Add Your First Field (Text Field)",
+        "learning_objectives": [
+          "Understand what fields are",
+          "Learn field properties",
+          "Create a text field"
+        ],
+        "why_this_matters": "Fields are where data lives. Without fields, you can't store any information. Think of fields like columns in a spreadsheet.",
+        "steps": [
+          {
+            "step": 1,
+            "action": "Open Your Application in Edit Mode",
+            "details": [
+              "In the Application Catalog, find your 'Security Training Tracker' application",
+              "Click on it to open it",
+              "Look for an 'Edit' button or pencil icon",
+              "Click it to enter Edit Mode",
+              "You should see tabs/sections like: Overview, Fields, Layout, etc."
+            ]
+          },
+          {
+            "step": 2,
+            "action": "Navigate to the Fields Section",
+            "details": [
+              "Click on the 'Fields' tab",
+              "This is where you define what data your application will store",
+              "Right now it's empty (or has only system fields)"
+            ]
+          },
+          {
+            "step": 3,
+            "action": "Add a New Field",
+            "details": [
+              "Look for 'Add' or 'Add New Field' button",
+              "Click it",
+              "A dialog will appear asking for field type",
+              "Select 'Text' (this is the most basic field type)"
+            ],
+            "field_types_overview": "Archer has many field types: Text, Numeric, Date, Value List, Cross-Reference, Calculated, Attachments, etc. We'll learn them all progressively."
+          },
+          {
+            "step": 4,
+            "action": "Configure the Text Field",
+            "details": [
+              "**Field Name:** Employee Name",
+              "**Description:** Name of the employee who completed the training",
+              "**Required:** Check this box (make it a required field)",
+              "**Max Length:** 100 characters (default is usually fine)",
+              "Leave other settings as default"
+            ],
+            "exam_tip": "EXAM FACT: Record fields with red asterisks (*) are Required Fields. Users must fill these out before saving a record."
+          },
+          {
+            "step": 5,
+            "action": "Save the Field",
+            "details": [
+              "Click 'Save' or 'OK'",
+              "Your field is now created!",
+              "You'll see 'Employee Name' in your field list"
+            ]
+          },
+          {
+            "step": 6,
+            "action": "Add More Text Fields",
+            "details": [
+              "Repeat the process to add these additional text fields:",
+              "",
+              "**Field 2:**",
+              "  - Name: Training Title",
+              "  - Description: Name of the security training course",
+              "  - Required: Yes",
+              "",
+              "**Field 3:**",
+              "  - Name: Training Provider",
+              "  - Description: Organization that provided the training",
+              "  - Required: No",
+              "",
+              "**Field 4:**",
+              "  - Name: Certificate Number",
+              "  - Description: Certification ID if applicable",
+              "  - Required: No"
+            ]
+          }
+        ],
+        "checkpoint": [
+          "□ You've added 4 text fields to your application",
+          "□ You understand that required fields will have red asterisks (*) when creating records",
+          "□ You can see all your fields in the Fields list"
+        ],
+        "whats_next": "Text fields are great, but we need more field types for a real application. Let's add value lists, dates, and numbers!"
+      },
+      {
+        "activity_number": 3,
+        "title": "Add More Field Types (Value Lists, Dates, Numbers)",
+        "learning_objectives": [
+          "Learn about different field types",
+          "Create value list fields (dropdowns)",
+          "Create date fields",
+          "Create numeric fields"
+        ],
+        "why_this_matters": "Different data needs different field types. Dates for dates, numbers for calculations, value lists for dropdown selections. Using the right field type makes data entry easier and enables powerful features.",
+        "steps": [
+          {
+            "step": 1,
+            "action": "Create a Value List Field (Dropdown)",
+            "details": [
+              "Click 'Add New Field'",
+              "Select field type: 'Values List' (or 'Value List')",
+              "**Field Name:** Training Status",
+              "**Description:** Current status of the training record",
+              "**Required:** Yes",
+              "",
+              "Now you need to add the dropdown options (values):",
+              "**Values to add:**",
+              "  1. Not Started",
+              "  2. In Progress",
+              "  3. Completed",
+              "  4. Expired",
+              "",
+              "Look for a section to add values - click 'Add Value' for each one",
+              "Save the field"
+            ],
+            "exam_tip": "EXAM FACT: Value List fields provide dropdown selection options. They're perfect for status fields, categories, or any fixed set of choices."
+          },
+          {
+            "step": 2,
+            "action": "Create Another Value List Field",
+            "details": [
+              "Add another Values List field:",
+              "**Field Name:** Training Type",
+              "**Description:** Category of security training",
+              "**Required:** Yes",
+              "",
+              "**Values to add:**",
+              "  1. Phishing Awareness",
+              "  2. Data Protection",
+              "  3. Secure Coding",
+              "  4. Incident Response",
+              "  5. General Security Awareness",
+              "",
+              "Save the field"
+            ]
+          },
+          {
+            "step": 3,
+            "action": "Create Date Fields",
+            "details": [
+              "Click 'Add New Field'",
+              "Select field type: 'Date'",
+              "**Field Name:** Completion Date",
+              "**Description:** Date the employee completed the training",
+              "**Required:** Yes",
+              "**Default:** (leave blank - user will enter it)",
+              "Save the field",
+              "",
+              "Add another Date field:",
+              "**Field Name:** Expiration Date",
+              "**Description:** Date when the training certification expires",
+              "**Required:** No",
+              "Save the field"
+            ],
+            "exam_tip": "EXAM FACT: Date fields store dates and enable date-based filtering, searching, and calculations. You can set up scheduled notifications based on date fields."
+          },
+          {
+            "step": 4,
+            "action": "Create Numeric Fields",
+            "details": [
+              "Click 'Add New Field'",
+              "Select field type: 'Numeric'",
+              "**Field Name:** Training Duration (Hours)",
+              "**Description:** Number of hours the training took",
+              "**Required:** No",
+              "**Decimal Places:** 1 (allows values like 2.5 hours)",
+              "Save the field",
+              "",
+              "Add another Numeric field:",
+              "**Field Name:** Cost",
+              "**Description:** Cost of the training in dollars",
+              "**Required:** No",
+              "**Decimal Places:** 2 (for currency)",
+              "Save the field"
+            ],
+            "exam_tip": "EXAM FACT: Numeric fields store numbers and enable calculations. They're essential for any quantitative data (costs, scores, counts, etc.)."
+          }
+        ],
+        "checkpoint": [
+          "□ You've added 2 Value List fields (Training Status, Training Type)",
+          "□ You've added 2 Date fields (Completion Date, Expiration Date)",
+          "□ You've added 2 Numeric fields (Training Duration, Cost)",
+          "□ Your application now has 10 fields total"
+        ],
+        "fields_summary": {
+          "text_fields": ["Employee Name", "Training Title", "Training Provider", "Certificate Number"],
+          "value_list_fields": ["Training Status", "Training Type"],
+          "date_fields": ["Completion Date", "Expiration Date"],
+          "numeric_fields": ["Training Duration (Hours)", "Cost"]
+        },
+        "whats_next": "Now we have fields, but users need a way to see them and enter data. Time to create a FORM LAYOUT!"
+      },
+      {
+        "activity_number": 4,
+        "title": "Create Your Form Layout",
+        "learning_objectives": [
+          "Understand form layouts",
+          "Add fields to a layout",
+          "Organize fields in sections",
+          "Set default view/edit layout"
+        ],
+        "why_this_matters": "Fields define WHAT data you store. Layouts define HOW users see and interact with that data. Without a layout, users can't view or edit records!",
+        "steps": [
+          {
+            "step": 1,
+            "action": "Navigate to the Layout Section",
+            "details": [
+              "Make sure you're still in Edit Mode for your application",
+              "Click on the 'Layout' tab (might be called 'Views & Layouts' or similar)",
+              "This is where you design how fields appear to users"
+            ]
+          },
+          {
+            "step": 2,
+            "action": "Create a New Layout",
+            "details": [
+              "Look for 'Add New Layout' or similar button",
+              "Click it",
+              "**Layout Name:** Training Record Details",
+              "**Layout Type:** Record (this is for viewing/editing individual records)",
+              "Click 'Save' or 'OK'"
+            ]
+          },
+          {
+            "step": 3,
+            "action": "Add a Section to Your Layout",
+            "details": [
+              "You should now see a layout designer/editor",
+              "Layouts are organized into SECTIONS (like boxes that group related fields)",
+              "Look for 'Add Section' button",
+              "Click it",
+              "**Section Name:** Training Information",
+              "Save the section"
+            ]
+          },
+          {
+            "step": 4,
+            "action": "Add Fields to the Section",
+            "details": [
+              "You'll see your section, and probably a list of available fields on the side",
+              "Drag and drop (or select) these fields into the 'Training Information' section:",
+              "  1. Employee Name",
+              "  2. Training Title",
+              "  3. Training Type",
+              "  4. Training Provider",
+              "",
+              "Arrange them in this order (top to bottom)"
+            ]
+          },
+          {
+            "step": 5,
+            "action": "Add Another Section for Dates",
+            "details": [
+              "Add a new section: 'Dates and Status'",
+              "Add these fields to this section:",
+              "  1. Training Status",
+              "  2. Completion Date",
+              "  3. Expiration Date"
+            ]
+          },
+          {
+            "step": 6,
+            "action": "Add a Third Section for Additional Details",
+            "details": [
+              "Add a new section: 'Additional Details'",
+              "Add these fields:",
+              "  1. Training Duration (Hours)",
+              "  2. Cost",
+              "  3. Certificate Number"
+            ]
+          },
+          {
+            "step": 7,
+            "action": "Set This as the Default Layout",
+            "details": [
+              "Look for an option like 'Set as Default' or 'Default View/Edit Layout'",
+              "Enable this",
+              "This tells Archer: 'Use this layout when users create or view records'",
+              "Save your layout"
+            ]
+          },
+          {
+            "step": 8,
+            "action": "Save and Publish Your Application",
+            "details": [
+              "Look for a 'Save' button at the application level (not just the layout)",
+              "Click 'Save'",
+              "Then look for 'Publish' or 'Activate'",
+              "Click it",
+              "**IMPORTANT:** Until you publish, users can't access the application!",
+              "Confirm the publish action"
+            ],
+            "exam_tip": "EXAM FACT: After creating or modifying an application, you must PUBLISH it for changes to take effect."
+          }
+        ],
+        "checkpoint": [
+          "□ You've created a layout called 'Training Record Details'",
+          "□ You've organized all fields into 3 sections",
+          "□ You've set this layout as the default",
+          "□ You've published your application"
+        ],
+        "whats_next": "Your application is now LIVE! Time to create your first training record and see your work in action!"
+      },
+      {
+        "activity_number": 5,
+        "title": "Create and Save Your First Record",
+        "learning_objectives": [
+          "Navigate to your application",
+          "Create a new record",
+          "Understand required fields",
+          "Save records properly (don't be like Ruth!)"
+        ],
+        "why_this_matters": "This is the moment of truth! You'll create actual data in your application and see everything you built come to life.",
+        "steps": [
+          {
+            "step": 1,
+            "action": "Navigate to Your Application",
+            "details": [
+              "Click the logo (top left) to go to your homepage",
+              "Look for your workspace navigation (left side or top)",
+              "Navigate: Workspace → Solution Area → Your Application",
+              "You should see an empty list (no records yet)",
+              "You'll see a 'New Record' button (Classic UI) or 'Add New Record' (SaaS UI)"
+            ],
+            "exam_tip": "EXAM FACT: The correct path to access all records in an application is Workspace > Solution > Application. To add new data, click the New Record icon (Classic UI) or Add New Record (SaaS UI)."
+          },
+          {
+            "step": 2,
+            "action": "Click New Record",
+            "details": [
+              "Click 'New Record' or 'Add New Record'",
+              "You'll see the form you just designed!",
+              "All your sections and fields should appear",
+              "Required fields will have RED ASTERISKS (*)"
+            ],
+            "exam_tip": "EXAM FACT: Record fields with red asterisks are Required Fields. You must fill them out before you can save."
+          },
+          {
+            "step": 3,
+            "action": "Fill Out Your First Training Record",
+            "details": [
+              "Enter sample data:",
+              "",
+              "**Training Information Section:**",
+              "  - Employee Name: John Smith",
+              "  - Training Title: Phishing Defense 101",
+              "  - Training Type: Phishing Awareness (select from dropdown)",
+              "  - Training Provider: SecureTraining Inc.",
+              "",
+              "**Dates and Status Section:**",
+              "  - Training Status: Completed (select from dropdown)",
+              "  - Completion Date: [Today's date]",
+              "  - Expiration Date: [One year from today]",
+              "",
+              "**Additional Details Section:**",
+              "  - Training Duration (Hours): 2.5",
+              "  - Cost: 250.00",
+              "  - Certificate Number: CERT-2026-001"
+            ]
+          },
+          {
+            "step": 4,
+            "action": "SAVE YOUR RECORD (CRITICAL!)",
+            "details": [
+              "Look at the top or bottom of the record",
+              "Find the 'SAVE' button",
+              "Click it",
+              "Wait for confirmation (usually a green message saying 'Record saved successfully')",
+              "",
+              "⚠️ **DON'T BE LIKE RUTH!** ⚠️",
+              "Ruth's Story: Ruth filled out a record and closed it without clicking Save. When she came back, all her work was GONE. She had to start over.",
+              "",
+              "**THE GOLDEN RULE: ALWAYS CLICK SAVE BEFORE CLOSING A RECORD!**"
+            ],
+            "exam_tip": "EXAM FACT: The 'Save' option saves edits to a record. If you don't select Save, your changes won't be kept. This is one of the most common exam scenarios!"
+          },
+          {
+            "step": 5,
+            "action": "View Your Saved Record",
+            "details": [
+              "After saving, you'll see your record in 'view mode'",
+              "Note the RECORD ID at the top (something like 'STT-001' or a number)",
+              "This unique ID identifies this specific record",
+              "Click around and see your data organized in the sections you created",
+              "Clicking on a linked Record ID takes you directly to that record"
+            ],
+            "exam_tip": "EXAM FACT: Clicking on a linked record ID takes you to the record itself. Each record has a unique identifier."
+          },
+          {
+            "step": 6,
+            "action": "Practice: Create More Records",
+            "details": [
+              "Navigate back to the application record list",
+              "Create 2-3 more training records with different data:",
+              "",
+              "**Suggested Record 2:**",
+              "  - Employee: Sarah Johnson",
+              "  - Training: Data Privacy & GDPR",
+              "  - Type: Data Protection",
+              "  - Status: In Progress",
+              "",
+              "**Suggested Record 3:**",
+              "  - Employee: Mike Davis",
+              "  - Training: Secure Coding Practices",
+              "  - Type: Secure Coding",
+              "  - Status: Completed",
+              "",
+              "This gives you test data to work with in later activities!"
+            ]
+          }
+        ],
+        "checkpoint": [
+          "□ You've successfully created at least 3 training records",
+          "□ You saved each record properly (didn't lose any data!)",
+          "□ You can view your records in the application",
+          "□ You understand that required fields MUST be filled out"
+        ],
+        "whats_next": "Congratulations! You've built a working Archer application from scratch! Next, we'll add more advanced features like calculated fields, cross-references, and automation."
+      }
+    ],
+    "part_1_complete": {
+      "congratulations": "🎉 PART 1 COMPLETE! 🎉",
+      "what_you_learned": [
+        "✓ Created an On-Demand Application from scratch",
+        "✓ Added multiple field types (Text, Value List, Date, Numeric)",
+        "✓ Designed a form layout with organized sections",
+        "✓ Published your application",
+        "✓ Created and saved records",
+        "✓ Understood the importance of clicking SAVE!"
+      ],
+      "exam_concepts_covered": [
+        "✓ On-Demand Applications vs Use Cases",
+        "✓ Required fields (red asterisks)",
+        "✓ Different field types and their purposes",
+        "✓ Navigation paths (Workspace > Solution > Application > Records)",
+        "✓ Saving records properly",
+        "✓ Record IDs"
+      ],
+      "take_a_break": "Take a 10-15 minute break! You've earned it. When you come back, we'll level up with calculated fields, cross-references, and more advanced features."
+    }
+  },
+  "part_2_building_up": {
+    "title": "PART 2: BUILDING UP (Medium Difficulty)",
+    "subtitle": "Adding Advanced Functionality",
+    "duration": "2-3 hours",
+    "difficulty": "Intermediate",
+    "what_youll_learn": [
+      "Calculated fields (auto-calculations based on other fields)",
+      "Cross-reference fields (linking to other applications)",
+      "Advanced search and reporting",
+      "Dashboards and iViews",
+      "Email notifications and subscriptions"
+    ],
+    "activities": [
+      {
+        "activity_number": 6,
+        "title": "Add Calculated Fields (Auto-Calculations)",
+        "learning_objectives": [
+          "Understand calculated fields",
+          "Create calculations using formulas",
+          "Use date calculations"
+        ],
+        "why_this_matters": "Calculated fields do math for you automatically! They save time, prevent errors, and enable powerful business logic. Perfect for things like 'Days Until Expiration' or 'Total Cost'.",
+        "steps": [
+          {
+            "step": 1,
+            "action": "Understand Calculated Fields",
+            "details": [
+              "Calculated fields are GRAYED OUT (read-only) - users can't edit them manually",
+              "They auto-populate based on other fields using formulas",
+              "They recalculate whenever related fields change",
+              "Perfect for: totals, date math, conditional logic",
+              "",
+              "Example: If Expiration Date is set, calculate 'Days Until Expiration' automatically"
+            ],
+            "exam_tip": "EXAM FACT: Calculated fields cannot be edited manually and change based on other field values. They auto-populate when you save the record."
+          },
+          {
+            "step": 2,
+            "action": "Open Your Application in Edit Mode",
+            "details": [
+              "Navigate: Manage > Applications",
+              "Find 'Security Training Tracker'",
+              "Click Edit",
+              "Go to the Fields tab"
+            ]
+          },
+          {
+            "step": 3,
+            "action": "Create Your First Calculated Field",
+            "details": [
+              "Click 'Add New Field'",
+              "Select field type: 'Calculated'",
+              "**Field Name:** Days Until Expiration",
+              "**Description:** Auto-calculated days between today and expiration date",
+              "**Calculation Type:** Numeric",
+              "**Formula:** [Expiration Date] - TODAY()",
+              "(The exact syntax might vary - use Archer's formula builder)",
+              "This calculates: Expiration Date minus today's date = days remaining",
+              "Save the field"
+            ],
+            "formula_help": "Archer has a formula builder with common functions like TODAY(), SUM(), IF(), etc. Use it to build your formulas visually."
+          },
+          {
+            "step": 4,
+            "action": "Add to Your Layout",
+            "details": [
+              "Go to the Layout tab",
+              "Edit your 'Training Record Details' layout",
+              "Find the 'Dates and Status' section",
+              "Add the 'Days Until Expiration' field below 'Expiration Date'",
+              "Save the layout"
+            ]
+          },
+          {
+            "step": 5,
+            "action": "Test Your Calculated Field",
+            "details": [
+              "Publish your changes",
+              "Navigate to your application",
+              "Open one of your existing records",
+              "Look at the 'Days Until Expiration' field",
+              "It should show a number (could be positive or negative)",
+              "If you change the Expiration Date and save, the calculated field updates automatically!"
+            ],
+            "exam_tip": "EXAM FACT: Required calculated fields will populate once the record is saved. You can't manually edit them."
+          },
+          {
+            "step": 6,
+            "action": "Challenge: Create Another Calculated Field",
+            "details": [
+              "Create a calculated field called: 'Status Alert'",
+              "This will display a text alert based on Days Until Expiration",
+              "",
+              "**Formula logic (use IF statements):**",
+              "  - If Days Until Expiration < 0: 'EXPIRED'",
+              "  - If Days Until Expiration < 30: 'Expiring Soon'",
+              "  - Otherwise: 'Current'",
+              "",
+              "Add it to your layout in the 'Dates and Status' section",
+              "Test it with different expiration dates!"
+            ]
+          }
+        ],
+        "checkpoint": [
+          "□ You've created 'Days Until Expiration' calculated field",
+          "□ You've tested it and see it auto-calculate",
+          "□ You understand that calculated fields are read-only",
+          "□ (Bonus) You created 'Status Alert' calculated field"
+        ],
+        "whats_next": "Next, we'll create cross-reference fields to link your training tracker to other applications (like an employee directory)!"
+      }
+    ]
+  }
+}
